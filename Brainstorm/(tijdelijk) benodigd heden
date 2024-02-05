@@ -1,10 +1,11 @@
--display
--hdmi naar hdmi mini (of hdmi naar hdmi voor pi 3) voor raspberry pi
--verdeel stekker met 2 uitgangen
--3 pin stekker voor display
--pi
--pi oplader
--sd voor de pi
+-display (van school)
+-display port naar dp of hdmi (tussen pc en scherm)
+-verdeel stekker met 3à4 uitgangen
+-2x3 pin stekker voor pc en display
 -2 knoppen
 -joistick
--bekabeling van knoppen en joistick naar pi (pi onder de controller interface)
+-usb kabel van pc naar esp
+-esp
+-bekabeling van knoppen en joistick naar esp (esp onder controller interface)
+-(uitbreiding) speakers, speakers bekabeling
+-(uitbreiding) leds met led bekabeling (verbonden met de esp)

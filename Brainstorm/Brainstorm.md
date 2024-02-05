@@ -20,6 +20,6 @@ ontwerp <Link naar je bestand Domien>
 - scherm
 - Voeding voor alles
 - Handmatige haspel maken
-- stekkerdoos 3aparaten 
+- stekkerdoos 5 aparaten 
 - Pi 3 of 4
 - HDMI 

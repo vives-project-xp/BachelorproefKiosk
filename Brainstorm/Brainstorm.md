@@ -22,4 +22,4 @@ ontwerp <Link naar je bestand Domien>
 - Handmatige haspel maken
 - stekkerdoos 5 aparaten 
 - Pi 3 of 4
-- HDMI 
+- Displayport 

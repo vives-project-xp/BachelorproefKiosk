@@ -22,7 +22,7 @@ Functies
 -http server om onze webpagina en assets af te leveren bij clients, waarschijnlijk express+node
 -file service voor afbeeldingen in de fiches/database, als onderdeel van de http server.
 -frontend webpagina die aangepast is voor met joystick en knoppen maar kan nogsteeds bestuurdworden door muis, html+css+js.
--Linux met startup jobs om bij startup al de pagina te laden in fullscreen.
+-Windows 11 met taakplanner om bij opstart al de website in fullschreen weer te geven, ook gebruik makend van de kiosk mode in windows.
 
 Arcade kast:
 Input

@@ -12,11 +12,11 @@ er is een ouwe doos in het project kot die niet meer gebruikt wordt en er zitten
 | [x] | wifikaart | kopen |  |
 | [x] | pc | school |  |
 | [x] | scherm | school |  |
-| [ ] | display port bekabeling | school |  |
-| [ ] | 2x3pin adapters | school (doos) |  |
-| [ ] | Buttons | school (doos) |  |
-| [ ] | Joystick | school (doos) |  |
-| [ ] | esp | school (doos) |  |
+| [x] | display port bekabeling | school |  |
+| [x] | 2x3pin adapters | school |  |
+| [x] | Buttons | school (doos) |  |
+| [x] | Joystick | school (doos) |  |
+| [x] | esp | school (doos) |  |
 | [ ] | usb kabel geschikt voor de esp van stroom te voorzien | kopen |  |
 | [ ] | extra usb ventilator | kopen |  |
 | [x] | handvaten | maken, 3d printen | moet nog doorgegeven worden aan de print dienst |

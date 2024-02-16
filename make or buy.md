@@ -19,6 +19,6 @@ er is een ouwe doos in het project kot die niet meer gebruikt wordt en er zitten
 | [x] | esp | school (doos) |  |
 | [ ] | usb kabel geschikt voor de esp van stroom te voorzien | kopen |  |
 | [ ] | extra usb ventilator | kopen |  |
-| [x] | handvaten | maken, 3d printen | moet nog doorgegeven worden aan de print dienst |
+| [ ] | handvaten | maken, 3d printen | moet nog doorgegeven worden aan de print dienst |
 | [ ] | nagels/lijm om gemaakte doos onderdelen in elkaar te steken | kopen |  |
 | [ ] | verven | laten doen door een bedrijf of stickers in vives gemaakt of grafitti |  |

@@ -1,3 +1,4 @@
 **/node_modules
-**/IMG_upload/*
+**/IMG_uploads/*
 *.log
+.env

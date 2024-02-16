@@ -86,6 +86,7 @@ a:hover:after {
     animation: float-picture 10s ease-in-out infinite;
     max-width: 100px;
   }
+  
 
   .red-ghost-picture:nth-child(2) {
     animation-delay: 2s; /* Delay the animation */

@@ -170,8 +170,18 @@ li{
   list-style-type:none;
 } 
 
+.bodydiv{
+  margin: 1%;
+  display: flexbox;
+}
+
+.leftbodydiv{
+  width: 48%;
+  float: left;
+}
+
 /* The side navigation menu */
-.sidebar {
+.sidebar, .sidebarCheck {
   margin: 0;
   width: 22%;
   font-size: 60%;
@@ -182,13 +192,22 @@ li{
   overflow: auto;
   padding-top: 2%;
   padding-bottom: 2%;
+  position: left;
+}
+
+.sidebarCheck{
+  margin-top: 45%;
+}
+
+.sidebarCheck li{
+  margin: 5%;
 }
 
 .content {
   border-color: #ffffff;
   border-style: solid;
   border-width: 3px;
-  margin: 5%;
+  margin-right: 2%;
   margin-left: 25%;
   padding: 5%;
 }
@@ -219,6 +238,32 @@ li{
   }
 }
 
+/* wide screen */
+@media screen and (min-width: 1400px) {
+  h1 {
+    margin-top: 1%;
+    margin-bottom: 5%;
+  }
+
+  .TopText {
+    margin-bottom: 5%;
+  }
+
+  .sidebar {
+    position: static;
+    width: 40%;
+  }
+
+  .sidebarCheck {
+    position: static;
+    margin-top: 5%;
+    width: 40%;
+  }
+  
+  .content {
+    text-align: left;
+  }
+}
 
 /* 
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!

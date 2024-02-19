@@ -282,8 +282,9 @@ li{
 /* wide screen */
 @media screen and (min-width: 1400px) {
   h1 {
-    margin-top: 1%;
-    margin-bottom: 5%;
+    margin-top: 2%;
+    margin-left: 1%;
+    margin-bottom: 1%;
   }
 
   .TopText {

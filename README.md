@@ -31,13 +31,13 @@ An Arcade Kiosk that shows the bachelor's thesis of previous students.
 
 We got 3 different pages:
 
-- Bachelorproeven
+- Bachelorproeven:
  This shows a list with each bachelor thesis. When you click on a thesis you get more information.
 
-- Richting Informatie
+- Richting Informatie:
  Here you can find information and pictures of the different Electronica-ICT directions.
 
-- Game
+- Game:
  If we have extra time we gonna add some pop up games to de website.
 
 ### Admin

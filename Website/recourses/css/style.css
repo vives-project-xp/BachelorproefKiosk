@@ -109,6 +109,7 @@ h1 {
   text-align: center;
   font-size: 1000%;
   text-shadow: #ff0202 2px 2px 2px;
+  cursor:none;
 }
 
 h2 {
@@ -223,6 +224,20 @@ li{
    Moving parts ( keep it at the bottom of the file ) 
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 */
+
+/* Titels */
+@keyframes grow-shrink {
+  0%, 100% {
+    transform: scale(1);  /* Start and end at normal size */
+  }
+  50% {
+    transform: scale(1.004);  /* Grow 2% in the middle */
+  }
+}
+
+h1 {
+  animation: grow-shrink 0.8s infinite;  /* Apply the animation */
+}
 
 /* The ghost animations */
 .ghost-container {

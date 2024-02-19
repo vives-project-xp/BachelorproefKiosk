@@ -254,6 +254,12 @@ img.kong {
   animation: move-left-right 10s infinite;  
 }
 
+/* invaders */ 
+.invader-container {
+  position: relative;
+  overflow-x: hidden;
+  height: 300px;
+}
 /* The ghost animations */
 .ghost-container {
   position: relative;

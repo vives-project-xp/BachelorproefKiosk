@@ -42,3 +42,14 @@ Bachelor proeven pagina heeft een radiobutton sidebar om alleen projecten van ee
 - PC krijgt een extra wifi kaart om niet afhankelijk te zijn via ethernet.
 - Esp en extra ventilator worden gevoedt via usb vanuit de pc.
 - PC: we kunnen kiezen voor een kleintje of een grote, grote kunnen we uit elkaar halen en zo past die beter binnen behuizing, leerkrachten hebben kleintje liever omdat als pc'tje stuk gaat dan kunnen ze er een nieuwe in steken en dan werkt het weer.
+
+# Comunicatie tussen backend en frontend
+
+Voor Bachelor Proeven.html:
+    -opvraag van alle proeven via "/backend/getFiches/all"
+    -als je een richting selecteert dan gaat ei gwn in de data die hij al heeft alle fiches van deze richting selecteren om weer te geven.
+Op de fiche pagina:
+    -gaat ie alles opvragen via "/backend/getFiche/id" hierin zitten er ook een aantal afbeeldingen die tevinden zijn via de route "/backendIMG/name".
+    -opdracht gever / bedrijf: als het niet vives dan is het gewoon de naam van de opdrachtgever (img is display:none), als vives dan wordt het logo van vives weergegeven (p is display:none en img is href:vives-logo.png")
+Voor Richting info pagina:
+    -we moeten nog beslissen of dit voor elke richting een aparte html pagina is of als we 1 pagina doen en de info is te vinden in de backend/db

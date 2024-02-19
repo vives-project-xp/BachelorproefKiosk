@@ -1,0 +1,25 @@
+int RXLED = 17; // The RX LED has a defined Arduino pin
+int TXLED = 30; // The TX LED has a defined Arduino pin
+
+// the setup function runs once when you press reset or power the board
+void setup() {
+  
+  pinMode(RXLED, OUTPUT); // Set RX LED as an output
+  pinMode(TXLED, OUTPUT); // Set TX LED as an output
+  pinMode(20,INPUT_PULLUP);
+  pinMode(19,INPUT_PULLUP);
+  pinMode(10,INPUT_PULLUP);
+  pinMode(15,INPUT_PULLUP);
+  pinMode(21,OUTPUT);
+  digitalWrite(21, LOW);
+  Serial.begin(9600);
+  
+}
+
+// the loop function runs over and over again forever
+void loop() {
+  char umoeder[54];
+  sprintf(umoeder,"%d,%d,%d,%d\n\r", digitalRead(19) , digitalRead(20),digitalRead(10) , digitalRead(15));
+  Serial.print(umoeder);
+  delay(300);
+}

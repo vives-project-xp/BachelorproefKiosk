@@ -5,24 +5,23 @@
     - mode 2: general purpose browser mode: als de toeschouwers doorklikken op de linkedin dan komen ze op een pagina die niet geoptimalliseert is voor joystick en knopjes dus dan wordt de joystick een muis.
 
 ## Output
-- Menu met onderdelen:
-    - BP pagina
-    - Richting pagina
-    - game pagina
-    - Zoek functie (op menu zelf)
-- BP pagina: start bij een willekeurige fiche en je kan steeds naar onder en naar boven dmv de joistick, er is ook een zijbalk waar je fiches kan selecteren.
-- Richting pagina: Toont alle richtingen, als je een richting selecteert dan ga je naar de BP pagina met alleen maar fiches van deze richting en bovenaan toont hij dan ook de naam van de richting.
-- game pagina: als we tijd overhebben maken we nog een game die je kan spelen op deze arcade kast
-- Zoek functie: mogelijkheid om op student naam, bedrijf, jaar, of trefwoorden te zoeken met zoekresultaten die compact worden weergegeven en je kan dan doorklikken om de fiche te bekijken.
-- Screen saver: random fiches worden afgewisseld als screen saver.
-- Admin pagina om nieuwe fiches toe te voegen.
+Pagina tree:
+    -Menu:
+        -projecten
+            -project
+        -richtingen
+            -richting info
+        -game
+        -admin login
+            -admin pagina
+Bachelor proeven pagina heeft een radiobutton sidebar om alleen projecten van een bepaalde richting te selecteren. Ook een optie voor random fiche.
 
 ## Functies
 - database met alle fiches in, waarschijnlijk mysql/mariadb
 - http server om onze webpagina en assets af te leveren bij clients, waarschijnlijk express+node
 - file service voor afbeeldingen in de fiches/database, als onderdeel van de http server.
 - frontend webpagina die aangepast is voor met joystick en knoppen maar kan nogsteeds bestuurdworden door muis, html+css+js.
-- Windows 11 met taakplanner om bij opstart al de website in fullschreen weer te geven, ook gebruik makend van de kiosk mode in windows.
+- Windows 10 met taakplanner om bij opstart al de website in fullschreen weer te geven, ook gebruik makend van de kiosk mode in windows.
 
 # Arcade kast
 ## Input
@@ -43,3 +42,14 @@
 - PC krijgt een extra wifi kaart om niet afhankelijk te zijn via ethernet.
 - Esp en extra ventilator worden gevoedt via usb vanuit de pc.
 - PC: we kunnen kiezen voor een kleintje of een grote, grote kunnen we uit elkaar halen en zo past die beter binnen behuizing, leerkrachten hebben kleintje liever omdat als pc'tje stuk gaat dan kunnen ze er een nieuwe in steken en dan werkt het weer.
+
+# Comunicatie tussen backend en frontend
+
+Voor Bachelor Proeven.html:
+    -opvraag van alle proeven via "/backend/getFiches/all"
+    -als je een richting selecteert dan gaat ei gwn in de data die hij al heeft alle fiches van deze richting selecteren om weer te geven.
+Op de fiche pagina:
+    -gaat ie alles opvragen via "/backend/getFiche/id" hierin zitten er ook een aantal afbeeldingen die tevinden zijn via de route "/backendIMG/name".
+    -opdracht gever / bedrijf: als het niet vives dan is het gewoon de naam van de opdrachtgever (img is display:none), als vives dan wordt het logo van vives weergegeven (p is display:none en img is href:vives-logo.png")
+Voor Richting info pagina:
+    -we moeten nog beslissen of dit voor elke richting een aparte html pagina is of als we 1 pagina doen en de info is te vinden in de backend/db

@@ -99,7 +99,7 @@ body {
   -ms-overflow-style: none;
 }
 
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
   display: none;
 }
 
@@ -141,24 +141,29 @@ p {
 }
 
 a {
-  text-decoration: none;
   text-shadow: #ff0202 1px 1px 1px;
   font-size: 200%;
-  margin: 3%;
   line-height: 150%;
 }
 
-a :hover {
-  color: #ecd506;
+a:link {
+  color: #ffffff;
   text-decoration: none;
+}
+a:visited {
+      text-decoration: none;
+color: #ffffff;
+}
+a:hover {
+  color: #ecd506;
 }
 
 a:hover:after {
   content: "<";
 }
 
-li {
-  list-style-type:none
+li{
+  list-style-type:none;
 } 
 
 /* The side navigation menu */
@@ -166,24 +171,13 @@ li {
   margin: 0;
   width: 22%;
   font-size: 60%;
-  background-color: #ffffff;
+  background-color: #000000;
+  border: #ffffff 2px solid;
   position: fixed;
   height: auto;
   overflow: auto;
-}
-
-/* Sidebar links */
-.sidebar a {
-  display: block;
-  color: black;
-  padding: 5%;
-  text-decoration: none;
-}
-
-/* Links on mouse-over */
-.sidebar a:hover:not(.active) {
-  color: #ecd506;
-  text-decoration: none;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .content {
@@ -246,12 +240,12 @@ li {
 
 
 .red-ghost-picture:nth-child(2) {
-  animation-delay: 2s;
+  animation-delay: 2.1s;
   /* Delay the animation */
 }
 
 .red-ghost-picture:nth-child(3) {
-  animation-delay: 4s;
+  animation-delay: 4.3s;
 }
 
 @keyframes float-picture {
@@ -278,12 +272,12 @@ li {
 }
 
 .left-ghost-picture:nth-child(2) {
-  animation-delay: 3s;
+  animation-delay: 3.2s;
   /* Delay the animation */
 }
 
 .left-ghost-picture:nth-child(3) {
-  animation-delay: 4s;
+  animation-delay: 4.1s;
 }
 
 @keyframes left-ghost-picture {
@@ -295,3 +289,5 @@ li {
     left: -50%;
   }
 }
+
+

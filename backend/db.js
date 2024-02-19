@@ -38,7 +38,7 @@ const getFiche = (req, res,id) => {
 }
 const getFiches = (req, res, richtingId) => {
     configConnect(function(connection){
-        var queryry = "SELECT titel, tekst FROM fiche"
+        var queryry = "SELECT titel, tekst, richtingId FROM fiche"
         if(richtingId!=undefined){
             queryry+=" where richtingId=?"
         }

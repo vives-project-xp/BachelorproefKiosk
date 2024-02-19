@@ -176,7 +176,7 @@ li{
 }
 
 .leftbodydiv{
-  width: 48%;
+  width: 30%;
   float: left;
 }
 
@@ -199,8 +199,49 @@ li{
   margin-top: 45%;
 }
 
+.sidebarCheck h2{
+  margin-bottom: 10%;
+  font-size: 140%;
+  text-align: center;
+}
+
 .sidebarCheck li{
-  margin: 5%;
+  display: flex;
+    align-items: center; /* This will vertically center align the text with the checkbox */
+    margin: 10%;
+    font-size: 140%;
+}
+.sidebarCheck li input[type="checkbox"] {
+  margin-right: 10px;
+  display: none;
+}
+
+.sidebarCheck li label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+.sidebarCheck li label:before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  left: 0;
+  border: 2px solid #000000;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+.sidebarCheck li input[type="checkbox"]:checked + label:before {
+  background-color: #ecd506;
+  border-color: #ff0202;
+  border-width: 1px;
+}
+
+.sidebarCheck li label:hover {
+  color: #ecd506;
 }
 
 .content {
@@ -215,7 +256,7 @@ li{
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
   .sidebar {
-    width: 100%;
+    width: 10%;
     height: auto;
     position: relative;
     padding-top: 1%;
@@ -262,6 +303,18 @@ li{
   
   .content {
     text-align: left;
+  }
+
+  .leftbodydiv {
+    width: 15%;
+  }
+
+  .sidebar, .sidebarCheck {
+    width: auto;
+  }
+
+  .content {
+    margin-left: 20%;
   }
 }
 

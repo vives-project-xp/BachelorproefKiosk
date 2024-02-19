@@ -90,6 +90,7 @@ video {
   vertical-align: baseline;
   color: #ffffff;
   text-decoration: none;
+  cursor: crosshair;
 }
 
 body {
@@ -237,6 +238,20 @@ li{
 
 h1 {
   animation: grow-shrink 0.8s infinite;  /* Apply the animation */
+}
+
+/* Kong */
+@keyframes move-left-right {
+  0%, 100% {
+    transform: translateX(-130px);  
+  }
+  50% {
+    transform: translateX(-20px);  
+  }
+}
+
+img.kong {
+  animation: move-left-right 10s infinite;  
 }
 
 /* The ghost animations */

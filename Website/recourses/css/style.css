@@ -113,11 +113,13 @@ h1 {
 
 h2 {
   font-size: 130%;
+  text-shadow: #ff0202 1.3px 1.3px 1.3px;
 }
 
 h3 {
   font-size: 120%;
   margin: 3%;
+  text-shadow: #ff0202 1.2px 1.2px 1.2px;
 }
 
 p {

@@ -76,7 +76,7 @@
 
 <div class="proefInfo">
 
-    <p id="info"></p>
+    <p id="info">Deze bachelorproef leidt u door de werkwijze en de gedachtegang van het creëren van een 2D golf browser game. Het is een opdracht van de Royal Ostend Golf Club, een partner van Canyon Clan om spelers interactief kennis te doen maken met het golfterrein.</p>
 
 </div>
 
@@ -117,6 +117,7 @@
                         document.getElementById("AfstudeerRichting").textContent = data.afstudeerRichting
                         document.getElementsByClassName("Linkedin")[0].href = "https://"+data.link
                         document.getElementById("titel").textContent = data.titel
+                        document.getElementById("info").textContent = data.tekst
                         document.getElementById("opdrachtgeverText").textContent = data.bedrijf
                         document.getElementById("projectFoto").src = "http://"+backendAddr+"/backendIMG/"+data.afbeelding1
                         document.getElementById("hashtag").textContent = data.hashtags

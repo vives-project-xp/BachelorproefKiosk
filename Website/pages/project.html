@@ -102,6 +102,7 @@
                         document.getElementById("AfstudeerRichting").textContent = data.afstudeerRichting
                         document.getElementsByClassName("Linkedin")[0].href = "https://"+data.link
                         document.getElementById("titel").textContent = data.titel
+                        document.getElementById("info").textContent = data.tekst
                         document.getElementById("opdrachtgeverText").textContent = data.bedrijf
                         document.getElementById("projectFoto").src = "http://"+backendAddr+"/backendIMG/"+data.afbeelding1
                         document.getElementById("hashtag").textContent = data.hashtags

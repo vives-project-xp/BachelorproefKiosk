@@ -9,7 +9,7 @@
     <meta name="author" content="Seraphin Sampers">
     <title>Bachelor Kiosk</title>
     <!-- Java script connection -->
-    <script defer src="./recourses/js/script.js"></script>
+    <script defer src="../recourses/js/script.js"></script>
     <!-- Google charts connection -->
     <script src="https://www.gstatic.com/charts/loader.js"></script>
     <!-- Kit fontawesome and bootstrap -->
@@ -29,7 +29,7 @@
     }
 </style>
 
-<body>
+<body onload="fill()">
 <div class="Red">
 
     <img src="../../recourses/images/Logo-VIVES-Hogeschool.png" alt=""background-color = green>
@@ -75,13 +75,39 @@
     <li><i class="fa-light fa-hashtag"></i></li>
     <li><i class="fa-light fa-hashtag"></i></li>
     <li><i class="fa-light fa-hashtag"></i></li>
+    <!--als 1 string in de database:-->
+    <p id="hashtag"></p>
 </div>
 <div class="right">
 
-    <a id="projectFoto" href=""></a>
-
+    <!--<a id="projectFoto" href=""></a>-->
+    <img src="" alt="" id="projectFoto">
 </div>
 
 </div>
 </body>
 </html>
+
+<script>
+    function fill(){
+        if(window.location.search.indexOf("?")!=-1){
+            var ficheId = window.location.search.split("?")[1]
+            fetch("http://"+backendAddr+"/backend").then(function(response) {
+                if (response.ok) {
+                    fetch("http://"+backendAddr+"/backend/getFiche/"+ficheId).then(async function(response) {
+                        let data = await response.json();
+                        data = data[0]
+                        //console.log(data)
+                        document.getElementById("studentName").textContent = data.studentNaam
+                        document.getElementById("AfstudeerRichting").textContent = data.afstudeerRichting
+                        document.getElementsByClassName("Linkedin")[0].href = "https://"+data.link
+                        document.getElementById("titel").textContent = data.titel
+                        document.getElementById("opdrachtgeverText").textContent = data.bedrijf
+                        document.getElementById("projectFoto").src = "http://"+backendAddr+"/backendIMG/"+data.afbeelding1
+                        document.getElementById("hashtag").textContent = data.hashtags
+                    })
+                }
+            })
+        }
+    }
+</script>

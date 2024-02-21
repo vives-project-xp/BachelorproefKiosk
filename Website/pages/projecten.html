@@ -9,7 +9,7 @@
   <meta name="author" content="Seraphin Sampers">
   <title>Bachelor Kiosk</title>
   <!-- Java script connection -->
-  <script defer src="./recourses/js/script.js"></script>
+  <script defer src="../recourses/js/script.js"></script>
   <!-- Google charts connection -->
   <script src="https://www.gstatic.com/charts/loader.js"></script>
   <!-- Kit fontawesome and bootstrap -->
@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="../recourses/css/style.css">
 </head>
 
-<body>
+<body onload="fetchData()">
   <div class="TopText">
     <h1>Bachelor Proeven</h1>
     <p>Deze pagina bevat informatie over de bachelor proeven van de richting <br>Elektronica-ICT</p>
@@ -60,7 +60,7 @@
 </div>
 
     <!-- proeven -->
-    <div class="content">
+    <div class="content" id="proevenDiv">
       <div id="P1">
         <h2>Proef 1</h2>
         <p>Deze proef gaat over ...</p><br>
@@ -165,3 +165,39 @@
 </body>
 
 </html>
+<script>
+  function fetchData(){
+    //verbinding met de backend checken
+  fetch("http://"+backendAddr+"/backend").then(function(response) {
+    if (!response.ok) {
+        //oke de verbinding met de backend is niet werkend en we moeten het dus laten bij de template fiches
+    }else{
+      let Container = document.getElementById("proevenDiv")
+      //leeg maken van de div
+      while(Container.firstChild){
+        Container.removeChild(Container.firstChild);
+      }
+      fetch("http://"+backendAddr+"/backend/getFiches/all").then(async function(response) {
+        let data = await response.json();
+        console.log(data)
+        for(let i = 0; i<data.length; i++){
+          /*template
+          <div id="P19">
+            <h2>Proef 19</h2>
+            <p>Deze proef gaat over ...</p><br>
+          </div>*/
+          let containerDiv = document.createElement("div")
+          let h2 = document.createElement("a")
+          let p = document.createElement("p")
+          h2.textContent = data[i].titel
+          h2.href = "project.html?"+data[i].id
+          p.textContent = data[i].tekst
+          containerDiv.appendChild(h2)
+          containerDiv.appendChild(p)
+          Container.appendChild(containerDiv)
+        }
+      })
+    }
+  })
+  }
+</script>

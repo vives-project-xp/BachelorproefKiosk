@@ -25,7 +25,7 @@ let configConnect = (returnCode) => {
 }
 const getFiche = (req, res,id) => {
     configConnect(function(connection){
-        const queryry = "SELECT * FROM fiche where id = ?"
+        const queryry = "SELECT *,(select titel from richting where id=richtingId) as afstudeerRichting FROM fiche where id = ?"
         connection.query(queryry, [id], (err, data) => {
         if(err){
             res.status(404).send("interne database error")
@@ -38,7 +38,7 @@ const getFiche = (req, res,id) => {
 }
 const getFiches = (req, res, richtingId) => {
     configConnect(function(connection){
-        var queryry = "SELECT titel, tekst, richtingId FROM fiche"
+        var queryry = "SELECT id, titel, tekst, richtingId FROM fiche"
         if(richtingId!=undefined){
             queryry+=" where richtingId=?"
         }

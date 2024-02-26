@@ -299,6 +299,7 @@ li{
 
 .topbarimg {
   height: 50px;
+  margin-left: 2%;
 }
 
 .content {
@@ -323,6 +324,10 @@ footer {
   padding: 1em 0;
   background-color: #000000; /* Change this to your preferred color */
   color: #ffffff; /* Change this to your preferred color */
+}
+
+footer img {
+  height: 30px;
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
@@ -425,12 +430,6 @@ img.kong {
   animation: move-left-right 10s infinite;  
 }
 
-/* invaders */ 
-.invader-container {
-  position: relative;
-  overflow-x: hidden;
-  height: 300px;
-}
 /* The ghost animations */
 .ghost-container {
   position: relative;

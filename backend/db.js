@@ -67,8 +67,8 @@ const addFiche = (req, res, objectData)=>{
 }
 const updateFiche = (req, res, objectData)=>{
     configConnect(function(connection){
-        const queryry = "update fiche set studentNaam=?, bedrijf=?, titel=?, link=?, tekst = ?, afbeelding1=?, afbeelding2=?,hashtags=?, richingId=?"
-        connection.query(queryry,[objectData.studentNaam, objectData.bedrijf, objectData.titel,objectData.link,objectData.tekst, objectData.afbeelding1,objectData.afbeelding2,objectData.hashtags,objectData.richtingId], (err, data) => {
+        const queryry = "update fiche set naamStudent=?, bedrijf=?, titel=?, link=?, tekst = ?, afbeelding1=?, afbeelding2=?,hashtags=?, richingId=? where id=?"
+        connection.query(queryry,[objectData.studentNaam, objectData.bedrijf, objectData.titel,objectData.link,objectData.tekst, objectData.afbeelding1,objectData.afbeelding2,objectData.hashtags,objectData.richtingId, objectData.id], (err, data) => {
             if(err){
                 res.status(404).send("interne database error")
                 console.log("interne database error")
@@ -117,6 +117,19 @@ const addRichting = (req, res, naam)=>{
             connection.end()
         });})
 }
+const updateRichting = (req, res, naam,id)=>{
+    configConnect(function(connection){
+        const queryry = "update richting set titel=? where id=?"
+        connection.query(queryry,[naam, id], (err, data) => {
+            if(err){
+                res.status(404).send("interne database error")
+                console.log("interne database error")
+            }else{
+                res.status(200).send("ok");
+            }
+            connection.end()
+        });})
+}
 const removeRichting = (req, res, id)=>{
     configConnect(function(connection){
         const queryry = "delete from richting where id=?"
@@ -130,4 +143,4 @@ const removeRichting = (req, res, id)=>{
             connection.end()
         });})
 }
-module.exports = {getRichtingen, getFiche, getFiches, addRichting,addFiche, removeFiche, removeRichting}
+module.exports = {getRichtingen, getFiche, getFiches, addRichting,addFiche, removeFiche, removeRichting, updateFiche, updateRichting}

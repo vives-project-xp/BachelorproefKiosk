@@ -31,6 +31,9 @@ app.post('/backend/addFiche', (req, res) => {
 app.delete('/backend/removeFiche/:id', (req, res) => {
     db.removeFiche(req,res, req.params.id)
 })
+app.put("/backend/updateFiche/",(req, res)=>{
+    db.updateFiche(req, res, req.body)
+})
 app.get('/backend/getRichtingen', (req, res) => {
     db.getRichtingen(req,res)
 })
@@ -39,6 +42,9 @@ app.post('/backend/addRichting/:naam', (req, res) => {
 })
 app.delete('/backend/removeRichting/:id', (req, res) => {
     db.removeRichting(req,res, req.params.id)
+})
+app.put("/backend/updateRichting/:id/:naam",(req, res)=>{
+    db.updateRichting(req, res, req.params.naam, req.params.id)
 })
 app.post("/backendIMG/upload", async (req, res) => { //alleen hier rsa string in de url omdat body = image
       try{

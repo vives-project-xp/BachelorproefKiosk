@@ -144,6 +144,15 @@ p {
   padding: 2%;
 }
 
+.projectwrapper {
+  align-self: center;
+  width: 96%;
+  border: #ffffff 2px solid;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 2%;
+}
+
 a {
   text-shadow: #ff0202 1px 1px 1px;
   font-size: 200%;
@@ -275,11 +284,6 @@ li{
 .topbarimg {
   height: 50px;
 }
-
-.projectwrapper {
-  
-}
-
 
 .content {
   border-color: #ffffff;

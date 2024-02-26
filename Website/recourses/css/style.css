@@ -244,6 +244,70 @@ li{
   color: #ecd506;
 }
 
+/* topbar */
+.topbar, .topbarCheck {
+  margin: 0;
+  width: 22%;
+  font-size: 60%;
+  background-color: #000000;
+  border: #ffffff 2px solid;
+  position: fixed;
+  height: auto;
+  overflow: auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  position: left;
+}
+
+.topbarCheck{
+  margin-top: 45%;
+}
+
+.topbarCheck h2{
+  margin-bottom: 10%;
+  font-size: 140%;
+  text-align: center;
+}
+
+.topbarCheck li{
+  display: flex;
+    align-items: center; /* This will vertically center align the text with the checkbox */
+    margin: 10%;
+    font-size: 140%;
+}
+.topbarCheck li input[type="checkbox"] {
+  margin-right: 10px;
+  display: none;
+}
+
+.topbarCheck li label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+.topbarCheck li label:before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  left: 0;
+  border: 2px solid #000000;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+.topbarCheck li input[type="checkbox"]:checked + label:before {
+  background-color: #ecd506;
+  border-color: #ff0202;
+  border-width: 1px;
+}
+
+.topbarCheck li label:hover {
+  color: #ecd506;
+}
+
 .content {
   border-color: #ffffff;
   border-style: solid;

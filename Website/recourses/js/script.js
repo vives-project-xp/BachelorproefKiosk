@@ -1,3 +1,3 @@
 console.log("Loaded");
 
-const backendAddr = "127.0.0.1:3000"
+const backendAddr = "10.10.18.5:3000"

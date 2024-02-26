@@ -269,6 +269,10 @@ li{
   color: #ecd506;
 }
 
+#highkicks {
+  height: 250px;
+}
+
 /* topbar */
 .topbar {
   display: flex;

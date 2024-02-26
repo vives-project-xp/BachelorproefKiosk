@@ -76,11 +76,6 @@
         <p>In opdracht van</p>
         <a id="opdrachtgever" href=""></a>
         <p id="opdrachtgeverText"></p>
-
-        <li><i class="fa-light fa-hashtag"></i></li>
-        <li><i class="fa-light fa-hashtag"></i></li>
-        <li><i class="fa-light fa-hashtag"></i></li>
-        <!--als 1 string in de database:-->
         <p id="hashtag"></p>
     </div>
     <div class="right">
@@ -111,7 +106,8 @@
                         document.getElementById("titel").textContent = data.titel
                         document.getElementById("info").textContent = data.tekst
                         document.getElementById("opdrachtgeverText").textContent = data.bedrijf
-                        document.getElementById("projectFoto").src = "http://" + backendAddr + "/backendIMG/" + data.afbeelding1
+                        document.getElementById("StudentFace").src = "http://" + backendAddr + "/backendIMG/" + data.afbeelding1
+                        document.getElementById("projectFoto").src = "http://" + backendAddr + "/backendIMG/" + data.afbeelding2
                         document.getElementById("hashtag").textContent = data.hashtags
                     })
                 }

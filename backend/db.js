@@ -65,6 +65,19 @@ const addFiche = (req, res, objectData)=>{
             connection.end()
         });})
 }
+const updateFiche = (req, res, objectData)=>{
+    configConnect(function(connection){
+        const queryry = "update fiche set studentNaam=?, bedrijf=?, titel=?, link=?, tekst = ?, afbeelding1=?, afbeelding2=?,hashtags=?, richingId=?"
+        connection.query(queryry,[objectData.studentNaam, objectData.bedrijf, objectData.titel,objectData.link,objectData.tekst, objectData.afbeelding1,objectData.afbeelding2,objectData.hashtags,objectData.richtingId], (err, data) => {
+            if(err){
+                res.status(404).send("interne database error")
+                console.log("interne database error")
+            }else{
+                res.status(200).send("ok");
+            }
+            connection.end()
+        });})
+}
 const removeFiche = (req, res, id)=>{
     configConnect(function(connection){
         const queryry = "delete from fiche where id=?"

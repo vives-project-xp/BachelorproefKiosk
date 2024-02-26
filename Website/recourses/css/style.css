@@ -314,6 +314,17 @@ li{
   margin-bottom: 10%;
 }
 
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1em 0;
+  background-color: #000000; /* Change this to your preferred color */
+  color: #ffffff; /* Change this to your preferred color */
+}
+
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
   .sidebar {

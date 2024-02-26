@@ -245,68 +245,41 @@ li{
 }
 
 /* topbar */
-.topbar, .topbarCheck {
-  margin: 0;
-  width: 22%;
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 96%;
+  height: auto;
   font-size: 60%;
   background-color: #000000;
   border: #ffffff 2px solid;
   position: fixed;
-  height: auto;
-  overflow: auto;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  position: left;
+  padding-left: 3%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 2%;
 }
 
-.topbarCheck{
-  margin-top: 45%;
-}
-
-.topbarCheck h2{
-  margin-bottom: 10%;
-  font-size: 140%;
-  text-align: center;
-}
-
-.topbarCheck li{
+.topbar ul {
   display: flex;
-    align-items: center; /* This will vertically center align the text with the checkbox */
-    margin: 10%;
-    font-size: 140%;
-}
-.topbarCheck li input[type="checkbox"] {
-  margin-right: 10px;
-  display: none;
+  justify-content: space-between;
+  width: 90%; /* Adjust this value as needed */
+  padding: 0;
+  list-style-type: none;
 }
 
-.topbarCheck li label {
-  position: relative;
-  padding-left: 25px;
-  cursor: pointer;
+.topbarimg {
+  height: 50px;
 }
 
-.topbarCheck li label:before {
-  content: "";
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  top: 0;
-  left: 0;
-  border: 2px solid #000000;
-  border-radius: 3px;
-  background-color: #fff;
+.projectwrapper {
+  margin-top: 20%;
 }
 
-.topbarCheck li input[type="checkbox"]:checked + label:before {
-  background-color: #ecd506;
-  border-color: #ff0202;
-  border-width: 1px;
-}
-
-.topbarCheck li label:hover {
-  color: #ecd506;
-}
 
 .content {
   border-color: #ffffff;
@@ -315,6 +288,10 @@ li{
   margin-right: 2%;
   margin-left: 25%;
   padding: 5%;
+}
+
+.content, p {
+  margin-bottom: 10%;
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */

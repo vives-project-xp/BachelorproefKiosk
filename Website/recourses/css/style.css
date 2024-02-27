@@ -144,6 +144,31 @@ p {
   padding: 2%;
 }
 
+.projectwrapper {
+  align-self: center;
+  width: 96%;
+  border: #ffffff 2px solid;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 2%;
+}
+
+/* ID's project page */
+.projectwrapper p, #studentface, #projectFoto {
+  text-align: center;
+  font-size: 150%;
+  margin-bottom: 5%;
+}
+
+#studentface, #projectFoto {
+  display: block;
+  margin: auto;
+  width: 20%;
+}
+#projectFoto{
+  width: 50%;
+}
+
 a {
   text-shadow: #ff0202 1px 1px 1px;
   font-size: 200%;
@@ -244,6 +269,43 @@ li{
   color: #ecd506;
 }
 
+#highkicks {
+  height: 250px;
+}
+
+/* topbar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 96%;
+  height: auto;
+  font-size: 60%;
+  background-color: #000000;
+  border: #ffffff 2px solid;
+  position: static;
+  padding-left: 3%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 2%;
+}
+
+.topbar ul {
+  display: flex;
+  justify-content: space-between;
+  width: 90%; /* Adjust this value as needed */
+  padding: 0;
+  list-style-type: none;
+}
+
+.topbarimg {
+  height: 50px;
+  margin-left: 2%;
+}
+
 .content {
   border-color: #ffffff;
   border-style: solid;
@@ -251,6 +313,25 @@ li{
   margin-right: 2%;
   margin-left: 25%;
   padding: 5%;
+}
+
+.content, p {
+  margin-bottom: 10%;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 1em 0;
+  background-color: #000000; /* Change this to your preferred color */
+  color: #ffffff; /* Change this to your preferred color */
+}
+
+footer img {
+  height: 30px;
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
@@ -353,12 +434,6 @@ img.kong {
   animation: move-left-right 10s infinite;  
 }
 
-/* invaders */ 
-.invader-container {
-  position: relative;
-  overflow-x: hidden;
-  height: 300px;
-}
 /* The ghost animations */
 .ghost-container {
   position: relative;
@@ -426,5 +501,6 @@ img.kong {
     left: -50%;
   }
 }
+
 
 

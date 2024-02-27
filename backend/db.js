@@ -25,7 +25,7 @@ let configConnect = (returnCode) => {
 }
 const getFiche = (req, res,id) => {
     configConnect(function(connection){
-        const queryry = "SELECT * FROM fiche where id = ?"
+        const queryry = "SELECT *,(select titel from richting where id=richtingId) as afstudeerRichting FROM fiche where id = ?"
         connection.query(queryry, [id], (err, data) => {
         if(err){
             res.status(404).send("interne database error")
@@ -38,7 +38,7 @@ const getFiche = (req, res,id) => {
 }
 const getFiches = (req, res, richtingId) => {
     configConnect(function(connection){
-        var queryry = "SELECT titel, tekst, richtingId FROM fiche"
+        var queryry = "SELECT id, titel, tekst, richtingId FROM fiche"
         if(richtingId!=undefined){
             queryry+=" where richtingId=?"
         }
@@ -56,6 +56,19 @@ const addFiche = (req, res, objectData)=>{
     configConnect(function(connection){
         const queryry = "insert into fiche values(NULL, ?,?,?,?,?,?,?,?,?)"
         connection.query(queryry,[objectData.studentNaam, objectData.bedrijf, objectData.titel,objectData.link,objectData.tekst, objectData.afbeelding1,objectData.afbeelding2,objectData.hashtags,objectData.richtingId], (err, data) => {
+            if(err){
+                res.status(404).send("interne database error")
+                console.log("interne database error")
+            }else{
+                res.status(200).send("ok");
+            }
+            connection.end()
+        });})
+}
+const updateFiche = (req, res, objectData)=>{
+    configConnect(function(connection){
+        const queryry = "update fiche set naamStudent=?, bedrijf=?, titel=?, link=?, tekst = ?, afbeelding1=?, afbeelding2=?,hashtags=?, richingId=? where id=?"
+        connection.query(queryry,[objectData.studentNaam, objectData.bedrijf, objectData.titel,objectData.link,objectData.tekst, objectData.afbeelding1,objectData.afbeelding2,objectData.hashtags,objectData.richtingId, objectData.id], (err, data) => {
             if(err){
                 res.status(404).send("interne database error")
                 console.log("interne database error")
@@ -104,6 +117,19 @@ const addRichting = (req, res, naam)=>{
             connection.end()
         });})
 }
+const updateRichting = (req, res, naam,id)=>{
+    configConnect(function(connection){
+        const queryry = "update richting set titel=? where id=?"
+        connection.query(queryry,[naam, id], (err, data) => {
+            if(err){
+                res.status(404).send("interne database error")
+                console.log("interne database error")
+            }else{
+                res.status(200).send("ok");
+            }
+            connection.end()
+        });})
+}
 const removeRichting = (req, res, id)=>{
     configConnect(function(connection){
         const queryry = "delete from richting where id=?"
@@ -117,4 +143,4 @@ const removeRichting = (req, res, id)=>{
             connection.end()
         });})
 }
-module.exports = {getRichtingen, getFiche, getFiches, addRichting,addFiche, removeFiche, removeRichting}
+module.exports = {getRichtingen, getFiche, getFiches, addRichting,addFiche, removeFiche, removeRichting, updateFiche, updateRichting}

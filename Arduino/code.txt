@@ -17,9 +17,11 @@ void setup() {
 
 void loop() {
   if(digitalRead(8)==LOW){
-    Keyboard.press(102);//f
+    Keyboard.press(KEY_LEFT_ALT);
+    Keyboard.press(KEY_LEFT_ARROW);
   }else{
-    Keyboard.release(102); 
+    Keyboard.release(KEY_LEFT_ALT);
+    Keyboard.release(KEY_LEFT_ARROW);
   }
   if(digitalRead(7)==LOW){
     Mouse.press(MOUSE_LEFT);

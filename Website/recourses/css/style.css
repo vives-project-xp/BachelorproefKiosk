@@ -456,6 +456,10 @@ footer img {
   animation: flash 0.2s linear;
 }
 
+#imgrichting {
+  width: 100%;
+}
+
 /* 
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
    Moving parts ( keep it at the bottom of the file ) 

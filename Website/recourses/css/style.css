@@ -207,6 +207,16 @@ li{
   list-style-type:none;
 } 
 
+.checkbox li{
+  display: flex;
+  align-items: center;
+  margin: 5%;
+}
+
+.checkbox li input[type="checkbox"] {
+  margin-right: 10px;
+}
+
 .bodydiv{
   margin: 1%;
   display: flexbox;
@@ -346,6 +356,10 @@ footer img {
   height: 30px;
 }
 
+#dagonderwijs {
+  font-size: 80%;
+}
+
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
   .sidebar {
@@ -410,6 +424,36 @@ footer img {
   .content {
     margin-left: 20%;
   }
+}
+
+.splitter{
+  width: 100%;
+  height: 10px;
+  margin-bottom: 3%;
+}
+
+.backnext {
+  display: flex;
+  justify-content: space-between;
+  margin: 2%;
+}
+
+.back {
+  align-self: flex-start;
+}
+
+.next {
+  align-self: flex-end;
+}
+
+@keyframes flash {
+  0% { background-color: blue; }
+  33% { background-color: red; }
+  66% { background-color: rgb(17, 255, 0); }
+  100% { background-color: rgb(0, 255, 255); }
+}
+.back:active, .next:active {
+  animation: flash 0.2s linear;
 }
 
 /* 

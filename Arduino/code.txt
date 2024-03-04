@@ -1,3 +1,6 @@
+#include "Keyboard.h"
+#include "Mouse.h"
+
 // the setup function runs once when you press reset or power the board
 void setup() {
   pinMode(3,INPUT_PULLUP);    //up
@@ -8,28 +11,39 @@ void setup() {
   pinMode(8,INPUT_PULLUP);    //knop 2
   pinMode(9,OUTPUT);          //low output voor elke pheriferal
   digitalWrite(9, LOW);
-  Serial.begin(9600);
-  
+  Keyboard.begin();
+  Mouse.begin();
 }
 
-// the loop function runs over and over again forever
 void loop() {
   if(digitalRead(8)==LOW){
-    Serial.print("knop 2");
+    Keyboard.press(102);//f
+  }else{
+    Keyboard.release(102); 
   }
   if(digitalRead(7)==LOW){
-    Serial.print("knop 1");
+    Mouse.press(MOUSE_LEFT);
+  }else{
+    Mouse.release(MOUSE_LEFT);
   }
   if(digitalRead(6)==LOW){
-    Serial.print("links");
+    Keyboard.press(KEY_LEFT_ARROW);
+  }else{
+    Keyboard.release(KEY_LEFT_ARROW);  
   }
   if(digitalRead(5)==LOW){
-    Serial.print("neer");
+    Keyboard.press(KEY_DOWN_ARROW);
+  }else{
+    Keyboard.release(KEY_DOWN_ARROW);  
   }
   if(digitalRead(4)==LOW){
-    Serial.print("rechts");
-  } 
+    Keyboard.press(KEY_RIGHT_ARROW);
+  }else{
+    Keyboard.release(KEY_RIGHT_ARROW);
+  }
   if(digitalRead(3)==LOW){
-    Serial.print("boven");
+    Keyboard.press(KEY_UP_ARROW);
+  }else{
+    Keyboard.release(KEY_UP_ARROW);
   }
 }

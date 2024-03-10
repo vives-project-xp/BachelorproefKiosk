@@ -1,31 +1,32 @@
-version: '3'
+version: '3.1'
+
 services:
+
+  wordpress:
+    image: wordpress
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: exampleuser
+      WORDPRESS_DB_PASSWORD: examplepass
+      WORDPRESS_DB_NAME: exampledb
+    volumes:
+      - wordpress:/var/www/html
+
   db:
-    image: mysql
+    image: mysql:5.7
     restart: always
     environment:
-      - MYSQL_ROOT_PASSWORD=${DB_PASS}
-      - MYSQL_DATABASE=${DB_DTBS}
+      MYSQL_DATABASE: exampledb
+      MYSQL_USER: exampleuser
+      MYSQL_PASSWORD: examplepass
+      MYSQL_ROOT_PASSWORD: jojo
+      MYSQL_ROOT_HOST: "%"
     volumes:
       - db:/var/lib/mysql
-  phpmyadmin:
-    image: phpmyadmin/phpmyadmin
-    restart: always
-    ports:
-      - "8080:80"
-    environment:
-      - PMA_ARBITRARY=1
-      - PMA_HOST=db
-  backend:
-    depends_on:
-      - db
-    build: ./backend
-    restart: always
-    ports:
-      - 3000:3000
-    environment:
-      - DB_HOST=db
-      - DB_USER=${DB_USER}
-      - DB_PASS=${DB_PASS}
-      - DB_DTBS=${DB_DTBS}
-      - DB_PORT=3306
+
+volumes:
+  wordpress:
+  db:

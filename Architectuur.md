@@ -1,28 +1,42 @@
 # Website
 ## Input
-- Joistick en 2 knoppen: Mogelijks 2 modes:
-    - mode 1: gewone mode voor op onze site waar de joystick is voor items te selecteren, 1 knop voor selecteren (klikken) en 1 knop voor terug te gaan (terug pijl in de browser)
-    - mode 2: general purpose browser mode: als de toeschouwers doorklikken op de linkedin dan komen ze op een pagina die niet geoptimalliseert is voor joystick en knopjes dus dan wordt de joystick een muis.
+- Joistick en 2 knoppen: joistick: muis bewegen, knop 1: muis klik, knop 2: vorige pagina in de browser
+- Fiche en pagina uploads via wordpress
 
 ## Output
-Pagina tree:
-    -Menu:
-        -projecten
-            -project
-        -richtingen
-            -richting info
-        -game
-        -admin login
-            -admin pagina
-Bachelor proeven pagina heeft een radiobutton sidebar om alleen projecten van een bepaalde richting te selecteren. Ook een optie voor random fiche.
+Web paginas met volgende informatie:
+    -afgelopen bachelorproeven: pagina met afbeelding van fiche.
+    -richting informatie: pagina met afbeelding van fiche van de richtingen.
+    -game pagina met snake
 
 ## Functies
-- database met alle fiches in, waarschijnlijk mysql/mariadb
-- http server om onze webpagina en assets af te leveren bij clients, waarschijnlijk express+node
-- file service voor afbeeldingen in de fiches/database, als onderdeel van de http server.
-- frontend webpagina die aangepast is voor met joystick en knoppen maar kan nogsteeds bestuurdworden door muis, html+css+js.
-- Windows 10 met taakplanner om bij opstart al de website in fullschreen weer te geven, ook gebruik makend van de kiosk mode in windows.
+Wordpress mappenstructuur:
+    -Thema root
+        -assets
+            -images: afbeeldingen en gifs die we in de html paginas gebruiken
+            -fiche_images: afbeeldingen van de bachelor proef fiches
+            -richting_images: afbeeldingen van de fiches van de richtingen
+        -recources
+            -css: map met alle css (wordt nog geënqueued)
+            -js: map met alle js (zelfde)
+        -Alle php templates (html paginas)
+        -style.css
+        -functions.js
+        
+pagina urls:
+      /home: menu
+      /home/projecten: projecten selecteren
+      /home/richtingen: richting selecteren
+      /home/game: game
+      /home/richtingen/richting/id: info fiche van de richting
+      /home/projecten/project/id: project fiche van bepaalde id
 
+css/js gebruik:
+    /recources/css/style.css: wordt gebruikt in elk template
+    /recources/css/game.css: wordt gebruikt in de game pagina
+    /recources/js/script.js: wordt voorlopig vervangen door inline php
+    /recources/js/game.js: wordt gebruikt in de game pagina
+    
 # Arcade kast
 ## Input
 - Knoppen en joystick
@@ -42,14 +56,3 @@ Bachelor proeven pagina heeft een radiobutton sidebar om alleen projecten van ee
 - PC krijgt een extra wifi kaart om niet afhankelijk te zijn via ethernet.
 - Esp en extra ventilator worden gevoedt via usb vanuit de pc.
 - PC: we kunnen kiezen voor een kleintje of een grote, grote kunnen we uit elkaar halen en zo past die beter binnen behuizing, leerkrachten hebben kleintje liever omdat als pc'tje stuk gaat dan kunnen ze er een nieuwe in steken en dan werkt het weer.
-
-# Comunicatie tussen backend en frontend
-
-Voor Bachelor Proeven.html:
-    -opvraag van alle proeven via "/backend/getFiches/all"
-    -als je een richting selecteert dan gaat ei gwn in de data die hij al heeft alle fiches van deze richting selecteren om weer te geven.
-Op de fiche pagina:
-    -gaat ie alles opvragen via "/backend/getFiche/id" hierin zitten er ook een aantal afbeeldingen die tevinden zijn via de route "/backendIMG/name".
-    -opdracht gever / bedrijf: als het niet vives dan is het gewoon de naam van de opdrachtgever (img is display:none), als vives dan wordt het logo van vives weergegeven (p is display:none en img is href:vives-logo.png")
-Voor Richting info pagina:
-    -we moeten nog beslissen of dit voor elke richting een aparte html pagina is of als we 1 pagina doen en de info is te vinden in de backend/db

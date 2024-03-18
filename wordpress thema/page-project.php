@@ -22,10 +22,10 @@ Template Name: Project
     <ul>
         <li><a href="../../../Home">.Home</a></li>
         <li><a href="../../Projecten">.Projecten</a></li>
-        <li><a href="../../Richting">.Richtingen</a></li>
+        <li><a href="../../Richtingen">.Richtingen</a></li>
         <li><a href="../../Game">.Game</a></li>
     </ul>
-    <img class="topbarimg" src="../recourses/images/shells.gif">
+    <img class="topbarimg" src="../../../wp-content/themes/ProefGeval/assets/images/shells.gif">
 </div>
 
 <div class="backnext">
@@ -33,57 +33,23 @@ Template Name: Project
     <button class="next">Next</button>
 </div>
 
-<div class="projectwrapper">
-    <div class="Red">
+<div class="wrapper">
+    <?php
+$page_content = get_post_field('post_content', get_the_ID());
 
-        <img src="../../recourses/images/Logo-VIVES-Hogeschool.png" alt="" background-color=green>
-        <p id="studentName"></p>
-        <p>Bacherlor Electronica-ICT</p>
-        <p id="AfstudeerRichting"></p>
-
-    </div>
-
-    <div class="darkRed">
-
-        <img id="StudentFace" src="" alt="">
-
-        <i class="fa-brands fa-linkedin"><a class="Linkedin" href=""></a></i>
-
-    </div>
-
-    <div class="Gray">
-
-    </div>
-
-    <div class="proefTitel">
-
-        <p><i class="fa-solid fa-window-minimize"></i> BACHELORPROEF</p>
-
-        <p id="titel"></p>
-
-    </div>
-
-    <div class="proefInfo">
-
-        <p id="info"></p>
-
-    </div>
-
-
-    <div class="left">
-
-        <p>In opdracht van</p>
-        <a id="opdrachtgever" href=""></a>
-        <p id="opdrachtgeverText"></p>
-        <p id="hashtag"></p>
-    </div>
-    <div class="right">
-
-        <!--<a id="projectFoto" href=""></a>-->
-        <img src="" alt="" id="projectFoto">
-    </div>
+// Use WordPress functions to parse the content and extract the image URL
+$image_url = "project";
+//print_r($page_content);
+if (preg_match('/<img.+?src="(.+?)"/', $page_content, $matches)) {
+    $image_url = $matches[1];
+}
+// Output the image URL
+echo "<img class='' src='".$image_url."'>";
+?>
 
 </div>
+
+
 
 <div class="backnext">
     <button class="back">Back</button>

@@ -32,7 +32,7 @@ Template Name: Projecten
         <li><a href="../richtingen">.Richtingen</a></li>
         <li><a href="../game">.Game</a></li>
       </ul>
-      <img src="http://10.10.18.5:8080/wp-content/uploads/2024/03/asemgou-of-aventura-arcade.gif" class="kong">
+      <img src="../../wp-content/themes/ProefGeval/assets/images/asemgou-of-aventura-arcade.gif" class="kong">
     </div>
 
     <!-- Sidebar with boxes -->
@@ -57,105 +57,29 @@ Template Name: Projecten
 
     <!-- proeven -->
     <div class="content" id="proevenDiv">
-      <div id="P1">
-        <h2>Proef 1</h2>
-        <p>Deze proef gaat over ...</p><br>
-      </div>
-
-      <div id="P2">
-        <h2>Proef 2</h2>
-        <p>Deze proef gaat over ...</p><br>
-      </div>
-
-      <div id="P3">
-        <h2>Proef 3</h2>
-        <p>Deze proef gaat over ...</p><br>
-      </div>
-
-      <div id="P4">
-        <h2>Proef 4</h2>
-        <p>Deze proef gaat over ...</p><br>
-      </div>
-
-      <div id="P5">
-        <h2>Proef 5</h2>
-        <p>Deze proef gaat over ...</p><br>
-      </div>
-
-      <div id="P6">
-        <h2>Proef 6</h2>
-        <p>Deze proef gaat over ...</p><br>
-      </div>
-
-      <div id="P7">
-        <h2>Proef 7</h2>
-        <p>Deze proef gaat over ...</p><br>
-      </div>
-
-      <div id="P8">
-        <h2>Proef 8</h2>
-        <p>Deze proef gaat over ...</p><br>
-      </div>
-
-      <div id="P9">
-        <h2>Proef 9</h2>
-        <p>Deze proef gaat over ...</p><br>
-      </div>
-
-      <div id="P10">
-        <h2>Proef 10</h2>
-        <p>Deze proef gaat over ...</p><br>
-      </div>
-
-      <div id="P11">
-        <h2>Proef 11</h2>
-        <p>Deze proef gaat over ...</p><br>
-      </div>
-
-      <div id="P12">
-        <h2>Proef 12</h2>
-        <p>Deze proef gaat over ...</p><br>
-      </div>
-
-      <div id="P13">
-        <h2>Proef 13</h2>
-        <p>Deze proef gaat over ...</p><br>
-      </div>
-
-      <div id="P14">
-        <h2>Proef 14</h2>
-        <p>Deze proef gaat over ...</p><br>
-      </div>
-
-      <div id="P15">
-        <h2>Proef 15</h2>
-        <p>Deze proef gaat over ...</p><br>
-      </div>
-
-      <div id="P16">
-        <h2>Proef 16</h2>
-        <p>Deze proef gaat over ...</p><br>
-      </div>
-
-      <div id="P17">
-        <h2>Proef 17</h2>
-        <p>Deze proef gaat over ...</p><br>
-      </div>
-
-      <div id="P18">
-        <h2>Proef 18</h2>
-        <p>Deze proef gaat over ...</p><br>
-      </div>
-
-      <div id="P19">
-        <h2>Proef 19</h2>
-        <p>Deze proef gaat over ...</p><br>
-      </div>
-
-      <div id="P20">
-        <h2>Proef 20</h2>
-        <p>Deze proef gaat over ...</p><br>
-      </div>
+      <?php
+//dankje chat gpt
+$template_name = 'page-project.php';
+// Custom query to retrieve pages using the specified template
+$args = array(
+    'post_type' => 'page',
+    'meta_key' => '_wp_page_template',
+    'posts_per_page' => -1, // Display all pages, remove pagination
+    'meta_value' => $template_name
+);
+$pages_query = new WP_Query($args);
+if ($pages_query->have_posts()) {
+    echo '<ul>';
+    // Loop through each page
+    while ($pages_query->have_posts()) {
+        $pages_query->the_post();
+        echo '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
+    }
+    echo '</ul>';
+    // Restore original post data
+    wp_reset_postdata();
+}
+	?>
     </div>
   </div>
 <?php wp_footer();?>

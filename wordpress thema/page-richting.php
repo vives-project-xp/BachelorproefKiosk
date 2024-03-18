@@ -31,16 +31,16 @@ Template Name: Page richting
                 <li><a href="../Richtingen">.Richtingen</a></li>
                 <li><a href="../Game">.Game</a></li>
             </ul>
-            <img id="highkicks" src="http://10.10.18.5:8080/wp-content/uploads/2024/03/highkicks.gif">
+            <img id="highkicks" src="../../wp-content/themes/ProefGeval/assets/images/highkicks.gif">
         </div>
     </div>
 
     <div class="content">
 
-        <h3><a href="./richtingtemp.html">.Elektronica</a></h3>
+        <h3><a href="/richting">.Elektronica</a></h3>
 
 
-        <h3><a href="./richting/ict_network.html">.ICT</a></h3>
+        <h3><a href="/richting">.ICT</a></h3>
 
     </div>
 <?php wp_footer();?>

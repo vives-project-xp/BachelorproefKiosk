@@ -30,7 +30,7 @@ Template Name: Admin
             <li><a href="../Richtingen">.Richtingen</a></li>
             <li><a href="../Game">.Game</a></li>
         </ul>
-        <img src="../recourses/images/asemgou-of-aventura-arcade.gif" class="kong">
+        <img src="../../wp-content/themes/ProefGeval/assets/images/asemgou-of-aventura-arcade.gif" class="kong">
     </div>
 
     <div class="content">

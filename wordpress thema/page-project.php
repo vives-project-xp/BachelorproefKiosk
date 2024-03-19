@@ -17,7 +17,7 @@ Template Name: Project
 <?php wp_head();?>
 </head>
 
-<body onload="fill()" <?php body_class();?>>
+<body <?php body_class();?>>
 <div class="topbar" type="navbar">
     <ul>
         <li><a href="../../../Home">.Home</a></li>
@@ -29,8 +29,62 @@ Template Name: Project
 </div>
 
 <div class="backnext">
-    <button class="back">Back</button>
-    <button class="next">Next</button>
+      <?php
+$template_name = 'page-project.php';
+// Custom query to retrieve pages using the specified template
+$args = array(
+    'post_type' => 'page',
+    'meta_key' => '_wp_page_template',
+    'posts_per_page' => -1, // Display all pages, remove pagination
+    'meta_value' => $template_name
+);
+$pages_query = new WP_Query($args);
+$lower = -1; //er zullen wel geen 7777777 paginas op deze server staan.
+$higher = 7777777;
+$lowest = 7777777;
+$highest = 0;
+$links = array('0'=>null,'1'=>null,'2'=>null,'3'=>null);
+$eigenID = get_the_id();
+if ($pages_query->have_posts()) {
+    while ($pages_query->have_posts()) {
+        $pages_query->the_post();
+	$id = get_the_id();
+	$link = get_permalink();
+	if($id > $highest){
+		$highest = $id;
+		$links['0'] = $link;
+	}
+	if($id < $lowest){
+		$lowest = $id;
+		$links['1'] = $link;
+	}
+	if($id < $higher && $id > $eigenID){
+		$higher = $id;
+		$links['2'] = $link;
+	}
+	if($id > $lower && $id < $eigenID){
+		$lower = $id;
+		$links['3'] = $link;
+	}
+	wp_reset_postdata();
+    }
+}
+$nextlink = "maria";
+$prevlink = "mario";
+if($higher == 7777777){
+	$nextlink = $links['1'];
+}else{
+	$nextlink = $links['2'];
+}
+if($lower == -1){
+	$prevlink = $links['0'];
+}else{
+	$prevlink = $links['3'];
+}
+
+echo "<button class='back' onclick=redirect('".$prevlink."')>Back</button>";
+echo "<button class='next' onclick=redirect('".$nextlink."')>Next</button>";
+?>
 </div>
 
 <div class="wrapper">
@@ -44,46 +98,17 @@ if (preg_match('/<img.+?src="(.+?)"/', $page_content, $matches)) {
     $image_url = $matches[1];
 }
 // Output the image URL
-echo "<img class='' src='".$image_url."'>";
+echo "<img class='bachelorimg' src='".$image_url."'>";
 ?>
 
-</div>
-
-
-
-<div class="backnext">
-    <button class="back">Back</button>
-    <button class="next">Next</button>
 </div>
 
 </div>
 <?php wp_footer();?>
 </body>
-
-</html>
-
 <script>
-    function fill() {
-        if (window.location.search.indexOf("?") != -1) {
-            var ficheId = window.location.search.split("?")[1]
-            fetch("http://" + backendAddr + "/backend").then(function (response) {
-                if (response.ok) {
-                    fetch("http://" + backendAddr + "/backend/getFiche/" + ficheId).then(async function (response) {
-                        let data = await response.json();
-                        data = data[0]
-                        //console.log(data)
-                        document.getElementById("studentName").textContent = data.studentNaam
-                        document.getElementById("AfstudeerRichting").textContent = data.afstudeerRichting
-                        document.getElementsByClassName("Linkedin")[0].href = "https://" + data.link
-                        document.getElementById("titel").textContent = data.titel
-                        document.getElementById("info").textContent = data.tekst
-                        document.getElementById("opdrachtgeverText").textContent = data.bedrijf
-                        document.getElementById("StudentFace").src = "http://" + backendAddr + "/backendIMG/" + data.afbeelding1
-                        document.getElementById("projectFoto").src = "http://" + backendAddr + "/backendIMG/" + data.afbeelding2
-                        document.getElementById("hashtag").textContent = data.hashtags
-                    })
-                }
-            })
-        }
-    }
+function redirect(url){
+	window.location.href = url;
+}
 </script>
+</html>

@@ -22,9 +22,9 @@
     </div>
 
     <div class="ghost-container">
-        <img src="../../wp-content/themes/ProefGeval/assets/images/kisspng-pac-man-ghosts-pac-man-5ac80be7e06367.0261825015230596879191-kopie.png"
-            class="red-ghost-picture">
-        <img src="../../wp-content/themes/ProefGeval/assets/images/red-gost-left.png" class="left-ghost-picture">
+        <img class="red-ghost-picture" src="../../wp-content/themes/ProefGeval/assets/images/kisspng-pac-man-ghosts-pac-man-5ac80be7e06367.0261825015230596879191 - kopie.png"
+            >
+        <img class="left-ghost-picture" src="../../wp-content/themes/ProefGeval/assets/images/red-gost-left.png">
     </div>
 </body>
 <footer>

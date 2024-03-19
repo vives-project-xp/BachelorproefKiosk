@@ -358,6 +358,10 @@ footer img {
   font-size: 80%;
 }
 
+.bachelorimg {
+  width: 200%:
+}
+
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
   .sidebar {
@@ -560,4 +564,5 @@ img.kong {
     left: -50%;
   }
 }
+
 

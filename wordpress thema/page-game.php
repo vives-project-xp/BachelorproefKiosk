@@ -26,7 +26,7 @@ Template Name: Game
       <li><a href="../Richtingen">.Richtingen</a></li>
       <li><a href="../game">.Game</a></li>
     </ul>
-    <img src="../../wp-content/themes/ProefGeval/assets/images/shells.gif" clas=".topbarimg">
+    <img class="topbarimg" src="../../../wp-content/themes/ProefGeval/assets/images/shells.gif">
   </div>
 
 

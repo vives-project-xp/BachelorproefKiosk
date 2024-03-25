@@ -3,13 +3,13 @@
 
 // the setup function runs once when you press reset or power the board
 void setup() {
-  pinMode(3,INPUT_PULLUP);    //up
-  pinMode(4,INPUT_PULLUP);    //rechts
-  pinMode(5,INPUT_PULLUP);    //neer
-  pinMode(6,INPUT_PULLUP);    //links
-  pinMode(7,INPUT_PULLUP);    //knop 1
-  pinMode(8,INPUT_PULLUP);    //knop 2
-  pinMode(9,OUTPUT);          //low output voor elke pheriferal
+  pinMode(3,INPUT_PULLUP);    //up // Joystick_Gray
+  pinMode(4,INPUT_PULLUP);    //right // Joystick_White
+  pinMode(5,INPUT_PULLUP);    //down // Joy_Orange
+  pinMode(6,INPUT_PULLUP);    //left // Joystick_Brown
+  pinMode(7,INPUT_PULLUP);    //knop 1 // Buttom_Gray
+  pinMode(8,INPUT_PULLUP);    //knop 2 // Buttom_Purple
+  pinMode(9,OUTPUT);          //low output voor elke pheriferal // RED
   digitalWrite(9, LOW);
   Keyboard.begin();
   Mouse.begin();

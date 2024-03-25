@@ -29,7 +29,7 @@ Template Name: Page richting
                 <li><a href="../../Home">.Home</a></li>
                 <li><a href="../Projecten">.Projecten</a></li>
                 <li><a href="../Richtingen">.Richtingen</a></li>
-                <li><a href="../Game">.Game</a></li>
+                <li><a href="https://agar.io/">.Game</a></li>
             </ul>
             <img id="highkicks" src="../../wp-content/themes/ProefGeval/assets/images/highkicks.gif">
         </div>
@@ -37,10 +37,10 @@ Template Name: Page richting
 
     <div class="content">
 
-        <h3><a href="/richting">.Elektronica</a></h3>
+        <h3><a href="/home/richtingen/electronica">.Elektronica</a></h3>
 
 
-        <h3><a href="/richting">.ICT</a></h3>
+        <h3><a href="/home/richtingen/ict">.ICT</a></h3>
 
     </div>
 <?php wp_footer();?>

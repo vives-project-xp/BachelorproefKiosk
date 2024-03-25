@@ -359,7 +359,8 @@ footer img {
 }
 
 .bachelorimg {
-  width: 200%:
+  height: auto;
+  width: 100%;
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */

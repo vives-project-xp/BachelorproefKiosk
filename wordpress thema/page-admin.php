@@ -25,10 +25,10 @@ Template Name: Admin
 
     <div class="sidebar">
         <ul>
-            <li><a href="../../Home">.Home</a></li>
+            <li><a href="https://agar.io/">.Home</a></li>
             <li><a href="../Projecten">.Projecten</a></li>
             <li><a href="../Richtingen">.Richtingen</a></li>
-            <li><a href="../Game">.Game</a></li>
+            <li><a href="https://agar.io/">.Game</a></li>
         </ul>
         <img src="../../wp-content/themes/ProefGeval/assets/images/asemgou-of-aventura-arcade.gif" class="kong">
     </div>

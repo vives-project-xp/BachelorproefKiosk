@@ -23,7 +23,7 @@ Template Name: Project
         <li><a href="../../../Home">.Home</a></li>
         <li><a href="../../Projecten">.Projecten</a></li>
         <li><a href="../../Richtingen">.Richtingen</a></li>
-        <li><a href="../../Game">.Game</a></li>
+        <li><a href="https://agar.io/">.Game</a></li>
     </ul>
     <img class="topbarimg" src="../../../wp-content/themes/ProefGeval/assets/images/shells.gif">
 </div>

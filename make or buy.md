@@ -5,11 +5,12 @@ er is een ouwe doos in het project kot die niet meer gebruikt wordt en er zitten
 | op excel | item | hoe verkrijgbaar | opmerking |
 | ----------- | ----------- | ----------- | ----------- |
 | [ ] | Kast | laten maken in Kortrijk (Domien stuurt hiervoor naar Peter.Vanbiervliet@vives.be) |  |
-| [x] | Wieltjes draaibaar met rem | kopen |  |
-| [x] | Vaste wieltjes | kopen |  |
+| [x] | Hout voor de kast | kopen | houten panelen 14mm dik, 122cm-60cm |
+| [x] | Houtlijm | kopen |  |
+| [x] | Houtvijzen | kopen |  |
 | [x] | Scharnieren | kopen |  |
 | [x] | Stekkerdoos | kopen |  |
-| [x] | wifikaart | kopen |  |
+| [x] | wifikaart | als nodig van school |  |
 | [x] | pc | school |  |
 | [x] | scherm | school |  |
 | [x] | display port bekabeling | school |  |
@@ -17,8 +18,6 @@ er is een ouwe doos in het project kot die niet meer gebruikt wordt en er zitten
 | [x] | Buttons | school (doos) |  |
 | [x] | Joystick | school (doos) |  |
 | [x] | esp | school (doos) |  |
-| [ ] | usb kabel geschikt voor de esp van stroom te voorzien | kopen |  |
+| [x] | usb kabel geschikt voor de esp van stroom te voorzien | school |  |
 | [ ] | extra usb ventilator | kopen | Voorlopig gaan we hierzonder en de ventilatie van de pc tunnenlen naar buiten. |
-| [ ] | handvaten | maken, 3d printen | moet nog doorgegeven worden aan de print dienst |
-| [ ] | nagels/lijm om gemaakte doos onderdelen in elkaar te steken | kopen |  |
 | [ ] | verven | laten doen door een bedrijf of stickers in vives gemaakt of grafitti |  |

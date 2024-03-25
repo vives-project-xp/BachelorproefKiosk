@@ -1,7 +1,8 @@
 # Website
 ## Input
-- Joistick en 2 knoppen: joistick: muis bewegen, knop 1: muis klik, knop 2: vorige pagina in de browser
-- Fiche en pagina uploads via wordpress
+- Joistick en 2 knoppen: joistick: muis bewegen, knop 1: muis klik, knop 2: vorige pagina in de browser.
+- Fiche en pagina uploads via wordpress, gebruik template Project.
+- Richtingen: je mag paginas uploaden voor alle richtingen met template richting, als je een fiche wilt die tussen de lijst van deze richting moet staan dan moet je de slug van deze pagina aan de project pagina toevoegen.
 
 ## Output
 Web paginas met volgende informatie:
@@ -14,7 +15,6 @@ Wordpress mappenstructuur:
     -Thema root
         -assets
             -images: afbeeldingen en gifs die we in de html paginas gebruiken
-            -fiche_images: afbeeldingen van de bachelor proef fiches
             -richting_images: afbeeldingen van de fiches van de richtingen
         -recources
             -css: map met alle css (wordt nog geënqueued)
@@ -36,7 +36,7 @@ css/js gebruik:
     /recources/css/game.css: wordt gebruikt in de game pagina
     /recources/js/script.js: wordt voorlopig vervangen door inline php
     /recources/js/game.js: wordt gebruikt in de game pagina
-    
+
 # Arcade kast
 ## Input
 - Knoppen en joystick

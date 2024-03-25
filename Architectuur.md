@@ -2,7 +2,6 @@
 ## Input
 - Joistick en 2 knoppen: joistick: muis bewegen, knop 1: muis klik, knop 2: vorige pagina in de browser.
 - Fiche en pagina uploads via wordpress, gebruik template Project.
-- Richtingen: je mag paginas uploaden voor alle richtingen met template richting, als je een fiche wilt die tussen de lijst van deze richting moet staan dan moet je de slug van deze pagina aan de project pagina toevoegen.
 
 ## Output
 Web paginas met volgende informatie:

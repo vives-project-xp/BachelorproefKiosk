@@ -1,10 +1,9 @@
 version: '3.1'
 
 services:
-
   wordpress:
     image: wordpress
-    restart: always
+    restart: unless-stopped
     ports:
       - 8080:80
     environment:
@@ -17,7 +16,7 @@ services:
 
   db:
     image: mysql:5.7
-    restart: always
+    restart: unless-stopped
     environment:
       MYSQL_DATABASE: exampledb
       MYSQL_USER: exampleuser

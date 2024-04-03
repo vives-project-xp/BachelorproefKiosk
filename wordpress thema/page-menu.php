@@ -1,5 +1,9 @@
 <html lang="en">
-
+<?php
+/*
+Template Name: Menu
+*/
+?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

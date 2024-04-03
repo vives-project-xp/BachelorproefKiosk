@@ -20,10 +20,7 @@ Template Name: Project
 <body <?php body_class();?>>
 <div class="topbar" type="navbar">
     <ul>
-        <li><a href="../../../Home">.Home</a></li>
-        <li><a href="../../Projecten">.Projecten</a></li>
-        <li><a href="../../Richtingen">.Richtingen</a></li>
-        <li><a href="https://agar.io/">.Game</a></li>
+    <?php echo get_menu_links(array("page-menu.php","page-projecten.php","page-richting.php"));?>
     </ul>
     <img class="topbarimg" src="../../../wp-content/themes/ProefGeval/assets/images/shells.gif">
 </div>

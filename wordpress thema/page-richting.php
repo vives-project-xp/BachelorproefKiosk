@@ -25,12 +25,7 @@ Template Name: Page richting
     <div class="leftbodydiv">
         <!-- The sidebar -->
         <div class="sidebar">
-            <ul>
-                <li><a href="../../Home">.Home</a></li>
-                <li><a href="../Projecten">.Projecten</a></li>
-                <li><a href="../Richtingen">.Richtingen</a></li>
-                <li><a href="https://agar.io/">.Game</a></li>
-            </ul>
+        <?php echo get_menu_links(array("page-menu.php","page-projecten.php","page-richting.php"));?>
             <img id="highkicks" src="../../wp-content/themes/ProefGeval/assets/images/highkicks.gif">
         </div>
     </div>

@@ -32,12 +32,7 @@ Template Name: Projecten
     <div class="leftbodydiv">
     <!-- The sidebar -->
     <div class="sidebar">
-      <ul>
-        <li><a href="../../home">.Home</a></li>
-        <li><a href="../projecten">.Projecten</a></li>
-        <li><a href="../richtingen">.Richtingen</a></li>
-        <li><a href="https://agar.io/">.Game</a></li>
-      </ul>
+    <?php echo get_menu_links(array("page-menu.php","page-projecten.php","page-richting.php"));?>
       <img src="../../wp-content/themes/ProefGeval/assets/images/asemgou-of-aventura-arcade.gif" class="kong">
     </div>
 

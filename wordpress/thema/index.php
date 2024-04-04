@@ -1,9 +1,5 @@
 <html lang="en">
-<?php
-/*
-Template Name: Menu
-*/
-?>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,13 +19,12 @@ Template Name: Menu
     </div>
 
     <div class="ghost-container">
-        <img class="red-ghost-picture" src="../../wp-content/themes/ProefGeval/assets/images/kisspng-pac-man-ghosts-pac-man-5ac80be7e06367.0261825015230596879191 - kopie.png"
-            >
-        <img class="left-ghost-picture" src="../../wp-content/themes/ProefGeval/assets/images/red-gost-left.png">
+        <img class="red-ghost-picture" src="wp-content/uploads/kisspng-pac-man-ghosts-pac-man-5ac80be7e06367.0261825015230596879191-kopie.png">
+        <img class="left-ghost-picture" src="wp-content/uploads/red-gost-left.png">
     </div>
 </body>
 <footer>
-    <p>&copy; 2024 Passionately made by Kenrie, Seraphin & Domien <img src="../../wp-content/uploads/2024/03/pixel-heart.gif" alt=""></p>
+    <p>&copy; 2024 Passionately made by Kenrie, Seraphin & Domien <img src="../../wp-content/uploads/pixel-heart.gif" alt=""></p>
   </footer>
   <?php wp_footer();?>
 </html>

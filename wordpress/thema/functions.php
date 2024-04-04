@@ -33,6 +33,19 @@ function get_menu_links($templates){
 	wp_reset_postdata();
 	return $output;
 }
+function get_link_page($page){
+	$args = array(
+		'post_type' => 'page',
+		'meta_key' => '_wp_page_template',
+		'meta_value' => $page		
+	);
+	$pages_query = new WP_Query($args);
+	if (!$pages_query->have_posts()) {
+		return "importeer het juiste aub";
+	}
+	$pages_query->the_post();
+	return get_permalink();
+}
 
 function load_stylesheets(){
 

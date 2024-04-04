@@ -26,16 +26,16 @@ Template Name: Page richting
         <!-- The sidebar -->
         <div class="sidebar">
         <?php echo get_menu_links(array("page-menu.php","page-projecten.php","page-richting.php"));?>
-            <img id="highkicks" src="../../wp-content/themes/ProefGeval/assets/images/highkicks.gif">
+            <img id="highkicks" src="wp-content/uploads/highkicks.gif">
         </div>
     </div>
 
     <div class="content">
 
-        <h3><a href="/home/richtingen/electronica">.Elektronica</a></h3>
+        <h3><a href="<?php echo get_link_page("page-projecten.php")."/elektronica" ?>">.Elektronica</a></h3>
 
 
-        <h3><a href="/home/richtingen/ict">.ICT</a></h3>
+        <h3><a href="<?php echo get_link_page("page-projecten.php")."/ict" ?>">.ICT</a></h3>
 
     </div>
 <?php wp_footer();?>

@@ -21,8 +21,11 @@ Template Name: Projecten
   <div class="TopText">
     <?php
 	//    <h1>Bachelor Proeven</h1>
-	$string = explode('/',$_SERVER['REQUEST_URI']);//Array ( [0] => [1] => home [2] => richtingen [3] => electronica [4] => )
-	$stringo = $string[sizeof($string)-2];
+	$string = explode('/',$_SERVER['REQUEST_URI']);//Array ( [0] => [1] => ?page_id=7 [2] => electronica)
+	$stringo = $string[sizeof($string)-1];
+  if(sizeof($string) != 3){
+    $stringo = "projecten";
+  }
 	//print_r($string);
 	echo '<h1>'.$stringo.'</h1>';
     ?>
@@ -33,7 +36,7 @@ Template Name: Projecten
     <!-- The sidebar -->
     <div class="sidebar">
     <?php echo get_menu_links(array("page-menu.php","page-projecten.php","page-richting.php"));?>
-      <img src="../../wp-content/themes/ProefGeval/assets/images/asemgou-of-aventura-arcade.gif" class="kong">
+      <img src="wp-content/uploads/asemgou-of-aventura-arcade.gif" class="kong">
     </div>
 
     <!-- Sidebar with boxes -->

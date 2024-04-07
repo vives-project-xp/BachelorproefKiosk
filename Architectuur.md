@@ -24,12 +24,12 @@ Wordpress mappenstructuur:
     
 wordpress page structuur:
 - Menu (template: Menu)
-- Projecten (template: Projecten)
-    - Elektronica (template: Projecten)
-        - Paginas van Elektronica
-    - ICT (template: Projecten)
-        - Paginas van ICT
-- Richtingen (template: page Richting)
+    - Projecten (template: Projecten)
+        - Elektronica (template: Projecten)
+            - Paginas van Elektronica
+        - ICT (template: Projecten)
+            - Paginas van ICT
+    - Richtingen (template: page Richting)
 
 css/js gebruik:
 - /recources/css/style.css: wordt gebruikt in elk template

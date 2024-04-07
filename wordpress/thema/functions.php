@@ -15,24 +15,28 @@ function get_menu_links($templates){
         $args = array(
 			'post_type' => 'page',
 			'meta_key' => '_wp_page_template',
-			'meta_value' => $template		
+			'meta_value' => $template,
+			'depth' => 1, // maximale diepte in descendanten van paginas	
+			'echo' => 0, // Return the result instead of echoing it
 		);
-		$pages_query = new WP_Query($args);
-
-		if (!$pages_query->have_posts()) {
-			$output .="importeer het juiste aub";
-		}
-		//while ($pages_query->have_posts()) {
-			$pages_query->the_post();
-			$output .= '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
-		//}
+		$pages = wp_list_pages($args);
+		// Convert the list of pages into an array
+		$pages_array = explode("\n", $pages);
 		
+		// Extract the title from the first page link
+		if (!empty($pages_array[0])) {
+			preg_match('/<a(.*?)<\/a>/', $pages, $matches);
+			$output .= '<li>' . $matches[0] . '</li>';
+		} else {
+			echo "No pages found with the specified template.";
+		}
 	}
     $output .= '<li><a href="' . esc_url($GAME_URL) . '">Game</a></li>';
     $output .= '</ul>';
 	wp_reset_postdata();
 	return $output;
 }
+
 function get_link_page($page){
 	$args = array(
 		'post_type' => 'page',
@@ -44,7 +48,9 @@ function get_link_page($page){
 		return "importeer het juiste aub";
 	}
 	$pages_query->the_post();
-	return get_permalink();
+	$link = get_permalink();
+	wp_reset_postdata();
+	return $link;
 }
 
 function load_stylesheets(){

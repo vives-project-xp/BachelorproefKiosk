@@ -95,7 +95,19 @@ if (preg_match('/<img.+?src="(.+?)"/', $page_content, $matches)) {
     $image_url = $matches[1];
 }
 // Output the image URL
-echo "<img class='bachelorimg' src='".$image_url."'>";
+//echo "<img class='bachelorimg' src='".$image_url."'>";
+$cont = get_the_content();
+// Match the URL of the PDF file in the post content
+preg_match('/<a\s+(?:[^>]*?\s+)?href="([^"]*\.pdf)"[^>]*>(?:[^<]+)<\/a>/', $cont, $matches);
+
+if ($matches && isset($matches[1])) {
+    $pdf_url = $matches[1];
+    // Output the embedded PDF using an iframe
+    echo '<iframe src="' . esc_url($pdf_url) . '" class="bachelorimg" height="1000px"></iframe>';
+} else {
+    // If no PDF link found in the content
+    echo 'No PDF found in the content.';
+}
 ?>
 
 </div>

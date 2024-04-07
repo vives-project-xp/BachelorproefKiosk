@@ -31,12 +31,30 @@ Template Name: Page richting
     </div>
 
     <div class="content">
-
-        <h3><a href="<?php echo get_link_page("page-projecten.php")."/elektronica" ?>">.Elektronica</a></h3>
-
-
-        <h3><a href="<?php echo get_link_page("page-projecten.php")."/ict" ?>">.ICT</a></h3>
-
+        <?php
+        $elek_page_link = "";
+        $ict_page_link = "";
+        $args = array(
+            'post_type' => 'page',
+            'meta_key' => '_wp_page_template',
+            'meta_value' => 'page-projecten.php'		
+        );
+        $pages_query = new WP_Query($args);
+        if ($pages_query->have_posts()) {
+            while($pages_query->have_posts()){
+                $pages_query->the_post();
+                if(strtolower(get_the_title())=="elektronica"){
+                    $elek_page_link = get_permalink();
+                }
+                if(strtolower(get_the_title())=="ict"){
+                    $ict_page_link = get_permalink();
+                }
+            }
+        }
+        wp_reset_postdata();
+        echo "<h3><a href='".$elek_page_link."/elektronica'>.Elektronica</a></h3>";
+        echo "<h3><a href='".$ict_page_link."/ict'>.ICT</a></h3>";
+        ?>
     </div>
 <?php wp_footer();?>
 </body>

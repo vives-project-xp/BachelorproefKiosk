@@ -5,36 +5,37 @@
 
 ## Output
 Web paginas met volgende informatie:
-    -afgelopen bachelorproeven: pagina met afbeelding van fiche.
-    -richting informatie: pagina met afbeelding van fiche van de richtingen.
-    -game pagina met snake
+    - afgelopen bachelorproeven: pagina met afbeelding van fiche.
+    - richtingen: bekijk alle projecten van een bepaalde richting.
+    - game pagina met snake of agario
 
 ## Functies
 Wordpress mappenstructuur:
-    -Thema root
-        -assets
-            -images: afbeeldingen en gifs die we in de html paginas gebruiken
-            -richting_images: afbeeldingen van de fiches van de richtingen
-        -recources
-            -css: map met alle css (wordt nog geënqueued)
-            -js: map met alle js (zelfde)
-        -Alle php templates (html paginas)
-        -style.css
-        -functions.js
+    - Thema root
+        - assets
+            - images: afbeeldingen en gifs die we in de html paginas gebruiken
+            - richting_images: pdfs van de fiches van de richtingen die we mogelijks meeleveren.
+        - recources
+            - css: map met alle css (wordt nog geënqueued)
+            - js: map met alle js (zelfde)
+        - Alle php templates (html paginas)
+        - style.css
+        - functions.js
         
-pagina urls:
-      /home: menu
-      /home/projecten: projecten selecteren
-      /home/richtingen: richting selecteren
-      /home/game: game
-      /home/richtingen/richting/id: info fiche van de richting
-      /home/projecten/project/id: project fiche van bepaalde id
+wordpress page structuur:
+    - Menu (template: Menu)
+    - Projecten (template: Projecten)
+        - Elektronica (template: Projecten)
+            - Paginas van Elektronica
+        - ICT (template: Projecten)
+            - Paginas van ICT
+    - Richtingen (template: page Richting)
 
 css/js gebruik:
-    /recources/css/style.css: wordt gebruikt in elk template
-    /recources/css/game.css: wordt gebruikt in de game pagina
-    /recources/js/script.js: wordt voorlopig vervangen door inline php
-    /recources/js/game.js: wordt gebruikt in de game pagina
+    - /recources/css/style.css: wordt gebruikt in elk template
+    - /recources/css/game.css: wordt gebruikt in de game pagina
+    - /recources/js/script.js: wordt voorlopig vervangen door inline php
+    - /recources/js/game.js: wordt gebruikt in de game pagina
 
 # Arcade kast
 ## Input

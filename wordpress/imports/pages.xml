@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/6.4.3" created="2024-04-04 14:52" -->
+	<!-- generator="WordPress/6.4.3" created="2024-04-09 20:13" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>yehaw</title>
 	<link>http://localhost:8080</link>
 	<description></description>
-	<pubDate>Thu, 04 Apr 2024 14:52:58 +0000</pubDate>
+	<pubDate>Tue, 09 Apr 2024 20:13:56 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>http://localhost:8080</wp:base_site_url>
@@ -70,12 +70,12 @@
 		<wp:post_id>2</wp:post_id>
 		<wp:post_date><![CDATA[2024-04-04 14:40:54]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-04-04 14:40:54]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-04-04 14:40:54]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-04-04 14:40:54]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2024-04-09 20:13:12]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-04-09 20:13:12]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[sample-page]]></wp:post_name>
-		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_name><![CDATA[sample-page__trashed-2]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type><![CDATA[page]]></wp:post_type>
@@ -84,6 +84,18 @@
 														<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
 		<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+		<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1712693592]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+		<wp:meta_value><![CDATA[sample-page]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
@@ -98,12 +110,12 @@
 		<wp:post_id>3</wp:post_id>
 		<wp:post_date><![CDATA[2024-04-04 14:40:54]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-04-04 14:40:54]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-04-04 14:40:54]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-04-04 14:40:54]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2024-04-09 20:13:15]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-04-09 20:13:15]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[open]]></wp:ping_status>
-		<wp:post_name><![CDATA[privacy-policy]]></wp:post_name>
-		<wp:status><![CDATA[draft]]></wp:status>
+		<wp:post_name><![CDATA[privacy-policy__trashed-2]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
 		<wp:post_parent>0</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type><![CDATA[page]]></wp:post_type>
@@ -112,6 +124,18 @@
 														<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
 		<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+		<wp:meta_value><![CDATA[draft]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1712693595]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+		<wp:meta_value><![CDATA[privacy-policy]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
@@ -268,14 +292,14 @@
 		<wp:post_id>10</wp:post_id>
 		<wp:post_date><![CDATA[2024-04-03 16:18:12]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-04-03 15:18:12]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-04-03 16:18:12]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-04-03 15:18:12]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2024-04-07 12:28:05]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-04-07 12:28:05]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[projecten]]></wp:post_name>
 		<wp:status><![CDATA[publish]]></wp:status>
 		<wp:post_parent>13</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
+		<wp:menu_order>1</wp:menu_order>
 		<wp:post_type><![CDATA[page]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
@@ -332,8 +356,8 @@
 		<wp:post_id>13</wp:post_id>
 		<wp:post_date><![CDATA[2024-04-03 18:09:43]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-04-03 17:09:43]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-04-03 18:09:43]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-04-03 17:09:43]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2024-04-07 12:28:48]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-04-07 12:28:48]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[mendokuse]]></wp:post_name>
@@ -350,6 +374,208 @@
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
 		<wp:meta_value><![CDATA[page-menu.php]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title><![CDATA[test]]></title>
+		<link>http://localhost:8080/?page_id=37</link>
+		<pubDate>Sun, 07 Apr 2024 11:13:44 +0000</pubDate>
+		<dc:creator><![CDATA[sera]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8080/?page_id=37</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:file {"id":40,"href":"http://localhost:8080/wp-content/uploads/Bachelorproeffiches-elektronica-ICT-Brugge-22-23-3.pdf","displayPreview":true} -->
+<div class="wp-block-file"><object class="wp-block-file__embed" data="http://localhost:8080/wp-content/uploads/Bachelorproeffiches-elektronica-ICT-Brugge-22-23-3.pdf" type="application/pdf" style="width:100%;height:600px" aria-label="Bachelorproeffiches-elektronica-ICT-Brugge-22-23-3"></object><a id="wp-block-file--media-de9f8dba-acda-46fc-b9f2-21d28fc30f1d" href="http://localhost:8080/wp-content/uploads/Bachelorproeffiches-elektronica-ICT-Brugge-22-23-3.pdf">Bachelorproeffiches-elektronica-ICT-Brugge-22-23-3</a><a href="http://localhost:8080/wp-content/uploads/Bachelorproeffiches-elektronica-ICT-Brugge-22-23-3.pdf" class="wp-block-file__button wp-element-button" download aria-describedby="wp-block-file--media-de9f8dba-acda-46fc-b9f2-21d28fc30f1d">Download</a></div>
+<!-- /wp:file -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>37</wp:post_id>
+		<wp:post_date><![CDATA[2024-04-07 11:13:44]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-04-07 11:13:44]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2024-04-09 20:13:08]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-04-09 20:13:08]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[test__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+														<wp:postmeta>
+		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+		<wp:meta_value><![CDATA[page-test.php]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+		<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1712693588]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+		<wp:meta_value><![CDATA[test]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title><![CDATA[test1]]></title>
+		<link>http://localhost:8080/?page_id=42</link>
+		<pubDate>Sun, 07 Apr 2024 11:32:45 +0000</pubDate>
+		<dc:creator><![CDATA[sera]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8080/?page_id=42</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:file {"id":43,"href":"http://localhost:8080/wp-content/uploads/Bachelorproeffiches-elektronica-ICT-Brugge-22-23-9.pdf","displayPreview":true} -->
+<div class="wp-block-file"><object class="wp-block-file__embed" data="http://localhost:8080/wp-content/uploads/Bachelorproeffiches-elektronica-ICT-Brugge-22-23-9.pdf" type="application/pdf" style="width:100%;height:600px" aria-label="Bachelorproeffiches-elektronica-ICT-Brugge-22-23-9"></object><a id="wp-block-file--media-7c2ca12b-00ef-457e-b04e-484880e4c216" href="http://localhost:8080/wp-content/uploads/Bachelorproeffiches-elektronica-ICT-Brugge-22-23-9.pdf">Bachelorproeffiches-elektronica-ICT-Brugge-22-23-9</a><a href="http://localhost:8080/wp-content/uploads/Bachelorproeffiches-elektronica-ICT-Brugge-22-23-9.pdf" class="wp-block-file__button wp-element-button" download aria-describedby="wp-block-file--media-7c2ca12b-00ef-457e-b04e-484880e4c216">Download</a></div>
+<!-- /wp:file -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>42</wp:post_id>
+		<wp:post_date><![CDATA[2024-04-07 11:32:45]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-04-07 11:32:45]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2024-04-09 20:13:18]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-04-09 20:13:18]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[test1__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
+		<wp:post_parent>45</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+														<wp:postmeta>
+		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+		<wp:meta_value><![CDATA[page-project.php]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+		<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1712693598]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+		<wp:meta_value><![CDATA[test1]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title><![CDATA[ICT]]></title>
+		<link>http://localhost:8080/?page_id=45</link>
+		<pubDate>Sun, 07 Apr 2024 12:00:14 +0000</pubDate>
+		<dc:creator><![CDATA[sera]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8080/?page_id=45</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>45</wp:post_id>
+		<wp:post_date><![CDATA[2024-04-07 12:00:14]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-04-07 12:00:14]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2024-04-07 12:28:46]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-04-07 12:28:46]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[ict]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>10</wp:post_parent>
+		<wp:menu_order>3</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+														<wp:postmeta>
+		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+		<wp:meta_value><![CDATA[page-projecten.php]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title><![CDATA[Elektronica]]></title>
+		<link>http://localhost:8080/?page_id=47</link>
+		<pubDate>Sun, 07 Apr 2024 12:00:24 +0000</pubDate>
+		<dc:creator><![CDATA[sera]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8080/?page_id=47</guid>
+		<description></description>
+		<content:encoded><![CDATA[]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>47</wp:post_id>
+		<wp:post_date><![CDATA[2024-04-07 12:00:24]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-04-07 12:00:24]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2024-04-07 12:28:22]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-04-07 12:28:22]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[elektronica]]></wp:post_name>
+		<wp:status><![CDATA[publish]]></wp:status>
+		<wp:post_parent>10</wp:post_parent>
+		<wp:menu_order>2</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+														<wp:postmeta>
+		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+		<wp:meta_value><![CDATA[page-projecten.php]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title><![CDATA[elek1]]></title>
+		<link>http://localhost:8080/?page_id=49</link>
+		<pubDate>Sun, 07 Apr 2024 12:21:38 +0000</pubDate>
+		<dc:creator><![CDATA[sera]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8080/?page_id=49</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:file {"id":50,"href":"http://localhost:8080/wp-content/uploads/Bachelorproeffiches-elektronica-ICT-Brugge-22-23-2.pdf","displayPreview":true} -->
+<div class="wp-block-file"><object class="wp-block-file__embed" data="http://localhost:8080/wp-content/uploads/Bachelorproeffiches-elektronica-ICT-Brugge-22-23-2.pdf" type="application/pdf" style="width:100%;height:600px" aria-label="Bachelorproeffiches-elektronica-ICT-Brugge-22-23-2"></object><a id="wp-block-file--media-eba8dd09-f757-4c9a-a1be-68ff1c337ceb" href="http://localhost:8080/wp-content/uploads/Bachelorproeffiches-elektronica-ICT-Brugge-22-23-2.pdf">Bachelorproeffiches-elektronica-ICT-Brugge-22-23-2</a><a href="http://localhost:8080/wp-content/uploads/Bachelorproeffiches-elektronica-ICT-Brugge-22-23-2.pdf" class="wp-block-file__button wp-element-button" download aria-describedby="wp-block-file--media-eba8dd09-f757-4c9a-a1be-68ff1c337ceb">Download</a></div>
+<!-- /wp:file -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>49</wp:post_id>
+		<wp:post_date><![CDATA[2024-04-07 12:21:38]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-04-07 12:21:38]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2024-04-09 20:13:21]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-04-09 20:13:21]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
+		<wp:post_name><![CDATA[elek1__trashed]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
+		<wp:post_parent>47</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+														<wp:postmeta>
+		<wp:meta_key><![CDATA[_edit_last]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+		<wp:meta_value><![CDATA[page-project.php]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+		<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1712693601]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+		<wp:meta_value><![CDATA[elek1]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 				</channel>

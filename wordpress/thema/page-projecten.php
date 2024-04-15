@@ -35,7 +35,7 @@ Template Name: Projecten
     <div class="leftbodydiv">
     <!-- The sidebar -->
     <div class="sidebar">
-    <?php echo get_menu_links(array("page-menu.php","page-projecten.php","page-richting.php"));?>
+    <?php echo get_menu_links(array("page-menu.php","page-projecten.php","page-richting.php","page-game.php"));?>
       <img src="wp-content/uploads/asemgou-of-aventura-arcade.gif" class="kong">
     </div>
 

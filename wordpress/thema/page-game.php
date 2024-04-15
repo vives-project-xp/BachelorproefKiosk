@@ -20,24 +20,14 @@ Template Name: Game
 <body <?php body_class();?>>
   <h1>Game</h1>
   <div class="topbar">
-    <ul>
-      <li><a href="../../Home">.Home</a></li>
-      <li><a href="../Projecten">.Projecten</a></li>
-      <li><a href="../Richtingen">.Richtingen</a></li>
-      <li><a href="https://agar.io/">.Game</a></li>
-    </ul>
+<?php echo get_menu_links(array("page-menu.php","page-projecten.php","page-richting.php","page-game.php"));?>
     <img class="topbarimg" src="../../../wp-content/themes/ProefGeval/assets/images/shells.gif">
   </div>
 
 
   <div id="gameContainer">
-    <canvas id="gameBoard"></canvas>
+    <iframe src="https://www.bing.com/search?q=iframe+for+another+website" title="description" class="bachelorimg"></iframe>
   </div>
-
-  <div id="scoreText">0</div>
-
-  <button id="resetBtn">Reset</button>
-
 <?php wp_footer();?>
 </body>
 

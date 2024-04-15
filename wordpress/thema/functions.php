@@ -8,7 +8,6 @@ function get_menu_links($templates){
 		<li><a href="../Richtingen">.Richtingen</a></li>
 		<li><a href="https://agar.io/">.Game</a></li>
 	</ul>*/
-	$GAME_URL = "https://agar.io/";
 	$output = "<ul>";
 	//$templates = array("index.php","page-projecten.php","page-richtingen.php");
 	foreach($templates as $template){
@@ -31,7 +30,6 @@ function get_menu_links($templates){
 			echo "No pages found with the specified template.";
 		}
 	}
-    $output .= '<li><a href="' . esc_url($GAME_URL) . '">Game</a></li>';
     $output .= '</ul>';
 	wp_reset_postdata();
 	return $output;

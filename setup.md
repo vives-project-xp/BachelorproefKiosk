@@ -14,10 +14,10 @@ We gebruiken WordPress als content management system, Zorg dat je een WordPress 
 ## Activatie thema
 De eerste stap is het importeren van het WordPress thema in WordPress.
 1. In WordPress klik op de verfborstel om zo naar de thema's pagina te gaan.
-2. klik op "Nieuw thema toevoegen"
-3. klik op "Thema uploaden"
-4. klik op "Choose file" en selecteer dit bestand in onze repo: wordpress/imports/wp_thema.zip.
-5. klik op "Nu installeren".
+2. Klik op "Nieuw thema toevoegen".
+3. Klik op "Thema uploaden".
+4. Klik op "Choose file" en selecteer dit bestand in onze repo: wordpress/imports/wp_thema.zip.
+5. Klik op "Nu installeren".
 6. Navigeer terug naar de thema's pagina door op de verfborstel te drukken.
 7. Je zal nu een thema "Bachelor proef Kiosk" terugvinden klik bij deze op "Activeren"
 
@@ -29,6 +29,7 @@ In WordPress werken we met pagina's om inhoud weer te geven, er zijn ook een paa
 4. Klik dan op "Importeerfunctie uitvoeren" bij WordPress.
 5. Klik dan op "Choose file" en selecteer dan het bestand in de repo: wordpress/imports/pages.xml.
 6. Klik op "Upload bestand en importeer" en bij de volgende pagina op "Versturen".
+7. Dit is iets dat soms niet goed staat afhankelijk van de versie van wordpress, zorg dat onder instellingen -> permalinks de permalink structuur op "gewoon" staat.
 
 ## Upload Media
 Er zijn heel wat gifs en afbeeldingen die we gebruiken in onze pagina's voor decoratie, die moet je dan ook even uploaden.
@@ -37,7 +38,7 @@ Er zijn heel wat gifs en afbeeldingen die we gebruiken in onze pagina's voor dec
 3. Klik op "Wijzigingen opslaan.
 4. Druk daarna op het mediasymbool in de zijbalk (symbool met camera en muziek noot.)
 5. Klik op "Nieuw mediabestand toevoegen".
-6. Klik op "Bestanden selecteren" en selecteer alles in de map wordpress/thema/assets/images
+6. Klik op "Bestanden selecteren" en selecteer alles in de map wordpress/thema/assets/images.
 
 ## Projecten toevoegen
 Gefeliciteerd, je hebt succesvol de basis van onze pagina geïnstalleerd. Nu kan je zelf bachelorproeven toevoegen! Hier is een voorbeeld van hoe je dat doet:

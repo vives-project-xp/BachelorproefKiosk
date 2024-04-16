@@ -85,22 +85,7 @@ echo "<button class='next' onclick=redirect('".$nextlink."')>Next</button>";
 </div>
 
 <div class="wrapper">
-    <?php
-$page_content = get_post_field('post_content', get_the_ID());
-
-// Use WordPress functions to parse the content and extract the image URL
-$image_url = "project";
-//print_r($page_content);
-if (preg_match('/<img.+?src="(.+?)"/', $page_content, $matches)) {
-    $image_url = $matches[1];
-}
-// Output the image URL
-//echo "<img class='bachelorimg' src='".$image_url."'>";
-$cont = get_the_content();
-// Match the URL of the PDF file in the post content
-echo $cont;
-?>
-
+<?php echo do_shortcode(get_the_content()); ?>
 </div>
 
 </div>

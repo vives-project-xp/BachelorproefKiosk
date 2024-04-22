@@ -47,7 +47,7 @@ We got 4 different pages:
 
 - we gonna add a admin page where you can add en changes the thesises.
 
-  ### 3D model
+  ## 3D model
   We used autodesk inventor for the modeling of the arcade.
 
 ### Blueprint:

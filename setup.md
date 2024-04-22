@@ -5,7 +5,9 @@
 - [WordPress](#wordpress)
 - [activatie thema](#activatie-thema)
 - [Basis pagina's aanmaken](#basis-paginas-aanmaken)
+- [Plugins]
 - [Projecten toevoegen](#projecten-toevoegen)
+
 
 ## WordPress
 We gebruiken WordPress als content management system, Zorg dat je een WordPress installatie hebt of je een abonnement hebt bij een WordPress provider en dat je de instellingen die je moet invullen voor het eerste gebruik al hebt gedaan.

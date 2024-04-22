@@ -30,14 +30,26 @@ void loop() {
   }
   if(digitalRead(6)==LOW){
     Mouse.move(-3, 0);
+    Keyboard.press(KEY_LEFT_ARROW);
+  }else{
+    Keyboard.release(KEY_LEFT_ARROW);
   }
   if(digitalRead(5)==LOW){
         Mouse.move(0, 3);
+        Keyboard.press(KEY_DOWN_ARROW);
+  }else{
+    Keyboard.release(KEY_DOWN_ARROW);
   }
   if(digitalRead(4)==LOW){
     Mouse.move(3, 0);
+    Keyboard.press(KEY_RIGHT_ARROW);
+  }else{
+    Keyboard.release(KEY_RIGHT_ARROW);
   }
   if(digitalRead(3)==LOW){
         Mouse.move(0, -3);
+        Keyboard.press(KEY_UP_ARROW);
+  }else{
+    Keyboard.release(KEY_UP_ARROW);
   }
 }

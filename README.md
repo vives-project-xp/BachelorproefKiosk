@@ -29,7 +29,7 @@ An Arcade Kiosk that shows the bachelor's thesis of previous students.
 
 ### Website
 
-We got 3 different pages:
+We got 4 different pages:
 
 - Home:
   Starting point to navigate to all the other pages.

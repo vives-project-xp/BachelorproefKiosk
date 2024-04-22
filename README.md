@@ -49,4 +49,13 @@ We got 4 different pages:
 
   ### 3D model
   We used autodesk inventor for the modeling of the arcade.
+
+### Blueprint:
+  ![alt text](/autodesk/arcade%20blueprint%202.0.png)
+
+  ### 3D-model:
+  ![alt text](/autodesk/Schermafbeelding%202024-04-22%20093614.png)
+
+
+
   

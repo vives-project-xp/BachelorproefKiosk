@@ -29,7 +29,10 @@ An Arcade Kiosk that shows the bachelor's thesis of previous students.
 
 ### Website
 
-We got 3 different pages:
+We got 4 different pages:
+
+- Home:
+  Starting point to navigate to all the other pages.
 
 - Bachelorproeven:
  This shows a list with each bachelor thesis. When you click on a thesis you get more information.
@@ -43,3 +46,16 @@ We got 3 different pages:
 ### Admin
 
 - we gonna add a admin page where you can add en changes the thesises.
+
+  ## 3D model
+  We used autodesk inventor for the modeling of the arcade.
+
+### Blueprint:
+  ![alt text](/autodesk/arcade%20blueprint%202.0.png)
+
+  ### 3D-model:
+  ![alt text](/autodesk/Schermafbeelding%202024-04-22%20093614.png)
+
+
+
+  

@@ -25,8 +25,8 @@ Template Name: Game
   </div>
 
 
-  <div id="gameContainer">
-    <iframe src="https://www.bing.com/search?q=iframe+for+another+website" title="description" class="bachelorimg"></iframe>
+  <div class="wrapper">
+    <iframe src="https://snake.googlemaps.com/" width="500" height="500" title="description" class="bacheloring" ></iframe>
   </div>
 <?php wp_footer();?>
 </body>

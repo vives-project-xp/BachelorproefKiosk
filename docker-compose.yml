@@ -12,7 +12,7 @@ services:
       WORDPRESS_DB_PASSWORD: examplepass
       WORDPRESS_DB_NAME: exampledb
     volumes:
-      - wordpress:/var/www/html
+      - ./wordpress/thema:/var/www/html/wp-content/themes/thema
 
   db:
     image: mysql:5.7

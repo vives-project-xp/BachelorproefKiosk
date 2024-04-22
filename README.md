@@ -33,15 +33,19 @@ We got 4 different pages:
 
 - Home:
   Starting point to navigate to all the other pages.
+  ![alt text](./screenshots/menu_home.png)
 
 - Bachelorproeven:
  This shows a list with each bachelor thesis. When you click on a thesis you get more information.
+ ![alt text](./screenshots/bachelorproeven.png)
 
 - Richting Informatie:
  Here you can find information and pictures of the different Electronica-ICT directions.
+ ![alt text](./screenshots/richting.png)
 
 - Game:
  If we have extra time we gonna add some pop up games to de website.
+ ![alt text](./screenshots/game.png)
 
 ### Admin
 

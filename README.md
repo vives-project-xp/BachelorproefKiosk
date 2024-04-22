@@ -31,6 +31,9 @@ An Arcade Kiosk that shows the bachelor's thesis of previous students.
 
 We got 3 different pages:
 
+- Home:
+  Starting point to navigate to all the other pages.
+
 - Bachelorproeven:
  This shows a list with each bachelor thesis. When you click on a thesis you get more information.
 

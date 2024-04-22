@@ -5,7 +5,6 @@
 - [WordPress](#wordpress)
 - [activatie thema](#activatie-thema)
 - [Basis pagina's aanmaken](#basis-paginas-aanmaken)
-- [Upload Media](#upload-media)
 - [Projecten toevoegen](#projecten-toevoegen)
 
 ## WordPress

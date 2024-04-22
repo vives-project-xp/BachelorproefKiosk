@@ -97,7 +97,7 @@ if($stringo == 'projecten' || $stringo == 'Projecten'){
 	    echo '<ul>';
 	    // Loop through each page
 	    foreach ( $pages_query as $child_page ) {
-		echo '<li><a href="' . $child_page->guid . '">' . $child_page->post_title . '</a></li>';
+      echo '<li><a href="' . $child_page->guid . '">' . $child_page->post_title . '</a></li>';
 	    }
 	    echo '</ul>';
 

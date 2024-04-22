@@ -31,15 +31,6 @@ In WordPress werken we met pagina's om inhoud weer te geven, er zijn ook een paa
 6. Klik op "Upload bestand en importeer" en bij de volgende pagina op "Versturen".
 7. Dit is iets dat soms niet goed staat afhankelijk van de versie van wordpress, zorg dat onder instellingen -> permalinks de permalink structuur op "gewoon" staat.
 
-## Upload Media
-Er zijn heel wat gifs en afbeeldingen die we gebruiken in onze pagina's voor decoratie, die moet je dan ook even uploaden.
-1. In WordPress, hover met de muis over het instellingensymbool en klik daarna op het menu dat tevoorschijn komt op "Media".
-2. Deselecteer onderaan "Organiseer mijn uploads in "maand" en "jaar" mappen
-3. Klik op "Wijzigingen opslaan.
-4. Druk daarna op het mediasymbool in de zijbalk (symbool met camera en muziek noot.)
-5. Klik op "Nieuw mediabestand toevoegen".
-6. Klik op "Bestanden selecteren" en selecteer alles in de map wordpress/thema/assets/images.
-
 ## Projecten toevoegen
 Gefeliciteerd, je hebt succesvol de basis van onze pagina geïnstalleerd. Nu kan je zelf bachelorproeven toevoegen! Hier is een voorbeeld van hoe je dat doet:
 1. In WordPress klik in de zijbalk op het icoon voor pagina's (icoon met 2 rechthoeken)

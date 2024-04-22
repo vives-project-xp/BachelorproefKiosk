@@ -343,11 +343,11 @@ li{
 
 footer {
   position: fixed;
+  margin-bottom: -100;
   left: 0;
   bottom: 0;
   width: 100%;
   text-align: center;
-  padding: 1em 0;
   background-color: #000000; /* Change this to your preferred color */
   color: #ffffff; /* Change this to your preferred color */
 }

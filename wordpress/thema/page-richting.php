@@ -26,7 +26,7 @@ Template Name: Page richting
         <!-- The sidebar -->
         <div class="sidebar">
         <?php echo get_menu_links(array("page-menu.php","page-projecten.php","page-richting.php","page-game.php"));?>
-            <img id="highkicks" src="wp-content/uploads/highkicks.gif">
+            <img id="highkicks" src="wp-content/themes/thema/recourses/images/highkicks.gif">
         </div>
     </div>
 

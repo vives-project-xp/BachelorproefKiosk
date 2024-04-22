@@ -343,7 +343,7 @@ li{
 footer {
   position: static;
   left: 0;
-  bottom: 0;
+  margin-bottom: -100;
   width: 100%;
   text-align: center;
   background-color: transparent; /* Change this to your preferred color */

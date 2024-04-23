@@ -53,74 +53,36 @@ function get_link_page($page){
 function get_next_prev_link($index, $mode){
 	//return = [url prev, url next]
 	$links = ["mario", "luigi"];
-	$i = 0;
-	if($mode == "doc"){
-		$files = scandir('wp-content/themes/thema/recourses/folders');
-		$fileCount = count($files) - 2;
-		if($index == 0){
-			//links[0] op laatste van pages
-			if($index+1 >= $fileCount){
-				links[1] = $files[$index]
-			}
-			
-		}
-		if($index+1 >= $fileCount){
-			//links[1] op eerste van pages
-		}
+	$indieces = [0,0];
+	$filePage = get_link_page("page-docu.php");
+	$dedic_pages = get_pages($args);
+	$files = scandir('wp-content/themes/thema/recourses/folders');
+	$array = array_merge(array_slice($files, 2), $dedic_pages);
+	if($index != 0){
+		$links[0] = $array[$index-1];
+		$indieces[0] = $index-1
 	}else{
-		
+		$links[0] = $array[count($array-1)];
+		$indieces[0] = count($array-1)
 	}
-	$template_name = 'page-project.php';
-// Custom query to retrieve pages using the specified template
-$args = array(
-    'post_type' => 'page',
-    'meta_key' => '_wp_page_template',
-    'posts_per_page' => -1, // Display all pages, remove pagination
-    'meta_value' => $template_name
-);
-$pages_query = new WP_Query($args);
-$lower = -1; //er zullen wel geen 7777777 paginas op deze server staan.
-$higher = 7777777;
-$lowest = 7777777;
-$highest = 0;
-$links = array('0'=>null,'1'=>null,'2'=>null,'3'=>null);
-$eigenID = get_the_id();
-if ($pages_query->have_posts()) {
-    while ($pages_query->have_posts()) {
-        $pages_query->the_post();
-        $id = get_the_id();
-        $link = get_permalink();
-        if($id > $highest){
-            $highest = $id;
-            $links['0'] = $link;
-        }
-        if($id < $lowest){
-            $lowest = $id;
-            $links['1'] = $link;
-        }
-        if($id < $higher && $id > $eigenID){
-            $higher = $id;
-            $links['2'] = $link;
-        }
-        if($id > $lower && $id < $eigenID){
-            $lower = $id;
-            $links['3'] = $link;
-        }
-        wp_reset_postdata();
-    }
-}
-$nextlink = "maria";
-$prevlink = "mario";
-if($higher == 7777777){
-	$nextlink = $links['1'];
-}else{
-	$nextlink = $links['2'];
-}
-if($lower == -1){
-	$prevlink = $links['0'];
-}else{
-	$prevlink = $links['3'];
-}
+	if($index != count($array-1)){
+		$links[1] = $array[$index+1];
+		$indieces[1] = $index+1
+	}else{
+		$links[1] = $array[0];
+		$indieces[1] = 0;
+	}
+	if($indieces[0] < count($files)-2){
+		$links[0] = get_link_page("page-docu.php")."?".$links[0]->getFilename()."&". $indieces[0];
+	}else{
+		$links[0] = get_page_link($links[0]->ID)."?". $indieces[0];
+	}
+	if($indieces[1] < count($files)-2){
+		$links[1] = get_link_page("page-docu.php")."?".$links[1]->getFilename()."&". $indieces[1];
+	}else{
+		$links[1] = get_page_link($links[1]->ID)."?". $indieces[1];
+	}
+	return $links;
 }
 function load_stylesheets(){
 

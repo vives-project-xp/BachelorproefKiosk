@@ -64,7 +64,7 @@ if($stringo == 'projecten' || $stringo == 'Projecten'){
   $i =0;
   foreach (new DirectoryIterator('wp-content/themes/thema/recourses/folders') as $file) {
     if($file->isDot()) continue;
-    echo '<li><a href="' . get_link_page("page-docu.php")."?".$file->getFilename()."?". $i . '">' . $file->getFilename() . '</a></li>';
+    echo '<li><a href="' . get_link_page("page-docu.php")."?".$file->getFilename()."&". $i . '">' . $file->getFilename() . '</a></li>';
     $i += 1;
   }
   echo '</ul>';

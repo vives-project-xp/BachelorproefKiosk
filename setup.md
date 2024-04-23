@@ -5,9 +5,8 @@
 - [WordPress](#wordpress)
 - [activatie thema](#activatie-thema)
 - [Basis pagina's aanmaken](#basis-paginas-aanmaken)
-- [Plugins]
+- [Plugins](#plugins)
 - [Projecten toevoegen](#projecten-toevoegen)
-
 
 ## WordPress
 We gebruiken WordPress als content management system, Zorg dat je een WordPress installatie hebt of je een abonnement hebt bij een WordPress provider en dat je de instellingen die je moet invullen voor het eerste gebruik al hebt gedaan.
@@ -31,6 +30,10 @@ In WordPress werken we met pagina's om inhoud weer te geven, er zijn ook een paa
 5. Klik dan op "Choose file" en selecteer dan het bestand in de repo: wordpress/imports/pages.xml.
 6. Klik op "Upload bestand en importeer" en bij de volgende pagina op "Versturen".
 7. Dit is iets dat soms niet goed staat afhankelijk van de versie van wordpress, zorg dat onder instellingen -> permalinks de permalink structuur op "gewoon" staat.
+
+## Plugins
+Er zijn enkele plugins nodig voor ons project om te kunnen werken:
+
 
 ## Projecten toevoegen
 Gefeliciteerd, je hebt succesvol de basis van onze pagina geïnstalleerd. Nu kan je zelf bachelorproeven toevoegen! Hier is een voorbeeld van hoe je dat doet:

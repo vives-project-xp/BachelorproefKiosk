@@ -44,7 +44,7 @@ We got 4 different pages:
  ![alt text](./screenshots/richting.png)
 
 - Game:
- There are a few fames to choose from
+ There are a few games to choose from
  ![alt text](./screenshots/Schermafbeelding%202024-04-24%20154005.png)
 
 ### Admin

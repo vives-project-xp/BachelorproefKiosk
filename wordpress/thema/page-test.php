@@ -54,19 +54,32 @@ if($stringo == 'projecten' || $stringo == 'Projecten'){
 	);
 	$pages_query = new WP_Query($args);
   echo '<ul>';
+  $i =0;
 	if ($pages_query->have_posts()) {
 	    // Loop through each page
-	    while ($pages_query->have_posts()) {
-		$pages_query->the_post();
-		echo '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
-	    }
+    while ($pages_query->have_posts()) {
+		  $pages_query->the_post();
+		  echo '<li><a href="' . get_permalink() ."?&id=".$i. '">' . get_the_title() . '</a></li>';
+      $i += 1;
+    }
 	}
-  $i =0;
-  foreach (new DirectoryIterator('wp-content/themes/thema/recourses/folders') as $file) {
+  
+  /*foreach (new DirectoryIterator('wp-content/themes/thema/recourses/folders') as $file) {
     if($file->isDot()) continue;
-    echo '<li><a href="' . get_link_page("page-docu.php")."?".$file->getFilename()."&". $i . '">' . $file->getFilename() . '</a></li>';
+    echo '<li><a href="' . get_link_page("page-docu.php")."?&file=".$file->getFilename()."&id=". $i . '">' . $file->getFilename() . '</a></li>';
+    $i += 1;
+  }*/
+  $args = array(
+    'post_type' => 'attachment',
+    'post_mime_type' => 'application/pdf',
+    'posts_per_page' => -1, // Retrieve all PDFs
+  );
+  $pdf_attachments = get_posts($args);
+  foreach ($pdf_attachments as $attachment) {
+    echo '<li><a href="' . get_link_page("page-docu.php")."?&file=".wp_get_attachment_url($attachment->ID)."&id=". $i . '">' . $file->getFilename() . '</a></li>';
     $i += 1;
   }
+  
   echo '</ul>';
 }else{
 	$current_page_id = get_the_ID();

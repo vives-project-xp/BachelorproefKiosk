@@ -50,37 +50,47 @@ function get_link_page($page){
 	wp_reset_postdata();
 	return $link;
 }
-function get_next_prev_link($index, $mode){
+function get_next_prev_link($index){
 	//return = [url prev, url next]
+	$args = array(
+		'post_type' => 'page',
+		'meta_key' => '_wp_page_template',
+		'meta_value' => "page-project.php"		
+	);
+	$argspdf = array(
+		'post_type' => 'attachment',
+		'post_mime_type' => 'application/pdf',
+		'posts_per_page' => -1, // Retrieve all PDFs
+	);
 	$links = ["mario", "luigi"];
 	$indieces = [0,0];
 	$filePage = get_link_page("page-docu.php");
 	$dedic_pages = get_pages($args);
-	$files = scandir('wp-content/themes/thema/recourses/folders');
-	$array = array_merge(array_slice($files, 2), $dedic_pages);
+	$pdf_attachments = get_posts($argspdf);
+	$array = array_merge($pdf_attachments, $dedic_pages);
 	if($index != 0){
 		$links[0] = $array[$index-1];
-		$indieces[0] = $index-1
+		$indieces[0] = $index-1;
 	}else{
 		$links[0] = $array[count($array-1)];
-		$indieces[0] = count($array-1)
+		$indieces[0] = count($array-1);
 	}
 	if($index != count($array-1)){
 		$links[1] = $array[$index+1];
-		$indieces[1] = $index+1
+		$indieces[1] = $index+1;
 	}else{
 		$links[1] = $array[0];
 		$indieces[1] = 0;
 	}
-	if($indieces[0] < count($files)-2){
-		$links[0] = get_link_page("page-docu.php")."?".$links[0]->getFilename()."&". $indieces[0];
+	if($indieces[0] < count($pdf_attachments)){
+		$links[0] = get_link_page("page-docu.php")."?&file=".$links[0]->getFilename()."&id=". $indieces[0];
 	}else{
-		$links[0] = get_page_link($links[0]->ID)."?". $indieces[0];
+		$links[0] = get_page_link($links[0]->ID)."?&id=". $indieces[0];
 	}
-	if($indieces[1] < count($files)-2){
-		$links[1] = get_link_page("page-docu.php")."?".$links[1]->getFilename()."&". $indieces[1];
+	if($indieces[1] < count($pdf_attachments)){
+		$links[1] = get_link_page("page-docu.php")."?&file=".$links[1]->getFilename()."&id=". $indieces[1];
 	}else{
-		$links[1] = get_page_link($links[1]->ID)."?". $indieces[1];
+		$links[1] = get_page_link($links[1]->ID)."?&id=". $indieces[1];
 	}
 	return $links;
 }

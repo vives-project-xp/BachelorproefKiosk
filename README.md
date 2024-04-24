@@ -45,7 +45,7 @@ We got 4 different pages:
 
 - Game:
  If we have extra time we gonna add some pop up games to de website.
- ![alt text](./screenshots/game.png)
+ ![alt text](./screenshots/Schermafbeelding%202024-04-24%20154005.png)
 
 ### Admin
 

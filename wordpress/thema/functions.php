@@ -55,7 +55,8 @@ function get_next_prev_link($index){
 	$args = array(
 		'post_type' => 'page',
 		'meta_key' => '_wp_page_template',
-		'meta_value' => "page-project.php"		
+		'posts_per_page' => -1,
+		'meta_value' => "page-project.php",		
 	);
 	$argspdf = array(
 		'post_type' => 'attachment',
@@ -64,31 +65,32 @@ function get_next_prev_link($index){
 	);
 	$links = ["mario", "luigi"];
 	$indieces = [0,0];
-	$filePage = get_link_page("page-docu.php");
 	$dedic_pages = get_pages($args);
 	$pdf_attachments = get_posts($argspdf);
 	$array = array_merge($pdf_attachments, $dedic_pages);
+	//print_r($dedic_pages);
 	if($index != 0){
 		$links[0] = $array[$index-1];
 		$indieces[0] = $index-1;
 	}else{
-		$links[0] = $array[count($array-1)];
-		$indieces[0] = count($array-1);
+		$links[0] = $array[count($array)-1];
+		$indieces[0] = count($array)-1;
 	}
-	if($index != count($array-1)){
+	if($index != count($array)-1){
 		$links[1] = $array[$index+1];
 		$indieces[1] = $index+1;
-	}else{
+	}else{	
 		$links[1] = $array[0];
 		$indieces[1] = 0;
 	}
+	print_r($indieces);
 	if($indieces[0] < count($pdf_attachments)){
-		$links[0] = get_link_page("page-docu.php")."?&file=".$links[0]->getFilename()."&id=". $indieces[0];
+		$links[0] = get_link_page("page-docu.php")."?&file=".wp_get_attachment_url($links[0]->ID)."&id=". $indieces[0];
 	}else{
 		$links[0] = get_page_link($links[0]->ID)."?&id=". $indieces[0];
 	}
 	if($indieces[1] < count($pdf_attachments)){
-		$links[1] = get_link_page("page-docu.php")."?&file=".$links[1]->getFilename()."&id=". $indieces[1];
+		$links[1] = get_link_page("page-docu.php")."?&file=".wp_get_attachment_url($links[1]->ID)."&id=". $indieces[1];
 	}else{
 		$links[1] = get_page_link($links[1]->ID)."?&id=". $indieces[1];
 	}

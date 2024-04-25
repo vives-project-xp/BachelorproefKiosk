@@ -58,8 +58,8 @@ if($stringo == 'projecten' || $stringo == 'Projecten'){
   $i =0;
   while ($pages_query->have_posts()) {
     $pages_query->the_post();
-    echo '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
-    //echo '<li><a href="' . get_permalink($page->ID) ."?&id=".$i. '">' . $page->post_title . '</a></li>';
+    //echo '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
+    echo '<li><a href="' . get_permalink($page->ID) ."?&id=".$i. '">' . $page->post_title . '</a></li>';
     $i += 1;
   }
   

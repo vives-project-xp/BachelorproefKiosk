@@ -110,6 +110,7 @@ h1 {
   text-align: center;
   font-size: 1000%;
   text-shadow: #ff0202 2px 2px 2px;
+  cursor:none;
 }
 
 h2 {
@@ -301,7 +302,7 @@ li{
   align-items: center;
   box-sizing: border-box;
   width: 96%;
-  height: 5%;
+  height: 60px;
   font-size: 60%;
   background-color: #000000;
   border: #ffffff 2px solid;
@@ -341,12 +342,13 @@ li{
 }
 
 footer {
-  position: static;
-  left: 0;
+  position: fixed;
   margin-bottom: -100;
+  left: 0;
+  bottom: 0;
   width: 100%;
   text-align: center;
-  background-color: transparent; /* Change this to your preferred color */
+  background-color: #000000; /* Change this to your preferred color */
   color: #ffffff; /* Change this to your preferred color */
 }
 
@@ -356,11 +358,6 @@ footer img {
 
 #dagonderwijs {
   font-size: 80%;
-}
-
-.bachelorimg {
-  height: auto;
-  width: 100%;
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
@@ -462,9 +459,6 @@ footer img {
 #imgrichting {
   width: 100%;
 }
-iframe.bachelorimg{
- height: 75%;
-}
 
 /* 
    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -543,7 +537,6 @@ img.kong {
   bottom: 0;
   left: 0;
   max-width: 100px;
-  max-height: 100px;
 }
 
 .left-ghost-picture {
@@ -568,5 +561,3 @@ img.kong {
     left: -50%;
   }
 }
-
-

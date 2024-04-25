@@ -23,10 +23,13 @@ Template Name: Game
 <?php echo get_menu_links(array("page-menu.php","page-projecten.php","page-richting.php","page-game.php"));?>
     <img class="topbarimg" src="wp-content/themes/thema/recourses/images/shells.gif">
   </div>
-
-
   <div class="wrapper">
-    <iframe src="https://snake.googlemaps.com/" width="500" height="500" title="description" class="bacheloring" ></iframe>
+  <ul>
+    <li><a href="<?php echo get_link_page("page-snake.php") ?>">.Snake</a></li>
+    <li><a href='<?php echo get_link_page("page-pong.php") ?>'>.Pong</a></li>
+    <li><a href='<?php echo get_link_page("page-ball-box.php") ?>'>.Ball-box</a></li>
+  </ul>
+</div>
   </div>
 <?php wp_footer();?>
 </body>

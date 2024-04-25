@@ -65,9 +65,18 @@ function get_next_prev_link($index){
 	);
 	$links = ["mario", "luigi"];
 	$indieces = [0,0];
-	$dedic_pages = get_pages($args);
+
+	//omzetten in array
+	$pages_query = new WP_Query($args);
+	$dedic_pages = array();
+	while ($pages_query->have_posts()) {
+		$pages_query->the_post();
+		$dedic_pages[] = get_permalink();
+	}
+	wp_reset_postdata();
+
 	$pdf_attachments = get_posts($argspdf);
-	$array = array_merge($pdf_attachments, $dedic_pages);
+	$array = array_merge($dedic_pages, $pdf_attachments);
 	//print_r($dedic_pages);
 	if($index != 0){
 		$links[0] = $array[$index-1];
@@ -77,23 +86,25 @@ function get_next_prev_link($index){
 		$indieces[0] = count($array)-1;
 	}
 	if($index != count($array)-1){
+		
 		$links[1] = $array[$index+1];
 		$indieces[1] = $index+1;
 	}else{	
 		$links[1] = $array[0];
 		$indieces[1] = 0;
 	}
-	print_r($indieces);
-	if($indieces[0] < count($pdf_attachments)){
+	//print_r($indieces);
+	if($indieces[0] < count($dedic_pages)){
+		$links[0] = $links[0]."?&id=". $indieces[0];
+	}else{
 		$links[0] = get_link_page("page-docu.php")."?&file=".wp_get_attachment_url($links[0]->ID)."&id=". $indieces[0];
-	}else{
-		$links[0] = get_page_link($links[0]->ID)."?&id=". $indieces[0];
 	}
-	if($indieces[1] < count($pdf_attachments)){
+	if($indieces[1] < count($dedic_pages)){
+		$links[1] = $links[1]."?&id=". $indieces[1];
+	}else{
 		$links[1] = get_link_page("page-docu.php")."?&file=".wp_get_attachment_url($links[1]->ID)."&id=". $indieces[1];
-	}else{
-		$links[1] = get_page_link($links[1]->ID)."?&id=". $indieces[1];
 	}
+	//print_r($links);
 	return $links;
 }
 function load_stylesheets(){

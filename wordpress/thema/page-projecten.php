@@ -47,19 +47,21 @@ $template_name = 'page-project.php';
 $args = array();
 if($stringo == 'projecten' || $stringo == 'Projecten'){
 	$args = array(
-	    'post_type' => 'page',
-	    'meta_key' => '_wp_page_template',
-	    'posts_per_page' => -1, // Display all pages, remove pagination
-	    'meta_value' => $template_name
-	);
-	$pages_query = get_pages($args);
+    'post_type' => 'page',
+    'meta_key' => '_wp_page_template',
+    'posts_per_page' => -1, // Display all pages, remove pagination
+    'meta_value' => $template_name
+  );
+  $pages_query = new WP_Query($args);
   echo '<ul>';
+  //echo count($pages_query);
   $i =0;
-  foreach($pages_query as $page)
-		  echo '<li><a href="' . get_permalink($page->ID) ."?&id=".$i. '">' . $page->post_title . '</a></li>';
-      $i += 1;
-    }
-	}
+  while ($pages_query->have_posts()) {
+    $pages_query->the_post();
+    echo '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
+    //echo '<li><a href="' . get_permalink($page->ID) ."?&id=".$i. '">' . $page->post_title . '</a></li>';
+    $i += 1;
+  }
   
   /*foreach (new DirectoryIterator('wp-content/themes/thema/recourses/folders') as $file) {
     if($file->isDot()) continue;

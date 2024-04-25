@@ -10,11 +10,14 @@ Template Name: page Projecten
   <meta name="author" content="Kenrie Vandekerckhove">
   <meta name="author" content="Domien Verstraete">
   <meta name="author" content="Seraphin Sampers">
+  <script type="text/javascript" src="wp-content/themes/thema/recourses/js/Disable_scroll.js" defer></script>
   <title>Bachelor Kiosk</title>
   <?php wp_head();?>
 </head>
 
 <body <?php body_class();?>>
+<div id="top" style="height: 100px; position: fixed; top: 0; width: 100vw;"></div>
+<div id="bottom" style="height: 100px; position: fixed; bottom: 0; width: 100vw;"></div> 
   <div class="TopText">
     <?php
 	//    <h1>Bachelor Proeven</h1>

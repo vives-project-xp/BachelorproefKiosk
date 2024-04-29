@@ -1,26 +1,26 @@
 # Website
 ## Input
-- Joistick en 2 knoppen: joistick: muis bewegen, knop 1: muis klik, knop 2: vorige pagina in de browser.
+- Joistick en 2 knoppen: joistick: muis bewegen en pijltjes toetsen tergelijk, knop 1: muis klik, knop 2: vorige pagina in de browser (alt + pijltje links).
 - Fiche en pagina uploads via wordpress, gebruik template Project.
+- Alternatieve manier om fiches weer te geven: upload gewoon de fiche pdf's in de mediabibliotheek van wordpress
 
 ## Output
 Web paginas met volgende informatie:
 - afgelopen bachelorproeven: pagina met afbeelding van fiche.
 - richtingen: bekijk alle projecten van een bepaalde richting.
-- game pagina met snake of agario
+- game pagina met snake, pong en ball-box
 
 ## Functies
 Wordpress mappenstructuur:
 - Thema root
-    - assets
-        - images: afbeeldingen en gifs die we in de html paginas gebruiken
-        - richting_images: pdfs van de fiches van de richtingen die we mogelijks meeleveren.
     - recources
         - css: map met alle css (wordt nog geënqueued)
         - js: map met alle js (zelfde)
+        - images: afbeeldingen en gifs die we in de html paginas gebruiken
     - Alle php templates (html paginas)
     - style.css
     - functions.js
+    
     
 wordpress page structuur:
 - Menu (template: Menu)
@@ -30,12 +30,14 @@ wordpress page structuur:
         - ICT (template: Projecten)
             - Paginas van ICT
     - Richtingen (template: page Richting)
+    - Game
+        - Snake
+        - Pong
+        - Ball-box
+    - doc page     
 
 css/js gebruik:
 - /recources/css/style.css: wordt gebruikt in elk template
-- /recources/css/game.css: wordt gebruikt in de game pagina
-- /recources/js/script.js: wordt voorlopig vervangen door inline php
-- /recources/js/game.js: wordt gebruikt in de game pagina
 
 # Arcade kast
 ## Input

@@ -21,7 +21,7 @@ Template Name: Doc page
 <body <?php body_class();?>>
 <div class="topbar" type="navbar">
     <ul>
-    <?php echo get_menu_links(array("page-menu.php","page-projecten.php","page-richting.php","page-game.php"));?>
+    <?php echo get_menu_links(array("page-menu.php","page-projecten.php","page-richtingen.php","page-game.php"));?>
     </ul>
     <img class="topbarimg" src="wp-content/themes/thema/recourses/images/shells.gif">
 </div>

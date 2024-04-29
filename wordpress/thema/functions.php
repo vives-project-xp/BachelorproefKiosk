@@ -44,7 +44,7 @@ function get_link_page($page){
 	$link = "";
 	$pages_query = new WP_Query($args);
 	if ($pages_query->have_posts()) {
-			$link = esc_url($pages_query->posts[0]->guid);
+			$link = get_permalink($pages_query->posts[0]->ID);
 		// Restore original post data
 		wp_reset_postdata();
 	} else {

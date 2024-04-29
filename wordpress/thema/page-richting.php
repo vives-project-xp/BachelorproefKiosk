@@ -34,11 +34,6 @@ Template Name: Page richting
         <img src="wp-content/themes/thema/recourses/images/megaman-nt-warrior-anime.gif" width="50px">
     </div>
 
-    <div class="backnext">
-        <button class="back">Back</button>
-        <button class="next">Next</button>
-    </div>
-
     <div class="projectwrapper">
         <div class="splitter">
             <img src="wp-content/themes/thema/recourses/images/ezgif.com-crop1.gif" class="splitter">

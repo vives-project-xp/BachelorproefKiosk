@@ -27,5 +27,5 @@ services:
       - db:/var/lib/mysql
 
 volumes:
-  wordpress:
+  #wordpress:
   db:

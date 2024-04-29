@@ -21,7 +21,7 @@ Template Name: Doc page
 <body <?php body_class();?>>
 <div class="topbar" type="navbar">
     <ul>
-    <?php echo get_menu_links(array("page-menu.php","page-projecten.php","page-richting.php","page-game.php"));?>
+    <?php echo get_menu_links(array("page-menu.php","page-projecten.php","page-richtingen.php","page-game.php"));?>
     </ul>
     <img class="topbarimg" src="wp-content/themes/thema/recourses/images/shells.gif">
 </div>
@@ -38,7 +38,7 @@ Template Name: Doc page
 
 <div class="wrapper">
 <?php
-echo do_shortcode("[pdfjs-viewer url=".$file." viewer_width=0 viewer_height=800 download=false print=false fullscreen=false]");
+echo do_shortcode("[pdfjs-viewer url=".$file." viewer_width=0 viewer_height=1200 download=false print=false fullscreen=false]");
 ?>
 </div>
 

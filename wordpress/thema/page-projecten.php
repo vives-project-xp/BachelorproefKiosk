@@ -19,29 +19,14 @@ Template Name: page Projecten
 <div id="top" style="height: 100px; position: fixed; top: 0; width: 100vw;"></div>
 <div id="bottom" style="height: 100px; position: fixed; bottom: 0; width: 100vw;"></div> 
   <div class="TopText">
-    <?php
-	//    <h1>Bachelor Proeven</h1>
-	$string = explode('/',$_SERVER['REQUEST_URI']);//Array ( [0] => [1] => ?page_id=7 [2] => electronica)
-	$stringo = $string[sizeof($string)-1];
-  if(sizeof($string) != 3){
-    $stringo = "projecten";
-  }
-	//print_r($string);
-	echo '<h1>'.$stringo.'</h1>';
-
-  if($stringo == 'projecten' || $stringo == 'Projecten'){
-   echo '<p>Deze pagina bevat informatie over de bachelor proeven van de richting <br>Elektronica-ICT</p>';
-  }else{
-    echo '<p>Deze pagina bevat informatie over de bachelor proeven van de richting <br>'.$stringo.'</p>';
-  }
-  ?>
-  
-    </div>
+    <h1>projecten</h1>
+    <p>Deze pagina bevat informatie over de bachelor proeven van de richting <br>Elektronica-ICT</p>
+  </div>
   <div class="bodydiv">
     <div class="leftbodydiv">
     <!-- The sidebar -->
     <div class="sidebar">
-    <?php echo get_menu_links(array("page-menu.php","page-projecten.php","page-richting.php","page-game.php"));?>
+    <?php echo get_menu_links(array("page-menu.php","page-projecten.php","page-richtingen.php","page-game.php"));?>
       <img src="wp-content/themes/thema/recourses/images/asemgou-of-aventura-arcade.gif" class="kong">
     </div>
 </div>
@@ -50,11 +35,6 @@ Template Name: page Projecten
     <!-- proeven -->
     <div class="content" id="proevenDiv">
       <?php
-//dankje chat gpt
-$template_name = 'page-project.php';
-// Custom query to retrieve pages using the specified template	
-$args = array();
-if($stringo == 'projecten' || $stringo == 'Projecten'){
 	$args = array(
     'post_type' => 'page',
     'meta_key' => '_wp_page_template',
@@ -65,18 +45,6 @@ if($stringo == 'projecten' || $stringo == 'Projecten'){
   echo '<ul>';
   //echo count($pages_query);
   $i =0;
-  while ($pages_query->have_posts()) {
-    $pages_query->the_post();
-    //echo '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
-    echo '<li><a href="' . get_permalink($page->ID) ."?&id=".$i. '">' . $page->post_title . '</a></li>';
-    $i += 1;
-  }
-  
-  /*foreach (new DirectoryIterator('wp-content/themes/thema/recourses/folders') as $file) {
-    if($file->isDot()) continue;
-    echo '<li><a href="' . get_link_page("page-docu.php")."?&file=".$file->getFilename()."&id=". $i . '">' . $file->getFilename() . '</a></li>';
-    $i += 1;
-  }*/
   $args = array(
     'post_type' => 'attachment',
     'post_mime_type' => 'application/pdf',
@@ -88,26 +56,6 @@ if($stringo == 'projecten' || $stringo == 'Projecten'){
     $i += 1;
   }
   echo '</ul>';
-}else{
-	$current_page_id = get_the_ID();
-	$args = array(
-	    'child_of' => $current_page_id,
-	    'sort_column' => 'menu_order', // Sort by menu order
-	    'sort_order' => 'ASC', // Ascending order
-	);
-	//$pages_query = new WP_Query($args);
-	$pages_query = get_pages($args);
-  echo '<ul>';
-  $i = 0;
-	if ($pages_query) {
-	    // Loop through each page
-	    foreach ( $pages_query as $child_page ) {
-        echo '<li><a href="' . $child_page->guid  ."?&id=".$i. '">' . $child_page->post_title . '</a></li>';
-        $i += 1;
-      }
-	}
-  echo '</ul>';
-}
 
     // Restore original post data
     wp_reset_postdata();

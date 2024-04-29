@@ -18,11 +18,19 @@
   }
   canvas {
     border: 1px solid white;
-    width: 40vw;
-    height: 40vw;
+    width: 40vmin;
+    height: 40vmin;
     margin-left: 30%;
     cursor: none;
-  }
+}
+@media screen and (max-width: 1100px) {
+    canvas {
+        width: 90vmin;
+        height: 90vmin;
+        margin-left: 5%;
+        margin-top: 10%;
+    }
+}
   
   #score_display {
     width: min-content;
@@ -39,8 +47,7 @@
   </style>
 </head>
 <body>
-  <div id="top" style="height: 100px; position: fixed; top: 0;  width: 100vw;"></div>
-  <div id="bottom" style="height: 100px; position: fixed; bottom: 0;  width: 100vw;"></div> 
+  
     <div class="topbar" type="navbar">
         <ul>
             <li><a href="../../index.html">.Home</a></li>

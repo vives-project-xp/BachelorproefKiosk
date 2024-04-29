@@ -33,8 +33,14 @@ In WordPress werken we met pagina's om inhoud weer te geven, er zijn ook een paa
 
 ## Plugins
 Er zijn enkele plugins nodig voor ons project om te kunnen werken:
-
-
+- increase max upload size
+- PDFjs Viewer: voor de pdf's weer te geven, instellingen:
+  - [ ] Show Download Button
+  - [ ] Show Print Button
+  - [ ] Show Search Button
+  - [ ] Show Fullscreen Link
+  - de rest mag je laten zoals het is
+  
 ## Projecten toevoegen
 Gefeliciteerd, je hebt succesvol de basis van onze pagina geïnstalleerd. Nu kan je zelf bachelorproeven toevoegen! Hier is een voorbeeld van hoe je dat doet:
 1. In WordPress klik in de zijbalk op het icoon voor pagina's (icoon met 2 rechthoeken)

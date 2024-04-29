@@ -41,6 +41,7 @@ Template Name: snake
 
   </style>
   <?php wp_head();?>
+  <script type="text/javascript" src="wp-content/themes/thema/recourses/js/Disable_scroll.js" defer></script>
 </head>
 <body <?php body_class();?>>
     <div class="topbar" type="navbar">

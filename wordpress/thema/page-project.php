@@ -13,6 +13,7 @@ Template Name: Project
     <meta name="author" content="Kenrie Vandekerckhove">
     <meta name="author" content="Domien Verstraete">
     <meta name="author" content="Seraphin Sampers">
+    <script type="text/javascript" src="wp-content/themes/thema/recourses/js/Disable_scroll.js" defer></script>
     <title>Bachelor Kiosk</title>
 <?php wp_head();?>
 </head>

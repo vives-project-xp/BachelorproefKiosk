@@ -1,6 +1,6 @@
 # Website
 ## Input
-- Joistick en 2 knoppen: joistick: muis bewegen en pijltjes toetsen tergelijk, knop 1: muis klik, knop 2: vorige pagina in de browser (alt + pijltje links).
+- Joystick en 2 knoppen: joystick: muis bewegen en pijltjes toetsen tergelijk, knop 1: muis klik, knop 2: vorige pagina in de browser (alt + pijltje links).
 - Fiche en pagina uploads via wordpress, gebruik template Project.
 - Alternatieve manier om fiches weer te geven: upload gewoon de fiche pdf's in de mediabibliotheek van wordpress
 
@@ -38,6 +38,11 @@ wordpress page structuur:
 
 css/js gebruik:
 - /recources/css/style.css: wordt gebruikt in elk template
+
+scrol functionaliteit:
+- Input joystick: muis bewegen + pijltjes toetsen
+- waarom? We moeten de pagina kunnen bedienen met een muis maar voor de games heb je ook de pijltjes nodig voor games.
+- Hoe geïmplementeerd: scroll wordt afgezet in alle paginas (=pijltjes toetsen doen de pagina niet meer scrollen), in paginas waar er moet gescrolld worden (richtingen en projecten) zijn er onzichtbare div's voorzien onderaan en bovenaan de pagina en als je erop gaat met de cursor dan scrolt de pagina vanzelf.
 
 # Arcade kast
 ## Input

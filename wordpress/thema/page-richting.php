@@ -27,7 +27,7 @@ Template Name: Page richting
 
 <body <?php body_class();?>>
     <div class="titel">
-        <h2><?php echo "TITEL VAN DE SITE" ?></h2>
+        <h2><?php echo get_the_title(get_the_ID()) ?></h2>
     </div>
     <div class="topbar">
         <?php echo get_menu_links(array("page-menu.php","page-projecten.php","page-richtingen.php","page-game.php"));?>
@@ -46,14 +46,10 @@ Template Name: Page richting
 
         <div class="richtingbrochure">
             <?php 
-                echo "<img src='https://i.imgflip.com/3p46fd.jpg' id='imgrichting'>"
+                echo "<img src='wp-content/themes/thema/recourses/folders/".get_the_title(get_the_ID()).".jpeg' id='imgrichting'>"
             ?>
         </div>
 
-    </div>
-    <div class="backnext">
-        <button class="back">Back</button>
-        <button class="next">Next</button>
     </div>
 </body>
 <?php wp_footer();?>

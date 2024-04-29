@@ -9,7 +9,7 @@ Template Name: snake
   <title>Snake</title>
   <style>
    
-  html, body {
+   html, body {
     height: 100%;
     margin: 0;
   }
@@ -21,11 +21,19 @@ Template Name: snake
   }
   canvas {
     border: 1px solid white;
-    width: 40vw;
-    height: 40vw;
+    width: 80vmin;
+    height: 80vmin;
     margin-left: 30%;
     cursor: none;
-  }
+}
+@media screen and (max-width: 1100px) {
+    canvas {
+        width: 90vmin;
+        height: 90vmin;
+        margin-left: 5%;
+        margin-top: 10%;
+    }
+}
   
   #score_display {
     width: min-content;

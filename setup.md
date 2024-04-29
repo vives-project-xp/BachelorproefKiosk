@@ -16,7 +16,7 @@ De eerste stap is het importeren van het WordPress thema in WordPress.
 1. In WordPress klik op de verfborstel om zo naar de thema's pagina te gaan.
 2. Klik op "Nieuw thema toevoegen".
 3. Klik op "Thema uploaden".
-4. Klik op "Choose file" en selecteer dit bestand in onze repo: wordpress/imports/wp_thema.zip.
+4. Klik op "Choose file" en selecteer dit bestand in onze repo: wordpress/imports/thema.zip.
 5. Klik op "Nu installeren".
 6. Navigeer terug naar de thema's pagina door op de verfborstel te drukken.
 7. Je zal nu een thema "Bachelor proef Kiosk" terugvinden klik bij deze op "Activeren"

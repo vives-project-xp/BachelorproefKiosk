@@ -57,7 +57,7 @@ var grid = 16;
 var count = 0;
   
 var score = 0;
-var highscore = localStorage.getItem("highscore") || 0; // Check local storage or set default to 0
+var highscore = localStorage.getItem("highscoreSnake") || 0; // Check local storage or set default to 0
 
 function ShowScore(score) {
   document.getElementById("score_display").textContent = `Score: ${score}`;
@@ -66,7 +66,7 @@ function ShowScore(score) {
 function getHighscore(score) {
   if (highscore === null || score >= highscore) { // Check for null or higher score
     highscore = score;
-    localStorage.setItem("highscore", highscore); // Update local storage
+    localStorage.setItem("highscoreSnake", highscore); // Update local storage
   }
   document.getElementById("highscore_display").textContent = `Highscore: ${highscore}`;
 }

@@ -38,7 +38,7 @@ Template Name: Doc page
 
 <div class="wrapper">
 <?php
-echo do_shortcode("[pdfjs-viewer url=".$file." viewer_width=0 viewer_height=800 download=false print=false fullscreen=false]");
+echo do_shortcode("[pdfjs-viewer url=".$file." viewer_width=0 viewer_height=1200 download=false print=false fullscreen=false]");
 ?>
 </div>
 

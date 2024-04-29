@@ -10,11 +10,14 @@ Template Name: page Projecten
   <meta name="author" content="Kenrie Vandekerckhove">
   <meta name="author" content="Domien Verstraete">
   <meta name="author" content="Seraphin Sampers">
+  <script type="text/javascript" src="wp-content/themes/thema/recourses/js/Disable_scroll.js" defer></script>
   <title>Bachelor Kiosk</title>
   <?php wp_head();?>
 </head>
 
 <body <?php body_class();?>>
+<div id="top" style="height: 100px; position: fixed; top: 0; width: 100vw;"></div>
+<div id="bottom" style="height: 100px; position: fixed; bottom: 0; width: 100vw;"></div> 
   <div class="TopText">
     <?php
 	//    <h1>Bachelor Proeven</h1>
@@ -58,8 +61,8 @@ if($stringo == 'projecten' || $stringo == 'Projecten'){
   $i =0;
   while ($pages_query->have_posts()) {
     $pages_query->the_post();
-    echo '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
-    //echo '<li><a href="' . get_permalink($page->ID) ."?&id=".$i. '">' . $page->post_title . '</a></li>';
+    //echo '<li><a href="' . get_permalink() . '">' . get_the_title() . '</a></li>';
+    echo '<li><a href="' . get_permalink($page->ID) ."?&id=".$i. '">' . $page->post_title . '</a></li>';
     $i += 1;
   }
   

@@ -41,13 +41,15 @@ function get_link_page($page){
 		'meta_key' => '_wp_page_template',
 		'meta_value' => $page		
 	);
+	$link = "";
 	$pages_query = new WP_Query($args);
-	if (!$pages_query->have_posts()) {
-		return "importeer het juiste aub";
+	if ($pages_query->have_posts()) {
+			$link = esc_url($pages_query->posts[0]->guid);
+		// Restore original post data
+		wp_reset_postdata();
+	} else {
+		echo 'No pages found with the specified template.';
 	}
-	$pages_query->the_post();
-	$link = get_permalink();
-	wp_reset_postdata();
 	return $link;
 }
 function get_next_prev_link($index){

@@ -28,9 +28,15 @@ Template Name: page Projecten
   }
 	//print_r($string);
 	echo '<h1>'.$stringo.'</h1>';
-    ?>
-    <p>Deze pagina bevat informatie over de bachelor proeven van de richting <br>Elektronica-ICT</p>
-  </div>
+
+  if($stringo == 'projecten' || $stringo == 'Projecten'){
+   echo '<p>Deze pagina bevat informatie over de bachelor proeven van de richting <br>Elektronica-ICT</p>';
+  }else{
+    echo '<p>Deze pagina bevat informatie over de bachelor proeven van de richting <br>'.$stringo.'</p>';
+  }
+  ?>
+  
+    </div>
   <div class="bodydiv">
     <div class="leftbodydiv">
     <!-- The sidebar -->

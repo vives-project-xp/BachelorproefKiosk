@@ -12,6 +12,7 @@ Template Name: Page richting
     <meta name="author" content="Domien Verstraete">
     <meta name="author" content="Seraphin Sampers">
     <title>Bachelor Kiosk</title>
+    <script type="text/javascript" src="wp-content/themes/thema/recourses/js/Disable_scroll.js" defer></script>
     <?php wp_head();?>
 </head>
 

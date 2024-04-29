@@ -7,6 +7,7 @@ Template Name: pong
 <html lang="en">
 
 <head>
+<script type="text/javascript" src="wp-content/themes/thema/recourses/js/Disable_scroll.js" defer></script>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">

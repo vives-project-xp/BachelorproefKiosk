@@ -13,7 +13,7 @@ Template Name: Menu
     <meta name="author" content="Seraphin Sampers">
     <title>Bachelor Kiosk</title>
     <?php wp_head();?>
-    <!-- css connection -->
+    <script type="text/javascript" src="wp-content/themes/thema/recourses/js/Disable_scroll.js" defer></script>
 </head>
 
 <body <?php body_class();?>>
@@ -23,7 +23,7 @@ Template Name: Menu
     </div>
 
     <div class="ghost-container">
-        <img class="red-ghost-picture" src="wp-content/themes/thema/recourses/images/kisspng-pac-man-ghosts-pac-man-5ac80be7e06367.0261825015230596879191-kopie.png">
+        <img class="red-ghost-picture" src="wp-content/themes/thema/recourses/images/red-gost-right.png">
         <img class="left-ghost-picture" src="wp-content/themes/thema/recourses/images/red-gost-left.png">
     </div>
 </body>

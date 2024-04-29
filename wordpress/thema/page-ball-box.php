@@ -8,6 +8,7 @@ Template Name: ball box
 <head>
   <title>Ball-Box</title>
   <?php wp_head();?>
+  <script type="text/javascript" src="wp-content/themes/thema/recourses/js/Disable_scroll.js" defer></script>
 </head>
 <style>
     .container {

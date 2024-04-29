@@ -17,6 +17,8 @@ Template Name: Page richting
 </head>
 
 <body <?php body_class();?>>
+<div id="top" style="height: 100px; position: fixed; top: 0; width: 100vw;"></div>
+<div id="bottom" style="height: 100px; position: fixed; bottom: 0; width: 100vw;"></div> 
     <div class="TopText">
         <h1>Kies een richting</h1>
         <p>Deze pagina bevat informatie over de richtingen van de opleiding Elektronica-ICT</p>

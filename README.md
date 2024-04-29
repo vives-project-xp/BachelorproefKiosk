@@ -5,13 +5,16 @@ An Arcade Kiosk that shows the bachelor's thesis of previous students.
  
 ## Table of contents
 
-- [BachelorproefKiosk](#BachelorproefKiosk)
+- [BachelorproefKiosk](#bachelorproefkiosk)
   - [Table of contents](#table-of-contents)
   - [The Team](#the-team)
   - [The idea](#the-idea)
-    - [Kiosk](#Kiosk)
-    - [Website](#Website)
-    - [Admin](#Admin)
+    - [Kiosk](#kiosk)
+    - [Website](#website)
+  - [3D model](#3d-model)
+    - [Blueprint:](#blueprint)
+    - [3D model Design:](#3d-model-design)
+
 
 
 ## The Team
@@ -47,17 +50,13 @@ We got 4 different pages:
  There are a few games to choose from
  ![alt text](./screenshots/Schermafbeelding%202024-04-24%20154005.png)
 
-### Admin
-
-- we gonna add a admin page where you can add en changes the thesises.
-
   ## 3D model
   We used autodesk inventor for the modeling of the arcade.
 
 ### Blueprint:
   ![alt text](/autodesk/arcade%20blueprint%202.0.png)
 
-  ### 3D-model:
+  ### 3D model Design:
   ![alt text](/autodesk/Schermafbeelding%202024-04-22%20093614.png)
 
 

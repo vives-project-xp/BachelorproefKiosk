@@ -16,7 +16,7 @@ De eerste stap is het importeren van het WordPress thema in WordPress.
 1. In WordPress klik op de verfborstel om zo naar de thema's pagina te gaan.
 2. Klik op "Nieuw thema toevoegen".
 3. Klik op "Thema uploaden".
-4. Klik op "Choose file" en selecteer dit bestand in onze repo: wordpress/imports/wp_thema.zip.
+4. Klik op "Choose file" en selecteer dit bestand in onze repo: wordpress/imports/thema.zip.
 5. Klik op "Nu installeren".
 6. Navigeer terug naar de thema's pagina door op de verfborstel te drukken.
 7. Je zal nu een thema "Bachelor proef Kiosk" terugvinden klik bij deze op "Activeren"
@@ -33,8 +33,14 @@ In WordPress werken we met pagina's om inhoud weer te geven, er zijn ook een paa
 
 ## Plugins
 Er zijn enkele plugins nodig voor ons project om te kunnen werken:
-
-
+- increase max upload size
+- PDFjs Viewer: voor de pdf's weer te geven, instellingen:
+  - [ ] Show Download Button
+  - [ ] Show Print Button
+  - [ ] Show Search Button
+  - [ ] Show Fullscreen Link
+  - de rest mag je laten zoals het is
+  
 ## Projecten toevoegen
 Gefeliciteerd, je hebt succesvol de basis van onze pagina geïnstalleerd. Nu kan je zelf bachelorproeven toevoegen! Hier is een voorbeeld van hoe je dat doet:
 1. In WordPress klik in de zijbalk op het icoon voor pagina's (icoon met 2 rechthoeken)

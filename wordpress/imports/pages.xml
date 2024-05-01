@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/6.5.2" created="2024-04-25 12:37" -->
+	<!-- generator="WordPress/6.4.3" created="2024-05-01 17:01" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -27,22 +27,22 @@
 
 <channel>
 	<title>site</title>
-	<link>http://10.10.251.37:8080</link>
+	<link>http://localhost:8080</link>
 	<description></description>
-	<pubDate>Thu, 25 Apr 2024 12:37:57 +0000</pubDate>
+	<pubDate>Wed, 01 May 2024 17:01:21 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
-	<wp:base_site_url>http://10.10.251.37:8080</wp:base_site_url>
-	<wp:base_blog_url>http://10.10.251.37:8080</wp:base_blog_url>
+	<wp:base_site_url>http://localhost:8080</wp:base_site_url>
+	<wp:base_blog_url>http://localhost:8080</wp:base_blog_url>
 
-		<wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[sera]]></wp:author_login><wp:author_email><![CDATA[seraphi@hotmail.com]]></wp:author_email><wp:author_display_name><![CDATA[sera]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
+		<wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[sera]]></wp:author_login><wp:author_email><![CDATA[suckdick@jojo.com]]></wp:author_email><wp:author_display_name><![CDATA[sera]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
 
 				
-	<generator>https://wordpress.org/?v=6.5.2</generator>
+	<generator>https://wordpress.org/?v=6.4.3</generator>
 
 		<item>
 		<title><![CDATA[Sample Page]]></title>
-		<link>http://10.10.251.37:8080/?page_id=2</link>
+		<link>http://localhost:8080/?page_id=8</link>
 		<pubDate>Mon, 22 Apr 2024 09:16:58 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://10.10.251.37:8080/?page_id=2</guid>
@@ -67,11 +67,11 @@
 <p>As a new WordPress user, you should go to <a href="http://10.10.251.37:8080/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!</p>
 <!-- /wp:paragraph -->]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>2</wp:post_id>
+		<wp:post_id>8</wp:post_id>
 		<wp:post_date><![CDATA[2024-04-22 09:16:58]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-04-22 09:16:58]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-04-22 09:19:50]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-04-22 09:19:50]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2024-04-22 09:16:58]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-04-22 09:16:58]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[open]]></wp:ping_status>
 		<wp:post_name><![CDATA[sample-page__trashed-3]]></wp:post_name>
@@ -100,18 +100,18 @@
 							</item>
 					<item>
 		<title><![CDATA[Privacy Policy]]></title>
-		<link>http://10.10.251.37:8080/?page_id=3</link>
+		<link>http://localhost:8080/?page_id=9</link>
 		<pubDate>Mon, 22 Apr 2024 09:16:58 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://10.10.251.37:8080/?page_id=3</guid>
 		<description></description>
 		<content:encoded><![CDATA[<!-- wp:heading --><h2>Who we are</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>Our website address is: http://10.10.251.37:8080.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Comments</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>When visitors leave comments on the site we collect the data shown in the comments form, and also the visitor&#8217;s IP address and browser user agent string to help spam detection.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>An anonymized string created from your email address (also called a hash) may be provided to the Gravatar service to see if you are using it. The Gravatar service privacy policy is available here: https://automattic.com/privacy/. After approval of your comment, your profile picture is visible to the public in the context of your comment.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Media</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you upload images to the website, you should avoid uploading images with embedded location data (EXIF GPS) included. Visitors to the website can download and extract any location data from images on the website.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Cookies</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you leave a comment on our site you may opt-in to saving your name, email address and website in cookies. These are for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>If you visit our login page, we will set a temporary cookie to determine if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>When you log in, we will also set up several cookies to save your login information and your screen display choices. Login cookies last for two days, and screen options cookies last for a year. If you select &quot;Remember Me&quot;, your login will persist for two weeks. If you log out of your account, the login cookies will be removed.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>If you edit or publish an article, an additional cookie will be saved in your browser. This cookie includes no personal data and simply indicates the post ID of the article you just edited. It expires after 1 day.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Embedded content from other websites</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>These websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content, including tracking your interaction with the embedded content if you have an account and are logged in to that website.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Who we share your data with</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you request a password reset, your IP address will be included in the reset email.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>How long we retain your data</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognize and approve any follow-up comments automatically instead of holding them in a moderation queue.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>For users that register on our website (if any), we also store the personal information they provide in their user profile. All users can see, edit, or delete their personal information at any time (except they cannot change their username). Website administrators can also see and edit that information.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>What rights you have over your data</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you have an account on this site, or have left comments, you can request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are obliged to keep for administrative, legal, or security purposes.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Where your data is sent</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>Visitor comments may be checked through an automated spam detection service.</p><!-- /wp:paragraph -->]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>3</wp:post_id>
+		<wp:post_id>9</wp:post_id>
 		<wp:post_date><![CDATA[2024-04-22 09:16:58]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-04-22 09:16:58]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-04-22 09:19:49]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-04-22 09:19:49]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2024-04-22 09:16:58]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-04-22 09:16:58]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[open]]></wp:ping_status>
 		<wp:post_name><![CDATA[privacy-policy__trashed-3]]></wp:post_name>
@@ -140,7 +140,7 @@
 							</item>
 					<item>
 		<title><![CDATA[Sample Page]]></title>
-		<link>http://10.10.251.37:8080/?page_id=8</link>
+		<link>http://localhost:8080/?page_id=10</link>
 		<pubDate>Thu, 04 Apr 2024 14:40:54 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://localhost:8080/?page_id=2</guid>
@@ -165,7 +165,7 @@
 <p>As a new WordPress user, you should go to <a href="http://localhost:8080/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!</p>
 <!-- /wp:paragraph -->]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>8</wp:post_id>
+		<wp:post_id>10</wp:post_id>
 		<wp:post_date><![CDATA[2024-04-04 14:40:54]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-04-04 14:40:54]]></wp:post_date_gmt>
 		<wp:post_modified><![CDATA[2024-04-04 14:40:54]]></wp:post_modified>
@@ -198,14 +198,14 @@
 							</item>
 					<item>
 		<title><![CDATA[Privacy Policy]]></title>
-		<link>http://10.10.251.37:8080/?page_id=9</link>
+		<link>http://localhost:8080/?page_id=11</link>
 		<pubDate>Thu, 04 Apr 2024 14:40:54 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://localhost:8080/?page_id=3</guid>
 		<description></description>
 		<content:encoded><![CDATA[<!-- wp:heading --><h2>Who we are</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>Our website address is: http://localhost:8080.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Comments</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>When visitors leave comments on the site we collect the data shown in the comments form, and also the visitor&#8217;s IP address and browser user agent string to help spam detection.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>An anonymized string created from your email address (also called a hash) may be provided to the Gravatar service to see if you are using it. The Gravatar service privacy policy is available here: https://automattic.com/privacy/. After approval of your comment, your profile picture is visible to the public in the context of your comment.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Media</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you upload images to the website, you should avoid uploading images with embedded location data (EXIF GPS) included. Visitors to the website can download and extract any location data from images on the website.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Cookies</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you leave a comment on our site you may opt-in to saving your name, email address and website in cookies. These are for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>If you visit our login page, we will set a temporary cookie to determine if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>When you log in, we will also set up several cookies to save your login information and your screen display choices. Login cookies last for two days, and screen options cookies last for a year. If you select &quot;Remember Me&quot;, your login will persist for two weeks. If you log out of your account, the login cookies will be removed.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>If you edit or publish an article, an additional cookie will be saved in your browser. This cookie includes no personal data and simply indicates the post ID of the article you just edited. It expires after 1 day.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Embedded content from other websites</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>These websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content, including tracking your interaction with the embedded content if you have an account and are logged in to that website.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Who we share your data with</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you request a password reset, your IP address will be included in the reset email.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>How long we retain your data</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognize and approve any follow-up comments automatically instead of holding them in a moderation queue.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>For users that register on our website (if any), we also store the personal information they provide in their user profile. All users can see, edit, or delete their personal information at any time (except they cannot change their username). Website administrators can also see and edit that information.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>What rights you have over your data</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you have an account on this site, or have left comments, you can request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are obliged to keep for administrative, legal, or security purposes.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Where your data is sent</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>Visitor comments may be checked through an automated spam detection service.</p><!-- /wp:paragraph -->]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>9</wp:post_id>
+		<wp:post_id>11</wp:post_id>
 		<wp:post_date><![CDATA[2024-04-04 14:40:54]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-04-04 14:40:54]]></wp:post_date_gmt>
 		<wp:post_modified><![CDATA[2024-04-04 14:40:54]]></wp:post_modified>
@@ -238,7 +238,7 @@
 							</item>
 					<item>
 		<title><![CDATA[Sample Page]]></title>
-		<link>http://10.10.251.37:8080/?page_id=10</link>
+		<link>http://localhost:8080/?page_id=12</link>
 		<pubDate>Wed, 03 Apr 2024 14:51:04 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://localhost:8080/?page_id=2</guid>
@@ -263,7 +263,7 @@
 <p>As a new WordPress user, you should go to <a href="http://localhost:8080/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!</p>
 <!-- /wp:paragraph -->]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>10</wp:post_id>
+		<wp:post_id>12</wp:post_id>
 		<wp:post_date><![CDATA[2024-04-03 15:51:04]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-04-03 14:51:04]]></wp:post_date_gmt>
 		<wp:post_modified><![CDATA[2024-04-03 15:51:04]]></wp:post_modified>
@@ -296,14 +296,14 @@
 							</item>
 					<item>
 		<title><![CDATA[Privacy Policy]]></title>
-		<link>http://10.10.251.37:8080/?page_id=11</link>
+		<link>http://localhost:8080/?page_id=13</link>
 		<pubDate>Wed, 03 Apr 2024 14:51:04 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://localhost:8080/?page_id=3</guid>
 		<description></description>
 		<content:encoded><![CDATA[<!-- wp:heading --><h2>Who we are</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>Our website address is: http://localhost:8080.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Comments</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>When visitors leave comments on the site we collect the data shown in the comments form, and also the visitor&#8217;s IP address and browser user agent string to help spam detection.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>An anonymised string created from your email address (also called a hash) may be provided to the Gravatar service to see if you are using it. The Gravatar service Privacy Policy is available here: https://automattic.com/privacy/. After approval of your comment, your profile picture is visible to the public in the context of your comment.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Media</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you upload images to the website, you should avoid uploading images with embedded location data (EXIF GPS) included. Visitors to the website can download and extract any location data from images on the website.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Cookies</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you leave a comment on our site you may opt in to saving your name, email address and website in cookies. These are for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>If you visit our login page, we will set a temporary cookie to determine if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>When you log in, we will also set up several cookies to save your login information and your screen display choices. Login cookies last for two days, and screen options cookies last for a year. If you select &quot;Remember Me&quot;, your login will persist for two weeks. If you log out of your account, the login cookies will be removed.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>If you edit or publish an article, an additional cookie will be saved in your browser. This cookie includes no personal data and simply indicates the post ID of the article you just edited. It expires after 1 day.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Embedded content from other websites</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>These websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content, including tracking your interaction with the embedded content if you have an account and are logged in to that website.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Who we share your data with</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you request a password reset, your IP address will be included in the reset email.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>How long we retain your data</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognise and approve any follow-up comments automatically instead of holding them in a moderation queue.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>For users that register on our website (if any), we also store the personal information they provide in their user profile. All users can see, edit, or delete their personal information at any time (except they cannot change their username). Website administrators can also see and edit that information.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>What rights you have over your data</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you have an account on this site, or have left comments, you can request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are obliged to keep for administrative, legal, or security purposes.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Where your data is sent</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>Visitor comments may be checked through an automated spam detection service.</p><!-- /wp:paragraph -->]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>11</wp:post_id>
+		<wp:post_id>13</wp:post_id>
 		<wp:post_date><![CDATA[2024-04-03 15:51:04]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-04-03 14:51:04]]></wp:post_date_gmt>
 		<wp:post_modified><![CDATA[2024-04-03 15:51:04]]></wp:post_modified>
@@ -336,14 +336,14 @@
 							</item>
 					<item>
 		<title><![CDATA[menu]]></title>
-		<link>http://10.10.251.37:8080/?page_id=12</link>
+		<link>http://localhost:8080/?page_id=14</link>
 		<pubDate>Wed, 03 Apr 2024 15:17:21 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://localhost:8080/?page_id=5</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>12</wp:post_id>
+		<wp:post_id>14</wp:post_id>
 		<wp:post_date><![CDATA[2024-04-03 16:17:21]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-04-03 15:17:21]]></wp:post_date_gmt>
 		<wp:post_modified><![CDATA[2024-04-03 16:17:21]]></wp:post_modified>
@@ -380,23 +380,23 @@
 							</item>
 					<item>
 		<title><![CDATA[Projecten]]></title>
-		<link>http://10.10.251.37:8080/?page_id=13</link>
+		<link>http://localhost:8080/?page_id=15</link>
 		<pubDate>Wed, 03 Apr 2024 15:18:12 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://localhost:8080/?page_id=7</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>13</wp:post_id>
+		<wp:post_id>15</wp:post_id>
 		<wp:post_date><![CDATA[2024-04-03 16:18:12]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-04-03 15:18:12]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-04-24 11:03:47]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-04-24 11:03:47]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2024-04-03 16:18:12]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-04-03 15:18:12]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[projecten]]></wp:post_name>
 		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>15</wp:post_parent>
+		<wp:post_parent>17</wp:post_parent>
 		<wp:menu_order>1</wp:menu_order>
 		<wp:post_type><![CDATA[page]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
@@ -412,23 +412,23 @@
 							</item>
 					<item>
 		<title><![CDATA[Richtingen]]></title>
-		<link>http://10.10.251.37:8080/?page_id=14</link>
+		<link>http://localhost:8080/?page_id=16</link>
 		<pubDate>Wed, 03 Apr 2024 15:18:51 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://localhost:8080/?page_id=10</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>14</wp:post_id>
+		<wp:post_id>16</wp:post_id>
 		<wp:post_date><![CDATA[2024-04-03 16:18:51]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-04-03 15:18:51]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-04-03 16:18:51]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-04-03 15:18:51]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2024-05-01 17:01:01]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-05-01 17:01:01]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[richtingen]]></wp:post_name>
 		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>15</wp:post_parent>
+		<wp:post_parent>17</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type><![CDATA[page]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
@@ -439,19 +439,19 @@
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-		<wp:meta_value><![CDATA[page-richting.php]]></wp:meta_value>
+		<wp:meta_value><![CDATA[page-richtingen.php]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
 		<title><![CDATA[Menu]]></title>
-		<link>http://10.10.251.37:8080/?page_id=15</link>
+		<link>http://localhost:8080/?page_id=17</link>
 		<pubDate>Wed, 03 Apr 2024 17:09:43 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://localhost:8080/?page_id=13</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>15</wp:post_id>
+		<wp:post_id>17</wp:post_id>
 		<wp:post_date><![CDATA[2024-04-03 18:09:43]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-04-03 17:09:43]]></wp:post_date_gmt>
 		<wp:post_modified><![CDATA[2024-04-03 18:09:43]]></wp:post_modified>
@@ -476,7 +476,7 @@
 							</item>
 					<item>
 		<title><![CDATA[test]]></title>
-		<link>http://10.10.251.37:8080/?page_id=37</link>
+		<link>http://localhost:8080/?page_id=37</link>
 		<pubDate>Sun, 07 Apr 2024 11:13:44 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://localhost:8080/?page_id=37</guid>
@@ -522,7 +522,7 @@
 							</item>
 					<item>
 		<title><![CDATA[test1]]></title>
-		<link>http://10.10.251.37:8080/?page_id=42</link>
+		<link>http://localhost:8080/?page_id=42</link>
 		<pubDate>Sun, 07 Apr 2024 11:32:45 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://localhost:8080/?page_id=42</guid>
@@ -568,7 +568,7 @@
 							</item>
 					<item>
 		<title><![CDATA[ICT]]></title>
-		<link>http://10.10.251.37:8080/?page_id=45</link>
+		<link>http://localhost:8080/?page_id=45</link>
 		<pubDate>Sun, 07 Apr 2024 12:00:14 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://localhost:8080/?page_id=45</guid>
@@ -578,13 +578,13 @@
 		<wp:post_id>45</wp:post_id>
 		<wp:post_date><![CDATA[2024-04-07 12:00:14]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-04-07 12:00:14]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-04-07 12:00:14]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-04-07 12:00:14]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2024-05-01 15:43:03]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-05-01 15:43:03]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[ict]]></wp:post_name>
 		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>13</wp:post_parent>
+		<wp:post_parent>16</wp:post_parent>
 		<wp:menu_order>3</wp:menu_order>
 		<wp:post_type><![CDATA[page]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
@@ -595,12 +595,12 @@
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-		<wp:meta_value><![CDATA[page-projecten.php]]></wp:meta_value>
+		<wp:meta_value><![CDATA[page-richting.php]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
 		<title><![CDATA[Elektronica]]></title>
-		<link>http://10.10.251.37:8080/?page_id=47</link>
+		<link>http://localhost:8080/?page_id=47</link>
 		<pubDate>Sun, 07 Apr 2024 12:00:24 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://localhost:8080/?page_id=47</guid>
@@ -610,13 +610,13 @@
 		<wp:post_id>47</wp:post_id>
 		<wp:post_date><![CDATA[2024-04-07 12:00:24]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-04-07 12:00:24]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-04-07 12:00:24]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-04-07 12:00:24]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2024-05-01 15:43:11]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-05-01 15:43:11]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[elektronica]]></wp:post_name>
 		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>13</wp:post_parent>
+		<wp:post_parent>16</wp:post_parent>
 		<wp:menu_order>2</wp:menu_order>
 		<wp:post_type><![CDATA[page]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
@@ -627,12 +627,12 @@
 		</wp:postmeta>
 							<wp:postmeta>
 		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
-		<wp:meta_value><![CDATA[page-projecten.php]]></wp:meta_value>
+		<wp:meta_value><![CDATA[page-richting.php]]></wp:meta_value>
 		</wp:postmeta>
 							</item>
 					<item>
 		<title><![CDATA[elek1]]></title>
-		<link>http://10.10.251.37:8080/?page_id=49</link>
+		<link>http://localhost:8080/?page_id=49</link>
 		<pubDate>Sun, 07 Apr 2024 12:21:38 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://localhost:8080/?page_id=49</guid>
@@ -678,7 +678,7 @@
 							</item>
 					<item>
 		<title><![CDATA[game]]></title>
-		<link>http://10.10.251.37:8080/?page_id=50</link>
+		<link>http://localhost:8080/?page_id=50</link>
 		<pubDate>Mon, 22 Apr 2024 09:19:40 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://10.10.251.37:8080/?page_id=50</guid>
@@ -694,7 +694,7 @@
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[game]]></wp:post_name>
 		<wp:status><![CDATA[publish]]></wp:status>
-		<wp:post_parent>15</wp:post_parent>
+		<wp:post_parent>17</wp:post_parent>
 		<wp:menu_order>0</wp:menu_order>
 		<wp:post_type><![CDATA[page]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
@@ -706,7 +706,7 @@
 							</item>
 					<item>
 		<title><![CDATA[doc page]]></title>
-		<link>http://10.10.251.37:8080/?page_id=79</link>
+		<link>http://localhost:8080/?page_id=79</link>
 		<pubDate>Tue, 23 Apr 2024 10:06:33 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://10.10.251.37:8080/?page_id=79</guid>
@@ -716,8 +716,8 @@
 		<wp:post_id>79</wp:post_id>
 		<wp:post_date><![CDATA[2024-04-23 10:06:33]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-04-23 10:06:33]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-04-23 10:07:14]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-04-23 10:07:14]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2024-04-23 10:06:33]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-04-23 10:06:33]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[doc-page]]></wp:post_name>
@@ -738,7 +738,7 @@
 							</item>
 					<item>
 		<title><![CDATA[snake]]></title>
-		<link>http://10.10.251.37:8080/?page_id=88</link>
+		<link>http://localhost:8080/?page_id=88</link>
 		<pubDate>Thu, 25 Apr 2024 11:34:59 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://10.10.251.37:8080/?page_id=88</guid>
@@ -766,7 +766,7 @@
 							</item>
 					<item>
 		<title><![CDATA[pong]]></title>
-		<link>http://10.10.251.37:8080/?page_id=90</link>
+		<link>http://localhost:8080/?page_id=90</link>
 		<pubDate>Thu, 25 Apr 2024 11:35:19 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://10.10.251.37:8080/?page_id=90</guid>
@@ -794,7 +794,7 @@
 							</item>
 					<item>
 		<title><![CDATA[ball box]]></title>
-		<link>http://10.10.251.37:8080/?page_id=92</link>
+		<link>http://localhost:8080/?page_id=92</link>
 		<pubDate>Thu, 25 Apr 2024 11:35:52 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://10.10.251.37:8080/?page_id=92</guid>
@@ -821,8 +821,106 @@
 		</wp:postmeta>
 							</item>
 					<item>
+		<title><![CDATA[Sample Page]]></title>
+		<link>http://localhost:8080/?page_id=2</link>
+		<pubDate>Wed, 01 May 2024 15:40:37 +0000</pubDate>
+		<dc:creator><![CDATA[sera]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8080/?page_id=2</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p>This is an example page. It's different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>Hi there! I'm a bike messenger by day, aspiring actor by night, and this is my website. I live in Los Angeles, have a great dog named Jack, and I like pi&#241;a coladas. (And gettin' caught in the rain.)</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>...or something like this:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>As a new WordPress user, you should go to <a href="http://localhost:8080/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!</p>
+<!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>2</wp:post_id>
+		<wp:post_date><![CDATA[2024-05-01 15:40:37]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-05-01 15:40:37]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2024-05-01 15:44:54]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-05-01 15:44:54]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[open]]></wp:ping_status>
+		<wp:post_name><![CDATA[sample-page__trashed-4]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+														<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+		<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+		<wp:meta_value><![CDATA[publish]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1714578294]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+		<wp:meta_value><![CDATA[sample-page]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
+		<title><![CDATA[Privacy Policy]]></title>
+		<link>http://localhost:8080/?page_id=3</link>
+		<pubDate>Wed, 01 May 2024 15:40:37 +0000</pubDate>
+		<dc:creator><![CDATA[sera]]></dc:creator>
+		<guid isPermaLink="false">http://localhost:8080/?page_id=3</guid>
+		<description></description>
+		<content:encoded><![CDATA[<!-- wp:heading --><h2>Who we are</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>Our website address is: http://localhost:8080.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Comments</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>When visitors leave comments on the site we collect the data shown in the comments form, and also the visitor&#8217;s IP address and browser user agent string to help spam detection.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>An anonymized string created from your email address (also called a hash) may be provided to the Gravatar service to see if you are using it. The Gravatar service privacy policy is available here: https://automattic.com/privacy/. After approval of your comment, your profile picture is visible to the public in the context of your comment.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Media</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you upload images to the website, you should avoid uploading images with embedded location data (EXIF GPS) included. Visitors to the website can download and extract any location data from images on the website.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Cookies</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you leave a comment on our site you may opt-in to saving your name, email address and website in cookies. These are for your convenience so that you do not have to fill in your details again when you leave another comment. These cookies will last for one year.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>If you visit our login page, we will set a temporary cookie to determine if your browser accepts cookies. This cookie contains no personal data and is discarded when you close your browser.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>When you log in, we will also set up several cookies to save your login information and your screen display choices. Login cookies last for two days, and screen options cookies last for a year. If you select &quot;Remember Me&quot;, your login will persist for two weeks. If you log out of your account, the login cookies will be removed.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>If you edit or publish an article, an additional cookie will be saved in your browser. This cookie includes no personal data and simply indicates the post ID of the article you just edited. It expires after 1 day.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Embedded content from other websites</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>Articles on this site may include embedded content (e.g. videos, images, articles, etc.). Embedded content from other websites behaves in the exact same way as if the visitor has visited the other website.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>These websites may collect data about you, use cookies, embed additional third-party tracking, and monitor your interaction with that embedded content, including tracking your interaction with the embedded content if you have an account and are logged in to that website.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Who we share your data with</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you request a password reset, your IP address will be included in the reset email.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>How long we retain your data</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you leave a comment, the comment and its metadata are retained indefinitely. This is so we can recognize and approve any follow-up comments automatically instead of holding them in a moderation queue.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>For users that register on our website (if any), we also store the personal information they provide in their user profile. All users can see, edit, or delete their personal information at any time (except they cannot change their username). Website administrators can also see and edit that information.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>What rights you have over your data</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>If you have an account on this site, or have left comments, you can request to receive an exported file of the personal data we hold about you, including any data you have provided to us. You can also request that we erase any personal data we hold about you. This does not include any data we are obliged to keep for administrative, legal, or security purposes.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Where your data is sent</h2><!-- /wp:heading --><!-- wp:paragraph --><p><strong class="privacy-policy-tutorial">Suggested text: </strong>Visitor comments may be checked through an automated spam detection service.</p><!-- /wp:paragraph -->]]></content:encoded>
+		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
+		<wp:post_id>3</wp:post_id>
+		<wp:post_date><![CDATA[2024-05-01 15:40:37]]></wp:post_date>
+		<wp:post_date_gmt><![CDATA[2024-05-01 15:40:37]]></wp:post_date_gmt>
+		<wp:post_modified><![CDATA[2024-05-01 15:44:51]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-05-01 15:44:51]]></wp:post_modified_gmt>
+		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
+		<wp:ping_status><![CDATA[open]]></wp:ping_status>
+		<wp:post_name><![CDATA[privacy-policy__trashed-4]]></wp:post_name>
+		<wp:status><![CDATA[trash]]></wp:status>
+		<wp:post_parent>0</wp:post_parent>
+		<wp:menu_order>0</wp:menu_order>
+		<wp:post_type><![CDATA[page]]></wp:post_type>
+		<wp:post_password><![CDATA[]]></wp:post_password>
+		<wp:is_sticky>0</wp:is_sticky>
+														<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_page_template]]></wp:meta_key>
+		<wp:meta_value><![CDATA[default]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_trash_meta_status]]></wp:meta_key>
+		<wp:meta_value><![CDATA[draft]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_trash_meta_time]]></wp:meta_key>
+		<wp:meta_value><![CDATA[1714578291]]></wp:meta_value>
+		</wp:postmeta>
+							<wp:postmeta>
+		<wp:meta_key><![CDATA[_wp_desired_post_slug]]></wp:meta_key>
+		<wp:meta_value><![CDATA[privacy-policy]]></wp:meta_value>
+		</wp:postmeta>
+							</item>
+					<item>
 		<title><![CDATA[pfdExample]]></title>
-		<link>http://10.10.251.37:8080/?page_id=54</link>
+		<link>http://localhost:8080/?page_id=54</link>
 		<pubDate>Mon, 22 Apr 2024 09:22:47 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://10.10.251.37:8080/?page_id=54</guid>
@@ -834,8 +932,8 @@
 		<wp:post_id>54</wp:post_id>
 		<wp:post_date><![CDATA[2024-04-22 09:22:47]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-04-22 09:22:47]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-04-22 09:32:46]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-04-22 09:32:46]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2024-04-22 09:22:47]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-04-22 09:22:47]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[pfdexample__trashed]]></wp:post_name>
@@ -863,41 +961,8 @@
 		</wp:postmeta>
 							</item>
 					<item>
-		<title><![CDATA[jay d_hulster]]></title>
-		<link>http://10.10.251.37:8080/?attachment_id=55</link>
-		<pubDate>Mon, 22 Apr 2024 09:22:01 +0000</pubDate>
-		<dc:creator><![CDATA[sera]]></dc:creator>
-		<guid isPermaLink="false">http://10.10.251.37:8080/wp-content/uploads/jay-d_hulster.png</guid>
-		<description></description>
-		<content:encoded><![CDATA[]]></content:encoded>
-		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
-		<wp:post_id>55</wp:post_id>
-		<wp:post_date><![CDATA[2024-04-22 09:22:01]]></wp:post_date>
-		<wp:post_date_gmt><![CDATA[2024-04-22 09:22:01]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-04-22 09:22:01]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-04-22 09:22:01]]></wp:post_modified_gmt>
-		<wp:comment_status><![CDATA[open]]></wp:comment_status>
-		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
-		<wp:post_name><![CDATA[jay-d_hulster]]></wp:post_name>
-		<wp:status><![CDATA[inherit]]></wp:status>
-		<wp:post_parent>54</wp:post_parent>
-		<wp:menu_order>0</wp:menu_order>
-		<wp:post_type><![CDATA[attachment]]></wp:post_type>
-		<wp:post_password><![CDATA[]]></wp:post_password>
-		<wp:is_sticky>0</wp:is_sticky>
-						<wp:attachment_url><![CDATA[http://10.10.251.37:8080/wp-content/uploads/jay-d_hulster.png]]></wp:attachment_url>
-											<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
-		<wp:meta_value><![CDATA[jay-d_hulster.png]]></wp:meta_value>
-		</wp:postmeta>
-							<wp:postmeta>
-		<wp:meta_key><![CDATA[_wp_attachment_metadata]]></wp:meta_key>
-		<wp:meta_value><![CDATA[a:6:{s:5:"width";i:792;s:6:"height";i:806;s:4:"file";s:17:"jay-d_hulster.png";s:8:"filesize";i:204429;s:5:"sizes";a:3:{s:6:"medium";a:5:{s:4:"file";s:25:"jay-d_hulster-295x300.png";s:5:"width";i:295;s:6:"height";i:300;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:49630;}s:9:"thumbnail";a:5:{s:4:"file";s:25:"jay-d_hulster-150x150.png";s:5:"width";i:150;s:6:"height";i:150;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:15730;}s:12:"medium_large";a:5:{s:4:"file";s:25:"jay-d_hulster-768x782.png";s:5:"width";i:768;s:6:"height";i:782;s:9:"mime-type";s:9:"image/png";s:8:"filesize";i:217622;}}s:10:"image_meta";a:12:{s:8:"aperture";s:1:"0";s:6:"credit";s:0:"";s:6:"camera";s:0:"";s:7:"caption";s:0:"";s:17:"created_timestamp";s:1:"0";s:9:"copyright";s:0:"";s:12:"focal_length";s:1:"0";s:3:"iso";s:1:"0";s:13:"shutter_speed";s:1:"0";s:5:"title";s:0:"";s:11:"orientation";s:1:"0";s:8:"keywords";a:0:{}}}]]></wp:meta_value>
-		</wp:postmeta>
-							</item>
-					<item>
 		<title><![CDATA[tokusentai]]></title>
-		<link>http://10.10.251.37:8080/?page_id=57</link>
+		<link>http://localhost:8080/?page_id=57</link>
 		<pubDate>Mon, 22 Apr 2024 10:01:53 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://10.10.251.37:8080/?page_id=57</guid>
@@ -909,8 +974,8 @@
 		<wp:post_id>57</wp:post_id>
 		<wp:post_date><![CDATA[2024-04-22 10:01:53]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-04-22 10:01:53]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-04-22 10:38:42]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-04-22 10:38:42]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2024-04-22 10:01:53]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-04-22 10:01:53]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[tokusentai-2__trashed]]></wp:post_name>
@@ -943,7 +1008,7 @@
 							</item>
 					<item>
 		<title><![CDATA[tokusentai]]></title>
-		<link>http://10.10.251.37:8080/?page_id=58</link>
+		<link>http://localhost:8080/?page_id=58</link>
 		<pubDate>Mon, 22 Apr 2024 10:01:46 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://10.10.251.37:8080/?page_id=58</guid>
@@ -953,8 +1018,8 @@
 		<wp:post_id>58</wp:post_id>
 		<wp:post_date><![CDATA[2024-04-22 10:01:46]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-04-22 10:01:46]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-04-22 10:38:42]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-04-22 10:38:42]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2024-04-22 10:01:46]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-04-22 10:01:46]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[tokusentai__trashed]]></wp:post_name>
@@ -987,7 +1052,7 @@
 							</item>
 					<item>
 		<title><![CDATA[tokusentai]]></title>
-		<link>http://10.10.251.37:8080/?page_id=61</link>
+		<link>http://localhost:8080/?page_id=61</link>
 		<pubDate>Mon, 22 Apr 2024 10:02:01 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://10.10.251.37:8080/?page_id=61</guid>
@@ -997,8 +1062,8 @@
 		<wp:post_id>61</wp:post_id>
 		<wp:post_date><![CDATA[2024-04-22 10:02:01]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-04-22 10:02:01]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-04-22 10:38:42]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-04-22 10:38:42]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2024-04-22 10:02:01]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-04-22 10:02:01]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[tokusentai-3__trashed]]></wp:post_name>
@@ -1031,7 +1096,7 @@
 							</item>
 					<item>
 		<title><![CDATA[tokusentai]]></title>
-		<link>http://10.10.251.37:8080/?page_id=63</link>
+		<link>http://localhost:8080/?page_id=63</link>
 		<pubDate>Mon, 22 Apr 2024 10:02:07 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://10.10.251.37:8080/?page_id=63</guid>
@@ -1041,8 +1106,8 @@
 		<wp:post_id>63</wp:post_id>
 		<wp:post_date><![CDATA[2024-04-22 10:02:07]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-04-22 10:02:07]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-04-22 10:38:42]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-04-22 10:38:42]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2024-04-22 10:02:07]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-04-22 10:02:07]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[tokusentai-4__trashed]]></wp:post_name>
@@ -1075,7 +1140,7 @@
 							</item>
 					<item>
 		<title><![CDATA[v]]></title>
-		<link>http://10.10.251.37:8080/?page_id=65</link>
+		<link>http://localhost:8080/?page_id=65</link>
 		<pubDate>Mon, 22 Apr 2024 10:02:16 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://10.10.251.37:8080/?page_id=65</guid>
@@ -1085,8 +1150,8 @@
 		<wp:post_id>65</wp:post_id>
 		<wp:post_date><![CDATA[2024-04-22 10:02:16]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-04-22 10:02:16]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-04-22 10:38:42]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-04-22 10:38:42]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2024-04-22 10:02:16]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-04-22 10:02:16]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[v__trashed]]></wp:post_name>
@@ -1119,7 +1184,7 @@
 							</item>
 					<item>
 		<title><![CDATA[dsvs]]></title>
-		<link>http://10.10.251.37:8080/?page_id=67</link>
+		<link>http://localhost:8080/?page_id=67</link>
 		<pubDate>Mon, 22 Apr 2024 10:02:21 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://10.10.251.37:8080/?page_id=67</guid>
@@ -1129,8 +1194,8 @@
 		<wp:post_id>67</wp:post_id>
 		<wp:post_date><![CDATA[2024-04-22 10:02:21]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-04-22 10:02:21]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-04-22 10:38:42]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-04-22 10:38:42]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2024-04-22 10:02:21]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-04-22 10:02:21]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[dsvs__trashed]]></wp:post_name>
@@ -1163,7 +1228,7 @@
 							</item>
 					<item>
 		<title><![CDATA[aver]]></title>
-		<link>http://10.10.251.37:8080/?page_id=69</link>
+		<link>http://localhost:8080/?page_id=69</link>
 		<pubDate>Mon, 22 Apr 2024 10:02:27 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://10.10.251.37:8080/?page_id=69</guid>
@@ -1173,8 +1238,8 @@
 		<wp:post_id>69</wp:post_id>
 		<wp:post_date><![CDATA[2024-04-22 10:02:27]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-04-22 10:02:27]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-04-22 10:38:41]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-04-22 10:38:41]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2024-04-22 10:02:27]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-04-22 10:02:27]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[aver__trashed]]></wp:post_name>
@@ -1207,7 +1272,7 @@
 							</item>
 					<item>
 		<title><![CDATA[aefazef]]></title>
-		<link>http://10.10.251.37:8080/?page_id=71</link>
+		<link>http://localhost:8080/?page_id=71</link>
 		<pubDate>Mon, 22 Apr 2024 10:02:35 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://10.10.251.37:8080/?page_id=71</guid>
@@ -1217,8 +1282,8 @@
 		<wp:post_id>71</wp:post_id>
 		<wp:post_date><![CDATA[2024-04-22 10:02:35]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-04-22 10:02:35]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-04-22 10:38:41]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-04-22 10:38:41]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2024-04-22 10:02:35]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-04-22 10:02:35]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[aefazef__trashed]]></wp:post_name>
@@ -1251,7 +1316,7 @@
 							</item>
 					<item>
 		<title><![CDATA[e]]></title>
-		<link>http://10.10.251.37:8080/?page_id=73</link>
+		<link>http://localhost:8080/?page_id=73</link>
 		<pubDate>Mon, 22 Apr 2024 12:22:56 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://10.10.251.37:8080/?page_id=73</guid>
@@ -1263,8 +1328,8 @@
 		<wp:post_id>73</wp:post_id>
 		<wp:post_date><![CDATA[2024-04-22 12:22:56]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-04-22 12:22:56]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-04-25 10:04:28]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-04-25 10:04:28]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2024-04-22 12:22:56]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-04-22 12:22:56]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[e__trashed]]></wp:post_name>
@@ -1293,7 +1358,7 @@
 							</item>
 					<item>
 		<title><![CDATA[tesyt]]></title>
-		<link>http://10.10.251.37:8080/?page_id=76</link>
+		<link>http://localhost:8080/?page_id=76</link>
 		<pubDate>Mon, 22 Apr 2024 13:17:02 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://10.10.251.37:8080/?page_id=76</guid>
@@ -1303,8 +1368,8 @@
 		<wp:post_id>76</wp:post_id>
 		<wp:post_date><![CDATA[2024-04-22 13:17:02]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-04-22 13:17:02]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-04-25 11:33:44]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-04-25 11:33:44]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2024-04-22 13:17:02]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-04-22 13:17:02]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[tesyt__trashed]]></wp:post_name>
@@ -1337,7 +1402,7 @@
 							</item>
 					<item>
 		<title><![CDATA[tets]]></title>
-		<link>http://10.10.251.37:8080/?page_id=81</link>
+		<link>http://localhost:8080/?page_id=81</link>
 		<pubDate>Wed, 24 Apr 2024 09:23:46 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://10.10.251.37:8080/?page_id=81</guid>
@@ -1347,8 +1412,8 @@
 		<wp:post_id>81</wp:post_id>
 		<wp:post_date><![CDATA[2024-04-24 09:23:46]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-04-24 09:23:46]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-04-25 11:33:48]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-04-25 11:33:48]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2024-04-24 09:23:46]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-04-24 09:23:46]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[tets__trashed]]></wp:post_name>
@@ -1377,7 +1442,7 @@
 							</item>
 					<item>
 		<title><![CDATA[new soup]]></title>
-		<link>http://10.10.251.37:8080/?page_id=86</link>
+		<link>http://localhost:8080/?page_id=86</link>
 		<pubDate>Thu, 25 Apr 2024 09:33:28 +0000</pubDate>
 		<dc:creator><![CDATA[sera]]></dc:creator>
 		<guid isPermaLink="false">http://10.10.251.37:8080/?page_id=86</guid>
@@ -1387,8 +1452,8 @@
 		<wp:post_id>86</wp:post_id>
 		<wp:post_date><![CDATA[2024-04-25 09:33:28]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2024-04-25 09:33:28]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2024-04-25 10:04:26]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2024-04-25 10:04:26]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2024-04-25 09:33:28]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2024-04-25 09:33:28]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[closed]]></wp:comment_status>
 		<wp:ping_status><![CDATA[closed]]></wp:ping_status>
 		<wp:post_name><![CDATA[new-soup__trashed]]></wp:post_name>

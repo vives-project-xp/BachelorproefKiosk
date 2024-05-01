@@ -13,6 +13,14 @@ services:
       WORDPRESS_DB_NAME: exampledb
     volumes:
       - ./wordpress/thema:/var/www/html/wp-content/themes/thema
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_HOST=db
 
   db:
     image: mysql:5.7

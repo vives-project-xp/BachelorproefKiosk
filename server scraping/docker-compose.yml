@@ -13,7 +13,7 @@ services:
       WORDPRESS_DB_NAME: exampledb
     volumes:
       - ../wordpress/thema:/var/www/html/wp-content/themes/thema
-      - ./downlaods:/var/www/html/wp-content/downloads
+      - ./downloads:/var/www/html/wp-content/downloads
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     restart: unless-stopped

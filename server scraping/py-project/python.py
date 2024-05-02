@@ -28,6 +28,12 @@ locdb = mysql.connector.connect(
   password=loc_wachtwoord,
   database=loc_db
 )
+
+def quit():
+   db.close()
+   locdb.close()
+   exit(0)
+
 local_cursor = locdb.cursor()
 cursor = db.cursor()
 
@@ -35,7 +41,7 @@ try:
    local_cursor.execute("SELECT * FROM `wp_options` WHERE option_id=1;")
 except:
    print("error met lokale database")
-   exit(1)
+   quit()
 
 querry_res = local_cursor.fetchall()
 siteurl = querry_res[0][2]
@@ -45,7 +51,7 @@ try:
    cursor.execute("SELECT * FROM `wp_posts` WHERE post_type='attachment';")
 except:
    print("Error: unable to fecth data")
-   exit(1)
+   quit()
 results = cursor.fetchall()
 for row in results:
     #print(row) = (98, 1, datetime.datetime(2024, 5, 1, 16, 25, 10), datetime.datetime(2024, 5, 1, 16, 25, 10), '', 'arcade', '', 'inherit', 'open', 'closed', '', 'arcade', '', '', datetime.datetime(2024, 5, 1, 16, 25, 10), datetime.datetime(2024, 5, 1, 16, 25, 10), '', 0, 'http://localhost:8080/wp-content/uploads/2024/05/arcade-1.gif', 0, 'attachment', 'image/gif', 0)
@@ -71,5 +77,6 @@ for row in results:
        print("upload van bestand",filename)
     except:
        print("Error bij updaten database")
-       exit(1)
-db.close()
+       quit()
+locdb.commit()
+quit()

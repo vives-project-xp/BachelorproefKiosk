@@ -3,16 +3,18 @@ import mysql.connector
 import os
 import shutil
 import requests
+from dotenv import load_dotenv
 
-serverip = "172.18.0.4"
-db_gebruiker = "exampleuser"
-db_wachtwoord = "examplepass"
-db_db = "exampledb"
+load_dotenv()
+serverip = os.getenv("REMOTE_SERVER")
+db_gebruiker = os.getenv("RM_USER")
+db_wachtwoord = os.getenv("RM_PASS")
+db_db = os.getenv("RM_DB")
 
-localip = "172.18.0.4"
-loc_gebruiker = "exampleuser"
-loc_wachtwoord = "examplepass"
-loc_db = "exampledb"
+localip = os.getenv("LOCAL_SERVER")
+loc_gebruiker = os.getenv("LO_USER")
+loc_wachtwoord = os.getenv("LO_PASS")
+loc_db = os.getenv("LO_DB")
 
 db = mysql.connector.connect(
   host=serverip,
@@ -29,7 +31,6 @@ locdb = mysql.connector.connect(
 local_cursor = locdb.cursor()
 cursor = db.cursor()
 
-siteurl = ""
 try:
    local_cursor.execute("SELECT * FROM `wp_options` WHERE option_id=1;")
 except:
@@ -65,8 +66,9 @@ for row in results:
     row = tuple(lst)
     try:
        stri = "INSERT INTO wp_posts (post_author,post_date,post_date_gmt,post_content,post_title,post_excerpt,post_status,comment_status,ping_status,post_password,post_name,to_ping,pinged,post_modified,post_modified_gmt,post_content_filtered,post_parent,guid,menu_order,post_type,post_mime_type,comment_count) Values" + str(row)
+       local_cursor.execute(stri)
        print(stri)
-       #local_cursor.execute(string)
+       print("upload van bestand",filename)
     except:
        print("Error bij updaten database")
        exit(1)

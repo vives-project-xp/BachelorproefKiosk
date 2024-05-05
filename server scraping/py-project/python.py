@@ -43,7 +43,7 @@ try:
    querry_res = local_cursor.fetchall()
    siteurl = querry_res[0][2]
    local_cursor.execute("SELECT * FROM `wp_posts` WHERE post_type='attachment';")
-   results = cursor.fetchall()
+   results = local_cursor.fetchall()
    for row in results:
       url = row[18]
       filenames.append(url.split('/')[-1])
@@ -61,9 +61,7 @@ for row in results:
     #print(row) = (98, 1, datetime.datetime(2024, 5, 1, 16, 25, 10), datetime.datetime(2024, 5, 1, 16, 25, 10), '', 'arcade', '', 'inherit', 'open', 'closed', '', 'arcade', '', '', datetime.datetime(2024, 5, 1, 16, 25, 10), datetime.datetime(2024, 5, 1, 16, 25, 10), '', 0, 'http://localhost:8080/wp-content/uploads/2024/05/arcade-1.gif', 0, 'attachment', 'image/gif', 0)
     url = row[18]
     filename = url.split('/')[-1]
-    ind = filenames.index(filename)
-    if(ind != -1):
-      del filenames[ind]
+    if(not filename in filenames):
       path = "./downloads/"+filename
       with requests.get(url, stream=True) as r:
                with open(path, 'wb') as f:
@@ -75,7 +73,6 @@ for row in results:
       lst[2] = lst[2].strftime("%Y-%m-%d %H:%M:%S")
       lst[13] = lst[13].strftime("%Y-%m-%d %H:%M:%S")
       lst[14] = lst[14].strftime("%Y-%m-%d %H:%M:%S")
-      
       row = tuple(lst)
       try:
          stri = "INSERT INTO wp_posts (post_author,post_date,post_date_gmt,post_content,post_title,post_excerpt,post_status,comment_status,ping_status,post_password,post_name,to_ping,pinged,post_modified,post_modified_gmt,post_content_filtered,post_parent,guid,menu_order,post_type,post_mime_type,comment_count) Values" + str(row)
@@ -85,6 +82,8 @@ for row in results:
       except:
          print("Error bij updaten database")
          quit()
+    else:
+      del filenames[filenames.index(filename)]
 locdb.commit()
 #degene die overbleven in de filenames lijst zijn bestanden die al verwijdert waren
 for bestand in filenames:

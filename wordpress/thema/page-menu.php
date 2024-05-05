@@ -13,7 +13,7 @@ Template Name: Menu
     <meta name="author" content="Seraphin Sampers">
     <title>Bachelor Kiosk</title>
     <?php wp_head();?>
-    <script type="text/javascript" src="wp-content/themes/thema/recourses/js/Disable_scroll.js" defer></script>
+    <script type="text/javascript" src="<?php echo get_partone_url() ?>/recourses/js/Disable_scroll.js" defer></script>
 </head>
 
 <body <?php body_class();?>>
@@ -23,12 +23,12 @@ Template Name: Menu
     </div>
 
     <div class="ghost-container">
-        <img class="red-ghost-picture" src="wp-content/themes/thema/recourses/images/red-gost-right.png">
-        <img class="left-ghost-picture" src="wp-content/themes/thema/recourses/images/red-gost-left.png">
+        <img class="red-ghost-picture" src="<?php echo get_partone_url() ?>/recourses/images/red-gost-right.png">
+        <img class="left-ghost-picture" src="<?php echo get_partone_url() ?>/recourses/images/red-gost-left.png">
     </div>
 </body>
 <footer>
-    <p>&copy; 2024 Passionately made by Kenrie, Seraphin & Domien <img src="wp-content/themes/thema/recourses/images/pixel-heart.gif" alt=""></p>
+    <p>&copy; 2024 Passionately made by Kenrie, Seraphin & Domien <img src="<?php echo get_partone_url() ?>/recourses/images/pixel-heart.gif" alt=""></p>
   </footer>
   <?php wp_footer();?>
 </html>

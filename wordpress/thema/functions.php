@@ -84,6 +84,10 @@ function get_next_prev_link($index){
 	//print_r($links);
 	return $links;
 }
+function get_partone_url(){
+	$x = explode("/",get_template_directory());
+	return "wp-content/themes/".$x[sizeof($x)-1]."/";
+}
 function load_stylesheets(){
 
 	wp_register_style('stylesheet', get_template_directory_uri().'/recourses/css/style.css', array(), false, 'all');

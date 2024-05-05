@@ -8,7 +8,7 @@ Template Name: ball box
 <head>
   <title>Ball-Box</title>
   <?php wp_head();?>
-  <script type="text/javascript" src="wp-content/themes/thema/recourses/js/Disable_scroll.js" defer></script>
+  <script type="text/javascript" src="<?php echo get_partone_url() ?>/recourses/js/Disable_scroll.js" defer></script>
 </head>
 <style>
     .container {
@@ -138,7 +138,7 @@ Template Name: ball box
             <li><p id="highscore_display"></p></li>
             <li><a href="<?php echo get_link_page("page-game.php") ?>">.Game</a></li>
         </ul>
-        <img class="topbarimg" src="wp-content/themes/thema/recourses/images/shells.gif">
+        <img class="topbarimg" src="<?php echo get_partone_url() ?>/recourses/images/shells.gif">
     </div>
     <div id="box">
       <div id="ball"></div>

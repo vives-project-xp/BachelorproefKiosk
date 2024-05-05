@@ -10,7 +10,7 @@ Template Name: page Projecten
   <meta name="author" content="Kenrie Vandekerckhove">
   <meta name="author" content="Domien Verstraete">
   <meta name="author" content="Seraphin Sampers">
-  <script type="text/javascript" src="wp-content/themes/thema/recourses/js/Disable_scroll.js" defer></script>
+  <script type="text/javascript" src="<?php echo get_partone_url() ?>/recourses/js/Disable_scroll.js" defer></script>
   <title>Bachelor Kiosk</title>
   <?php wp_head();?>
 </head>
@@ -27,7 +27,7 @@ Template Name: page Projecten
     <!-- The sidebar -->
     <div class="sidebar">
     <?php echo get_menu_links(array("page-menu.php","page-projecten.php","page-richtingen.php","page-game.php"));?>
-      <img src="wp-content/themes/thema/recourses/images/asemgou-of-aventura-arcade.gif" class="kong">
+      <img src="<?php echo get_partone_url() ?>/recourses/images/asemgou-of-aventura-arcade.gif" class="kong">
     </div>
 </div>
 <div style="display:none" class="data">

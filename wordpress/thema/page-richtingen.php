@@ -12,7 +12,7 @@ Template Name: Page richtingen
     <meta name="author" content="Domien Verstraete">
     <meta name="author" content="Seraphin Sampers">
     <title>Bachelor Kiosk</title>
-    <script type="text/javascript" src="wp-content/themes/thema/recourses/js/Disable_scroll.js" defer></script>
+    <script type="text/javascript" src="<?php echo get_partone_url() ?>/recourses/js/Disable_scroll.js" defer></script>
     <?php wp_head();?>
 </head>
 
@@ -29,7 +29,7 @@ Template Name: Page richtingen
         <!-- The sidebar -->
         <div class="sidebar">
         <?php echo get_menu_links(array("page-menu.php","page-projecten.php","page-richtingen.php","page-game.php"));?>
-            <img id="highkicks" src="wp-content/themes/thema/recourses/images/highkicks.gif">
+            <img id="highkicks" src="<?php echo get_partone_url() ?>/recourses/images/highkicks.gif">
         </div>
     </div>
 

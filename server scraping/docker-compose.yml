@@ -18,7 +18,7 @@ services:
     image: phpmyadmin/phpmyadmin
     restart: unless-stopped
     ports:
-      - "3000:80"
+      - "8081:80"
     environment:
       - PMA_ARBITRARY=1
       - PMA_HOST=db
@@ -41,7 +41,7 @@ services:
       dockerfile: Dockerfile
     restart: unless-stopped
     environment:
-      REMOTE_SERVER: db
+      REMOTE_SERVER: 192.168.0.232
       RM_USER: exampleuser
       RM_PASS: examplepass
       RM_DB: exampledb

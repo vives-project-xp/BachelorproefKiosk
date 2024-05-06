@@ -5,23 +5,15 @@ services:
     image: wordpress
     restart: unless-stopped
     ports:
-      - 3001:80
+      - 80:80
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: exampleuser
       WORDPRESS_DB_PASSWORD: examplepass
       WORDPRESS_DB_NAME: exampledb
     volumes:
+      - wordpress:/var/www/html
       - ./wordpress/thema:/var/www/html/wp-content/themes/thema
-  phpmyadmin:
-    image: phpmyadmin/phpmyadmin
-    restart: unless-stopped
-    ports:
-      - "3000:80"
-    environment:
-      - PMA_ARBITRARY=1
-      - PMA_HOST=db
-
   db:
     image: mysql:5.7
     restart: unless-stopped
@@ -36,5 +28,5 @@ services:
     ports:
       - 3306:3306
 volumes:
-  #wordpress:
+  wordpress:
   db:

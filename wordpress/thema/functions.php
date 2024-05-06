@@ -86,7 +86,7 @@ function get_next_prev_link($index){
 }
 function get_partone_url(){
 	$x = explode("/",get_template_directory());
-	return "wp-content/themes/".$x[sizeof($x)-1]."/";
+	return "wp-content/themes/".$x[sizeof($x)-1];
 }
 function load_stylesheets(){
 

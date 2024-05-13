@@ -21,7 +21,7 @@ Template Name: Game
 <body <?php body_class();?>>
   <h1>Game</h1>
   <div class="topbar">
-<?php echo get_menu_links(array("page-menu.php","page-projecten.php","page-richtingen.php","page-game.php"));?>
+<?php echo get_menu_links(array("page-menu.php","page-projecten.php","page-game.php"));?>
     <img class="topbarimg" src="<?php echo get_partone_url() ?>/recourses/images/shells.gif">
   </div>
   <div class="wrapper">

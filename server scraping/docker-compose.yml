@@ -12,7 +12,8 @@ services:
       WORDPRESS_DB_PASSWORD: examplepass
       WORDPRESS_DB_NAME: exampledb
     volumes:
-      - ../wordpress/thema:/var/www/html/wp-content/themes/thema
+      #- ../wordpress/thema:/var/www/html/wp-content/themes/thema
+      - wordpress:/var/www/html
       - ./downloads:/var/www/html/wp-content/downloads
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
@@ -41,7 +42,7 @@ services:
       dockerfile: Dockerfile
     restart: unless-stopped
     environment:
-      REMOTE_SERVER: 192.168.0.232
+      REMOTE_SERVER: 10.11.110.10
       RM_USER: exampleuser
       RM_PASS: examplepass
       RM_DB: exampledb
@@ -52,5 +53,5 @@ services:
     volumes:
       - ./downloads:/usr/src/app/downloads
 volumes:
-  #wordpress:
+  wordpress:
   db:

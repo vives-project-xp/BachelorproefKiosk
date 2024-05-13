@@ -1,0 +1,3 @@
+in win reg 2 dingen aangemaakt, in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon:
+DefaultUserName -> admin
+AutoAdminLogon -> 1

@@ -26,7 +26,7 @@ Template Name: page Projecten
     <div class="leftbodydiv">
     <!-- The sidebar -->
     <div class="sidebar">
-    <?php echo get_menu_links(array("page-menu.php","page-projecten.php","page-richtingen.php","page-game.php"));?>
+    <?php echo get_menu_links(array("page-menu.php","page-projecten.php","page-game.php"));?>
       <img src="<?php echo get_partone_url() ?>/recourses/images/asemgou-of-aventura-arcade.gif" class="kong">
     </div>
 </div>

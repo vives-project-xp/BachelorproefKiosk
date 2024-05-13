@@ -1,0 +1,11 @@
+Nieuwe taak in Task Scheduler Library
+General:
+	-Name: Dockor Compose Up
+	-Author: BACHELORKIOSK\admin
+	-Configure for: Windows 10
+Triggers:
+	-At log on of BACHELORKIOSK\admin
+Actions:
+	-Start a program: 
+
+

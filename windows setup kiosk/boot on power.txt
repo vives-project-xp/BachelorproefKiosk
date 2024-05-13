@@ -1,0 +1,2 @@
+in Bios van dell optiplex 7010:
+Power Management > AC Recovery > Power On

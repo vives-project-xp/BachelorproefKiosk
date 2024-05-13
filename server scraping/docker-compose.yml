@@ -41,7 +41,7 @@ services:
       dockerfile: Dockerfile
     restart: unless-stopped
     environment:
-      REMOTE_SERVER: 192.168.0.232
+      REMOTE_SERVER: 10.11.110.10
       RM_USER: exampleuser
       RM_PASS: examplepass
       RM_DB: exampledb

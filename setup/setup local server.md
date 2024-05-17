@@ -10,12 +10,13 @@ Dit is voor de kiosk versie op een server die content overneemt van een andere s
 - [Projecten toevoegen](#projecten-toevoegen)
 
 ## WordPress
-We gebruiken WordPress als content management system. Gebruik hiervoor het docker compose bestand in server scraping, maar bewerk het eerst met de gegevens van de server die je wilt gebruiken als media provider. pas deze lijnen aan (lijn 45 is de eerste):
-REMOTE_SERVER: address van de server
-RM_USER: gebruikersnaam van de mysql server op de server
-RM_PASS: wachtwoord van de mysql server op de server
-RM_DB: naam van de database die je gebruik voor wordpress op de server
-Hierna mag je docker compose up (-d) uitvoeren.
+We gebruiken WordPress als content management system. Gebruik hiervoor het docker compose bestand in server scraping, maar bewerk het eerst met de gegevens van de server die je wilt gebruiken als media provider. pas deze lijnen aan (lijn 45 is de eerste):<br>
+REMOTE_SERVER: address van de server<br>
+RM_USER: gebruikersnaam van de mysql server op de server<br>
+RM_PASS: wachtwoord van de mysql server op de server<br>
+RM_DB: naam van de database die je gebruik voor wordpress op de server<br>
+Hierna mag je docker compose up (-d) uitvoeren.<br><br>
+In de algemene instellingen van wordpress moet je zeker nagaan dat "WordPress Address (URL)" en "Site Address (URL)" zeker op localhost staat, anders zullen er bepaalde dingen niet werken als je hem uit de ethernet stekker trekt.
 
 ## Activatie thema
 De eerste stap is het importeren van het WordPress thema in WordPress.

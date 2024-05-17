@@ -68,7 +68,7 @@ for row in results:
                with open(path, 'wb') as f:
                   shutil.copyfileobj(r.raw, f)
       lst = list(row)
-      lst[18] = "https://" + siteurl + "/wp-content/downloads/" + filename
+      lst[18] = "https://" + siteurl + ":8080/wp-content/downloads/" + filename
       lst = lst[1:]
       lst[1] = lst[1].strftime("%Y-%m-%d %H:%M:%S")
       lst[2] = lst[2].strftime("%Y-%m-%d %H:%M:%S")

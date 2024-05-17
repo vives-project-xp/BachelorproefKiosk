@@ -41,7 +41,8 @@ filenames = []
 try:
    local_cursor.execute("SELECT * FROM `wp_options` WHERE option_id=1;")
    querry_res = local_cursor.fetchall()
-   siteurl = querry_res[0][2]
+   #siteurl = querry_res[0][2]
+   siteurl = "localhost" #error met als je hem van het internet haalt, dan verliest ie zijn ip address.
    local_cursor.execute("SELECT * FROM `wp_posts` WHERE post_type='attachment';")
    results = local_cursor.fetchall()
    for row in results:

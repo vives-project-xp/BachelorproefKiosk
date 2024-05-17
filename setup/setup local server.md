@@ -16,7 +16,7 @@ RM_USER: gebruikersnaam van de mysql server op de server<br>
 RM_PASS: wachtwoord van de mysql server op de server<br>
 RM_DB: naam van de database die je gebruik voor wordpress op de server<br>
 Hierna mag je docker compose up (-d) uitvoeren.<br><br>
-In de algemene instellingen van wordpress moet je zeker nagaan dat "WordPress Address (URL)" en "Site Address (URL)" zeker op localhost staat, anders zullen er bepaalde dingen niet werken als je hem uit de ethernet stekker trekt.
+In de algemene instellingen van wordpress moet je zeker nagaan dat "WordPress Address (URL)" en "Site Address (URL)" zeker op localhost staan, anders zullen er bepaalde dingen niet werken als je hem uit de ethernet stekker trekt.
 
 ## Activatie thema
 De eerste stap is het importeren van het WordPress thema in WordPress.

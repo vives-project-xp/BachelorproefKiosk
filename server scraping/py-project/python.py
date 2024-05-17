@@ -41,8 +41,8 @@ filenames = []
 try:
    local_cursor.execute("SELECT * FROM `wp_options` WHERE option_id=1;")
    querry_res = local_cursor.fetchall()
-   #siteurl = querry_res[0][2]
-   siteurl = "localhost" #error met als je hem van het internet haalt, dan verliest ie zijn ip address.
+   siteurl = querry_res[0][2] #zo laten sinds poort juist en standaard staat url op localhost
+   #siteurl = "localhost" #error met als je hem van het internet haalt, dan verliest ie zijn ip address.
    local_cursor.execute("SELECT * FROM `wp_posts` WHERE post_type='attachment';")
    results = local_cursor.fetchall()
    for row in results:
@@ -68,7 +68,7 @@ for row in results:
                with open(path, 'wb') as f:
                   shutil.copyfileobj(r.raw, f)
       lst = list(row)
-      lst[18] = "https://" + siteurl + ":8080/wp-content/downloads/" + filename
+      lst[18] = siteurl + "/wp-content/downloads/" + filename
       lst = lst[1:]
       lst[1] = lst[1].strftime("%Y-%m-%d %H:%M:%S")
       lst[2] = lst[2].strftime("%Y-%m-%d %H:%M:%S")

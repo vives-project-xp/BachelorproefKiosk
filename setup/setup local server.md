@@ -46,4 +46,4 @@ Er zijn enkele plugins nodig voor ons project om te kunnen werken, Installeer en
 Gefeliciteerd, je hebt succesvol de basis van onze pagina geïnstalleerd. Nu worden alle bachelor proeven van een andere server met wordpress gesyncroniseerd met deze. Je kan ook nog bachelorproeven onafhankelijk van de andere server toevoegen op deze manier:
 - Ga naar Media Library (camera + muzieknoot symbool)
 - Klik op "Add New Media File" en dan op "Select Files"
-- Selecteer vervolgens de pdf's van de bachelorproeven die je wilt beschikbaar stellen op de site.
+- Selecteer vervolgens de pdf's van de bachelorproeven die je wilt beschikbaar stellen op de site. (In de repo onder wordpress/imports kun je alle fiches van voor 2024 vinden)

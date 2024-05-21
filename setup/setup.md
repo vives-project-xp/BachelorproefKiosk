@@ -41,4 +41,4 @@ Er zijn enkele plugins nodig voor ons project om te kunnen werken, Installeer en
 Gefeliciteerd, je hebt succesvol de basis van onze pagina geïnstalleerd. Nu kan je zelf bachelorproeven toevoegen! Hier is een voorbeeld van hoe je dat doet:
 - Ga naar Media Library (camera + muzieknoot symbool)
 - Klik op "Add New Media File" en dan op "Select Files"
-- Selecteer vervolgens de pdf's van de bachelorproeven die je wilt beschikbaar stellen op de site.
+- Selecteer vervolgens de pdf's van de bachelorproeven die je wilt beschikbaar stellen op de site. (In de repo onder wordpress/imports kun je alle fiches van voor 2024 vinden)
